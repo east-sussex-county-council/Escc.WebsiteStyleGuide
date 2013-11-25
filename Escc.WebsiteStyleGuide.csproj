@@ -61,7 +61,11 @@
   </ItemGroup>
   <ItemGroup>
     <CodeAnalysisDictionary Include="CustomDictionary.xml" />
+    <Content Include=".gitignore" />
     <Content Include="default.aspx" />
+    <Content Include="setup.aspx" />
+    <Content Include="style-guide.css" />
+    <Content Include="text.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -73,8 +77,24 @@
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="setup.aspx.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="setup.aspx.designer.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="text.aspx.cs">
+      <DependentUpon>text.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="text.aspx.designer.cs">
+      <DependentUpon>text.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LICENSE.md" />
+    <Content Include="README.md" />
     <None Include="Web.config.example" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
