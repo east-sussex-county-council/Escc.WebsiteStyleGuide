@@ -1,1 +1,8 @@
-﻿.section-demo { margin-top: 1.384615em; }
+﻿/* Stack .article and .full-page */
+.section-demo { margin-top: 1.384615em; }
+
+/* Coloured boxes to demo responsive design */
+.demo-box { padding: .692308em;border-radius: 5px;}
+.demo-box.medium { background: seagreen;color: #fff;}
+.demo-box.small {background: lightskyblue;color: #000;}
+.demo-box.large { background: plum;color: #000;}

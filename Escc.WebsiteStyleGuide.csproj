@@ -64,6 +64,7 @@
     <Content Include=".gitignore" />
     <Content Include="default.aspx" />
     <Content Include="forms.aspx" />
+    <Content Include="grid.aspx" />
     <Content Include="setup.aspx" />
     <Content Include="style-guide.css" />
     <Content Include="text.aspx" />
@@ -83,6 +84,13 @@
     </Compile>
     <Compile Include="forms.aspx.designer.cs">
       <DependentUpon>forms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="grid.aspx.cs">
+      <DependentUpon>grid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="grid.aspx.designer.cs">
+      <DependentUpon>grid.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="setup.aspx.cs">
