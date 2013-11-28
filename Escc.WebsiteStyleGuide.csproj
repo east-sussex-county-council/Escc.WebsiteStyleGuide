@@ -63,6 +63,7 @@
     <CodeAnalysisDictionary Include="CustomDictionary.xml" />
     <Content Include=".gitignore" />
     <Content Include="default.aspx" />
+    <Content Include="forms.aspx" />
     <Content Include="setup.aspx" />
     <Content Include="style-guide.css" />
     <Content Include="text.aspx" />
@@ -75,6 +76,13 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forms.aspx.cs">
+      <DependentUpon>forms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms.aspx.designer.cs">
+      <DependentUpon>forms.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="setup.aspx.cs">

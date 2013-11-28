@@ -9,6 +9,7 @@
                 <ol>
                     <li><a href="setup.aspx">Set up a new page</a></li>
                     <li><a href="text.aspx">Text styles</a></li>
+                    <li><a href="forms.aspx">Forms</a></li>
                 </ol>
             </div>
         </article>

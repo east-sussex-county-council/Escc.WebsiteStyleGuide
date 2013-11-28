@@ -20,13 +20,25 @@
                 <p>A paragraph following the heading.</p>
                 <ol>
                     <li>An ordered list between paragraphs</li>
-                    <li>An ordered list between paragraphs</li>
+                    <li>An ordered list between paragraphs
+                        <ol>
+                            <li>With a nested list
+                                <ol><li>And another
+                                    <ol><li>And another
+                                        <ol><li>And another</li></ol>
+                                        </li></ol>
+                                    </li></ol>
+                            </li>
+                        </ol>
+                    </li>
                 </ol>
-                <p>A paragraph following an ordered list.</p>
+                <p>A paragraph following an ordered list. This one has an <abbr title="It means this">abbreviation</abbr>.</p>
                 <h5>Heading 5</h5>
                 <p>A paragraph following the heading.</p>
                 <h6>Heading 6</h6>
-                <p>A paragraph following the heading.</p>
+                <p>A paragraph following the heading. There's a horizontal rule next.</p>
+                <hr />
+                <small>The small print.</small>
             </div>
         </article>
     </div>
