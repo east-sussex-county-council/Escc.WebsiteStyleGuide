@@ -8,6 +8,7 @@
                 <h2>Page layout and the grid</h2>
                 <ol>
                     <li><a href="setup.aspx">Set up a new page</a></li>
+                    <li><a href="grid.aspx">Responsive design and the grid</a></li>
                     <li><a href="text.aspx">Text styles</a></li>
                     <li><a href="forms.aspx">Forms</a></li>
                 </ol>
