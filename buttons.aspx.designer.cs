@@ -10,6 +10,6 @@
 namespace Escc.WebsiteStyleGuide {
     
     
-    public partial class forms {
+    public partial class buttons {
     }
 }

@@ -62,8 +62,10 @@
   <ItemGroup>
     <CodeAnalysisDictionary Include="CustomDictionary.xml" />
     <Content Include=".gitignore" />
+    <Content Include="content.aspx" />
+    <Content Include="search.aspx" />
     <Content Include="default.aspx" />
-    <Content Include="forms.aspx" />
+    <Content Include="buttons.aspx" />
     <Content Include="grid.aspx" />
     <Content Include="setup.aspx" />
     <Content Include="style-guide.css" />
@@ -71,6 +73,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="content.aspx.cs">
+      <DependentUpon>content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content.aspx.designer.cs">
+      <DependentUpon>content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -78,12 +94,12 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="forms.aspx.cs">
-      <DependentUpon>forms.aspx</DependentUpon>
+    <Compile Include="buttons.aspx.cs">
+      <DependentUpon>buttons.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="forms.aspx.designer.cs">
-      <DependentUpon>forms.aspx</DependentUpon>
+    <Compile Include="buttons.aspx.designer.cs">
+      <DependentUpon>buttons.aspx</DependentUpon>
     </Compile>
     <Compile Include="grid.aspx.cs">
       <DependentUpon>grid.aspx</DependentUpon>
@@ -123,6 +139,10 @@
     <ProjectReference Include="..\..\Inetpub\wwwroot\eastsussex.gov.uk.csproj">
       <Project>{1426fef0-23dc-4c23-ae15-67f2527bd741}</Project>
       <Name>eastsussex.gov.uk</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VS Projects\_Libraries for re-use\EsccWebTeam.NavigationControls\EsccWebTeam.NavigationControls.csproj">
+      <Project>{0323f668-1723-44a1-8c94-f91dc59ef315}</Project>
+      <Name>EsccWebTeam.NavigationControls</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

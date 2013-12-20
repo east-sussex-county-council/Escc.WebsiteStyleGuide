@@ -9,8 +9,10 @@
                 <ol>
                     <li><a href="setup.aspx">Set up a new page</a></li>
                     <li><a href="grid.aspx">Responsive design and the grid</a></li>
-                    <li><a href="text.aspx">Text styles</a></li>
-                    <li><a href="forms.aspx">Forms</a></li>
+                    <li><a href="text.aspx">Text and tables</a></li>
+                    <li><a href="content.aspx">Standard elements on content pages</a></li>
+                    <li><a href="search.aspx">Search and paging</a></li>
+                    <li><a href="buttons.aspx">Buttons and navigation</a></li>
                 </ol>
             </div>
         </article>

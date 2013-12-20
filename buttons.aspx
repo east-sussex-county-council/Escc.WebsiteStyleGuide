@@ -1,9 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="forms.aspx.cs" Inherits="Escc.WebsiteStyleGuide.forms" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="buttons.aspx.cs" Inherits="Escc.WebsiteStyleGuide.buttons" %>
+<asp:Content runat="server" ContentPlaceHolderID="metadata">
+    <title>Buttons and navigation</title>
+</asp:Content>
+
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="content">
     <div class="full-page">
         <article>
             <div class="text">
-                <h1>Forms</h1>
+                <h1>Buttons and navigation</h1>
                 <p>Most buttons are inside a <code>.form</code> element (see below), but sometimes applications need extra buttons for navigation.</p>
                 <p>Apply <code>.button</code> to an input element which looks like the ones we have in forms:</p>
                 <input type="button" value="Example button" class="button"/>
@@ -32,6 +36,7 @@
                 <p>When there's only one thing you want people to do on the page, you can use <code>.major-action</code> on the parent element of the link:</p>
                 <p class="major-action"><a href="javascript:return false()">Wow, that's big!</a></p>
             </div>
+
         </article>
     </div>
 </asp:Content>
