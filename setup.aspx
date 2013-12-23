@@ -26,5 +26,9 @@
     <div class="supporting supporting-text">
         <h2>Add text formatting</h2>
         <p>Use <code>.supporting</code> and <code>.supporting-text</code> together to add standard text styles in the sidebar.</p>
+        <ul>
+            <li>lists look like this</li>
+            <li>lists look like this</li>
+        </ul>
     </div>
 </asp:Content>

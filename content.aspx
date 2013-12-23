@@ -45,6 +45,23 @@
                <p class="quick-answer"><strong>When most people want one thing: <strong class="quick-answer-datum">use <code>.quick-answer</code></strong></strong></p> 
 
             </div>
+            
+            <EastSussexGovUK:Related runat="server">
+                <PagesTemplate>
+                    <ul>
+                        <li><a href="#">Example link</a></li>
+                        <li><a href="#">Example link</a></li>
+                    </ul>
+                </PagesTemplate>
+                <WebsitesTemplate>
+                    <ul>
+                        <li><a href="#">Example link</a></li>
+                        <li><a href="#">Example link</a></li>
+                    </ul>
+                </WebsitesTemplate>
+            </EastSussexGovUK:Related>
+
+            <EastSussexGovUK:Share ID="Share1" runat="server" />
         </article>
     </div>
 </asp:Content>
