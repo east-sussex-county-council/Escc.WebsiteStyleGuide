@@ -70,7 +70,9 @@
     <Content Include="setup.aspx" />
     <Content Include="style-guide.css" />
     <Content Include="text.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="content.aspx.cs">

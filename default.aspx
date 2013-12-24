@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Escc.WebsiteStyleGuide.Default" %>
-
+<asp:Content runat="server" ContentPlaceHolderID="metadata">
+    <title>Website style guide</title>
+</asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="content">
     <div class="full-page">
         <article>

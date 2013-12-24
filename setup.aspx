@@ -18,6 +18,11 @@
         <div class="text">
             <h2>Add text formatting</h2>
             <p>Most of the time you'll want to add <code>.text</code> inside <code>.article</code> to add the standard text formatting.</p>
+            <h2>Columns</h2>
+            <div class="tCols">
+                <div class="tCol1"><p>Within <code>.text</code>, use <code>.tCol1</code> and <code>.tCol2</code> inside a container element with <code>.tCols</code> to create two columns.</p></div>
+                <div class="tCol2"><p>The columns are stacked rather than side-by-side at the smallest level.</p></div>
+            </div>
         </div>
     </div>
     <div class="supporting section-demo">
