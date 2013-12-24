@@ -63,6 +63,8 @@
     <CodeAnalysisDictionary Include="CustomDictionary.xml" />
     <Content Include=".gitignore" />
     <Content Include="content.aspx" />
+    <Content Include="maps.aspx" />
+    <Content Include="fullscreen.aspx" />
     <Content Include="search.aspx" />
     <Content Include="default.aspx" />
     <Content Include="buttons.aspx" />
@@ -81,6 +83,20 @@
     </Compile>
     <Compile Include="content.aspx.designer.cs">
       <DependentUpon>content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maps.aspx.cs">
+      <DependentUpon>maps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maps.aspx.designer.cs">
+      <DependentUpon>maps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fullscreen.aspx.cs">
+      <DependentUpon>fullscreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fullscreen.aspx.designer.cs">
+      <DependentUpon>fullscreen.aspx</DependentUpon>
     </Compile>
     <Compile Include="search.aspx.cs">
       <DependentUpon>search.aspx</DependentUpon>
