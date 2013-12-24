@@ -162,6 +162,10 @@
       <Project>{0323f668-1723-44a1-8c94-f91dc59ef315}</Project>
       <Name>EsccWebTeam.NavigationControls</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\VS Projects\_Standards\E-Government Metadata Standard %28E-GMS%29\EsccWebTeam.Egms\EsccWebTeam.Egms.csproj">
+      <Project>{78083dcb-b12f-4950-86c5-3a844d8604f3}</Project>
+      <Name>EsccWebTeam.Egms</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
