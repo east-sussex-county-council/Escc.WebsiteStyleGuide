@@ -11,13 +11,13 @@
                 <p>Load extra styles for GIS maps using <code>&lt;Egms:Css runat=&quot;server&quot; Files=&quot;Map&quot; /&gt;</code></p>
 
                 <p>Older GIS maps are rendered on the server-side.</p>
-                <p>Zoom buttons use <code>.button</code> inside <code>.zoom</code>. The key is a list using <code>ul.key</code>.
+                <p>Zoom buttons use <code>p.button-nav</code>. The key is a list using <code>ul.key</code>.
                    The map is contained within <code>.gisMap</code>. There are arrows to move the map, but these are missing when the map is zoomed out.</p>
 
-                <span class="zoom">
+                <p class="button-nav">
                     <input type="submit" value="Zoom in" class="button" />
                     <input type="submit" value="Zoom out" class="button" />
-                </span>
+                </p>
 
                 <ul class="key">
                     <li>&#9733; Example key item</li>

@@ -63,6 +63,7 @@
     <CodeAnalysisDictionary Include="CustomDictionary.xml" />
     <Content Include=".gitignore" />
     <Content Include="content.aspx" />
+    <Content Include="mobile.aspx" />
     <Content Include="maps.aspx" />
     <Content Include="fullscreen.aspx" />
     <Content Include="search.aspx" />
@@ -83,6 +84,13 @@
     </Compile>
     <Compile Include="content.aspx.designer.cs">
       <DependentUpon>content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mobile.aspx.cs">
+      <DependentUpon>mobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile.aspx.designer.cs">
+      <DependentUpon>mobile.aspx</DependentUpon>
     </Compile>
     <Compile Include="maps.aspx.cs">
       <DependentUpon>maps.aspx</DependentUpon>
