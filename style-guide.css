@@ -6,3 +6,8 @@
 .demo-box.medium { background: seagreen;color: #fff;}
 .demo-box.small {background: lightskyblue;color: #000;}
 .demo-box.large { background: plum;color: #000;}
+
+/* Colour swatches */
+ul.swatches { list-style-type: none;margin-left: 0; }
+ul.swatches ul { list-style-type: square;margin-top: 0;}
+.swatch { display: inline-block; height: 30px; width: 30px; vertical-align: middle;margin-right: 5px;}
