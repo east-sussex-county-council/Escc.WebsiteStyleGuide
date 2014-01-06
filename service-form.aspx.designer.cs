@@ -10,24 +10,24 @@
 namespace Escc.WebsiteStyleGuide {
     
     
-    public partial class buttons {
+    public partial class serviceForm {
         
         /// <summary>
-        /// Css1 control.
+        /// DateControl1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::EsccWebTeam.Egms.Css Css1;
+        protected global::eastsussexgovuk.webservices.FormControls.DateControl DateControl1;
         
         /// <summary>
-        /// ContextContainer1 control.
+        /// FormAddressNonCitizen1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::EsccWebTeam.EastSussexGovUK.ContextContainer ContextContainer1;
+        protected global::eastsussexgovuk.webservices.FormControls.CustomControls.FormAddressNonCitizen FormAddressNonCitizen1;
     }
 }

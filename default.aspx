@@ -14,6 +14,7 @@
                     <li><a href="content.aspx">Standard elements on content pages</a></li>
                     <li><a href="search.aspx">Search and paging</a></li>
                     <li><a href="buttons.aspx">Buttons and navigation</a></li>
+                    <li><a href="forms.aspx">Forms</a></li>
                     <li><a href="fullscreen.aspx">The full screen template</a></li>
                     <li><a href="maps.aspx">Maps based on our GIS</a></li>
                     <li><a href="mobile.aspx">Adapting content for mobile</a></li>

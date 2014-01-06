@@ -1,6 +1,11 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="buttons.aspx.cs" Inherits="Escc.WebsiteStyleGuide.buttons" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
     <title>Buttons and navigation</title>
+    <Egms:Css ID="Css1" runat="server" Files="FormsSmall"/>
+    <EastSussexGovUK:ContextContainer ID="ContextContainer1" runat="server" Desktop="true">
+        <Egms:Css runat="server" Files="FormsMedium" MediaConfiguration="Medium"/>
+        <Egms:Css runat="server" Files="FormsLarge" MediaConfiguration="Large"/>
+    </EastSussexGovUK:ContextContainer>
 </asp:Content>
 
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="content">
@@ -8,7 +13,10 @@
         <article>
             <div class="text">
                 <h1>Buttons and navigation</h1>
-                <p>Most buttons are inside a <code>.form</code> element (see below), but sometimes applications need extra buttons for navigation.</p>
+                <p>A progress bar uses stages set up in <code>web.config</code>, and normally appears just under the <code>h1</code> element.</p>
+                <NavigationControls:ProgressBarControl runat="server" />
+    
+                <p>Most buttons are inside a <code>.form</code> element (see <a href="forms.aspx">forms</a>), but sometimes applications need extra buttons for navigation.</p>
                 <p>Apply <code>.button</code> to an input element which looks like the ones we have in forms:</p>
                 <input type="button" value="Example button" class="button"/>
                 
@@ -36,7 +44,6 @@
                 <p>When there's only one thing you want people to do on the page, you can use <code>.major-action</code> on the parent element of the link:</p>
                 <p class="major-action"><a href="javascript:return false()">Wow, that's big!</a></p>
             </div>
-
         </article>
     </div>
 </asp:Content>

@@ -1,5 +1,4 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="search.aspx.cs" Inherits="Escc.WebsiteStyleGuide.search" %>
-<%@ Register TagPrefix="NavigationControls" Namespace="EsccWebTeam.NavigationControls" Assembly="EsccWebTeam.NavigationControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06fad7304560ae6f" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
     <title>Search and paging</title>
 </asp:Content>
