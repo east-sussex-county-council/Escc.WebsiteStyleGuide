@@ -1,6 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="simple-form.aspx.cs" Inherits="Escc.WebsiteStyleGuide.simpleForm" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <title>Forms using .simple-form</title>
+    <Egms:MetadataControl runat="server" 
+        Title="Forms using .simple-form" 
+        DateIssued="2014-01-07"
+        IpsvPreferredTerms="Website management"
+        />
     <Egms:Css runat="server" Files="FormsSmall"/>
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
         <Egms:Css runat="server" Files="FormsMedium" MediaConfiguration="Medium"/>
@@ -37,7 +41,7 @@
                     <option>Option 2</option>
                 </select>
                 <input type="submit" value="Update"/>
-                <p class="note rss"><a href="#">Subscribe by RSS</a> in <code>p.note</code></p>
+                <p class="note rss"><a href="javascript:return false()">Subscribe by RSS</a> in <code>p.note</code></p>
             </div>
 
             <div class="form simple-form">
@@ -51,7 +55,7 @@
                     </div>
                     <input type="submit" value="Search" />
                 </div>
-                <p class="note useList">or <code>p.note</code> can point to a <a href="#">list of everything</a></p>
+                <p class="note useList">or <code>p.note</code> can point to a <a href="javascript:return false()">list of everything</a></p>
             </div>
                 
             <div class="form simple-form">

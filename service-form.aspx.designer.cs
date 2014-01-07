@@ -13,6 +13,15 @@ namespace Escc.WebsiteStyleGuide {
     public partial class serviceForm {
         
         /// <summary>
+        /// MetadataControl1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::EsccWebTeam.Egms.MetadataControl MetadataControl1;
+        
+        /// <summary>
         /// DateControl1 control.
         /// </summary>
         /// <remarks>

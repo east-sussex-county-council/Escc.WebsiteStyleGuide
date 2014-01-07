@@ -1,6 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="maps.aspx.cs" Inherits="Escc.WebsiteStyleGuide.Maps" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <title>Maps based on our GIS</title>
+    <Egms:MetadataControl runat="server" 
+        Title="Maps based on our GIS" 
+        DateIssued="2014-01-07"
+        IpsvPreferredTerms="Website management"
+        />
     <Egms:Css runat="server" Files="Map" />
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="content">

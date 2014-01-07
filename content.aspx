@@ -1,6 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="content.aspx.cs" Inherits="Escc.WebsiteStyleGuide.content" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <title>New and related content</title>
+    <Egms:MetadataControl runat="server" 
+        Title="New and related content" 
+        DateIssued="2014-01-07"
+        IpsvPreferredTerms="Website management"
+        />
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="content">
@@ -11,8 +15,8 @@
             <div class="section-nav">
                 <img src="http://placekitten.com/144/144" alt="example image - a kitten"/>
                 <ul>
-                    <li><a href="#">Example link</a></li>
-                    <li><a href="#">Example link</a></li>
+                    <li><a href="javascript:return false()">Example link</a></li>
+                    <li><a href="javascript:return false()">Example link</a></li>
                 </ul>
             </div>           
                 
@@ -20,12 +24,12 @@
 
             <div class="section-nav">
                 <ul>
-                    <li><a href="#">Example link</a></li>
-                    <li><a href="#">Example link</a></li>
+                    <li><a href="javascript:return false()">Example link</a></li>
+                    <li><a href="javascript:return false()">Example link</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#">Example link</a></li>
-                    <li><a href="#">Example link</a></li>
+                    <li><a href="javascript:return false()">Example link</a></li>
+                    <li><a href="javascript:return false()">Example link</a></li>
                 </ul>
             </div>
 
@@ -33,7 +37,7 @@
             <section>
                 <h2 class="latest">Latest</h2>
                 <p>Use a <code>.latestBox</code> to highlight new or updated content. It appears straight after the Heading 1 and, optionally, the <code>.section-nav</code>.
-                    If you need more than a few words, <a href="#">link to a separate page</a>.
+                    If you need more than a few words, <a href="javascript:return false()">link to a separate page</a>.
                 </p>
                 <ul><li>If there's a list it should appear to be part of the item above.</li></ul>
                 <p>Authors can add multiple items, but the HTML can be unpredictable.</p>
@@ -58,14 +62,14 @@
             <EastSussexGovUK:Related runat="server">
                 <PagesTemplate>
                     <ul>
-                        <li><a href="#">Example link</a></li>
-                        <li><a href="#">Example link</a></li>
+                        <li><a href="javascript:return false()">Example link</a></li>
+                        <li><a href="javascript:return false()">Example link</a></li>
                     </ul>
                 </PagesTemplate>
                 <WebsitesTemplate>
                     <ul>
-                        <li><a href="#">Example link</a></li>
-                        <li><a href="#">Example link</a></li>
+                        <li><a href="javascript:return false()">Example link</a></li>
+                        <li><a href="javascript:return false()">Example link</a></li>
                     </ul>
                 </WebsitesTemplate>
             </EastSussexGovUK:Related>

@@ -1,6 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="short-form.aspx.cs" Inherits="Escc.WebsiteStyleGuide.shortForm" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <title>Forms using .short-form</title>
+    <Egms:MetadataControl runat="server" 
+        Title="Forms using .short-form" 
+        DateIssued="2014-01-07"
+        IpsvPreferredTerms="Website management"
+        />
     <Egms:Css runat="server" Files="FormsSmall"/>
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
         <Egms:Css runat="server" Files="FormsMedium" MediaConfiguration="Medium"/>
@@ -18,7 +22,7 @@
            </div>            
             
             <div class="form short-form">
-                <p><a href="#">View all results</a> or other text here</p>
+                <p><a href="javascript:return false()">View all results</a> or other text here</p>
                 <fieldset>
                     <legend class="or">or search for something:</legend>
                     <label for="example8">Choose from a list</label>
@@ -72,7 +76,7 @@
                         </fieldset>
                     </div>
                     
-                    <p><span class="or">or</span> <a href="#">use something else, like a map</a></p>
+                    <p><span class="or">or</span> <a href="javascript:return false()">use something else, like a map</a></p>
                 </fieldset>
 
                 <div>
@@ -82,7 +86,7 @@
             
             <div class="form short-form">
                 <h2>Optional heading</h2>
-                <p><a href="#">List all results</a></p>
+                <p><a href="javascript:return false()">List all results</a></p>
                 <fieldset>
                     <legend>Choose some of these:</legend>
                     <label for="example10">

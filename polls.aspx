@@ -1,6 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="polls.aspx.cs" Inherits="Escc.WebsiteStyleGuide.polls" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <title>Polls</title>
+    <Egms:MetadataControl runat="server" 
+        Title="Polls" 
+        DateIssued="2014-01-07"
+        IpsvPreferredTerms="Website management"
+        />
     <Egms:Css runat="server" Files="PollSmall" />
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
         <Egms:Css runat="server" Files="PollLarge" MediaConfiguration="Large" />
@@ -37,8 +41,8 @@
             <div class="pollAnswer">Answer 2</div><span class="pollBackBar"><span style="width: 30%" class="bar">&nbsp;</span><span class="percent">30%</span></span>
             <div class="pollAnswer">Answer 3</div><span class="pollBackBar"><span style="width: 50%" class="bar"><span class="percent">50%</span></span></span>
             <p>Total votes: <strong>40</strong></p>
-            <p>Optional text after the poll can include <a href="#">a link</a>.</p>
-            <p><a class="pollLink" href="#">Link to related content</a></p>
+            <p>Optional text after the poll can include <a href="javascript:return false()">a link</a>.</p>
+            <p><a class="pollLink" href="javascript:return false()">Link to related content</a></p>
             <div class="cornerBR"><div class="cornerBL"></div></div>
     	</article>
     </div>

@@ -1,6 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="service-form.aspx.cs" Inherits="Escc.WebsiteStyleGuide.serviceForm" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <title>Forms using .service-form</title>
+    <Egms:MetadataControl runat="server" 
+        Title="Forms using .service-form" 
+        DateIssued="2014-01-07"
+        IpsvPreferredTerms="Website management"
+        />
     <Egms:Css runat="server" Files="FormsSmall"/>
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
         <Egms:Css runat="server" Files="FormsMedium" MediaConfiguration="Medium"/>
@@ -24,7 +28,7 @@
                 <div class="errorSummary">
                     <p>This is how we would like error messages to appear:</p>
                     <ul>
-                        <li>Required: <span class="errorItem"><a href="#">Missing name</a></span></li>
+                        <li>Required: <span class="errorItem"><a href="javascript:return false()">Missing name</a></span></li>
                     </ul>
                 </div>
 

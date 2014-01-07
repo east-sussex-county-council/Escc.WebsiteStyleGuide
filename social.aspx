@@ -1,6 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="social.aspx.cs" Inherits="Escc.WebsiteStyleGuide.social" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <title>Social media</title>
+    <Egms:MetadataControl runat="server" 
+        Title="Social media" 
+        DateIssued="2014-01-07"
+        IpsvPreferredTerms="Website management"
+        />
     <Egms:Css runat="server" Files="SocialMediaSmall" />
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
         <Egms:Css runat="server" Files="SocialMediaLarge" MediaConfiguration="Large" />
@@ -14,16 +18,16 @@
                 <h1>Social media</h1>
 
                <p>You can see examples of Facebook and Twitter controls on this page, but resize your browser because there are separate ones for small and large screens.</p>
-               <p>You can apply classes to links to add an appropriate social media icon for <a href="#" class="twitter">Twitter</a>, <a href="#" class="facebook">Facebook</a>,
-                   <a href="#" class="youtube">YouTube</a> and <a href="#" class="flickr">Flickr</a>.</p>
+               <p>You can apply classes to links to add an appropriate social media icon for <a href="javascript:return false()" class="twitter">Twitter</a>, <a href="javascript:return false()" class="facebook">Facebook</a>,
+                   <a href="javascript:return false()" class="youtube">YouTube</a> and <a href="javascript:return false()" class="flickr">Flickr</a>.</p>
                 <p>The 'Related pages' box is shown because social media on small screens appears between it and the 'Share' box.</p>
             </div>
             
             <EastSussexGovUK:Related runat="server">
                 <PagesTemplate>
                     <ul>
-                        <li><a href="#">Example link</a></li>
-                        <li><a href="#">Example link</a></li>
+                        <li><a href="javascript:return false()">Example link</a></li>
+                        <li><a href="javascript:return false()">Example link</a></li>
                     </ul>
                 </PagesTemplate>
             </EastSussexGovUK:Related>

@@ -1,6 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="mobile.aspx.cs" Inherits="Escc.WebsiteStyleGuide.mobile" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <title>Interfaces for mobile</title>
+    <Egms:MetadataControl runat="server" 
+        Title="Interfaces for mobile" 
+        DateIssued="2014-01-07"
+        IpsvPreferredTerms="Website management"
+        />
     <Egms:Css runat="server" Files="MobileControls" />
 </asp:Content>
 
@@ -14,9 +18,9 @@
                 <p>Include the <code>MobileControls</code> stylesheet in your page for this control. 
                     <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/mobile.aspx">View the source of this page</a> for an example.</p>
                 <p>Your application's script needs to generate a <code>.menu-toggle</code> element.</p>
-                <nav class="menu-toggle small medium"><a href="#">Show menu &#9660;</a></nav>
+                <nav class="menu-toggle small medium"><a href="javascript:return false()">Show menu &#9660;</a></nav>
                 <p>When clicked, the application's script should show the menu and change the text of the <code>.menu-toggle</code> element.</p>
-                <nav class="menu-toggle small medium"><a href="#">Hide menu &#9650;</a></nav>
+                <nav class="menu-toggle small medium"><a href="javascript:return false()">Hide menu &#9650;</a></nav>
 
                 <p class="large">It's not needed at this size, where the menu can always be visible, 
                 so make your browser window smaller to see it.</p>

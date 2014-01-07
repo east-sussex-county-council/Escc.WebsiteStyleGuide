@@ -1,6 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="quick-answer.aspx.cs" Inherits="Escc.WebsiteStyleGuide.quickAnswer" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <title>Quick answers</title>
+    <Egms:MetadataControl runat="server" 
+        Title="Quick answers" 
+        DateIssued="2014-01-07"
+        IpsvPreferredTerms="Website management"
+        />
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="content">

@@ -1,6 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="search.aspx.cs" Inherits="Escc.WebsiteStyleGuide.search" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <title>Search and paging</title>
+    <Egms:MetadataControl runat="server" 
+        Title="Search and paging" 
+        DateIssued="2014-01-07"
+        IpsvPreferredTerms="Website management"
+        />
 </asp:Content>
 
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="content">

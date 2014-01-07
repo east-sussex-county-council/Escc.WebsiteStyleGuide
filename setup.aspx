@@ -1,6 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="setup.aspx.cs" Inherits="Escc.WebsiteStyleGuide.setup" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <title>Set up a new page</title>
+    <Egms:MetadataControl runat="server" 
+        Title="Set up a new page" 
+        DateIssued="2014-01-07"
+        IpsvPreferredTerms="Website management"
+        />
     <link rel="stylesheet" href="style-guide.css" type="text/css"/>
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="content">

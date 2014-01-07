@@ -1,6 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="colours.aspx.cs" Inherits="Escc.WebsiteStyleGuide.colours" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <title>Colours</title>
+    <Egms:MetadataControl runat="server" 
+        Title="Colours" 
+        DateIssued="2014-01-07"
+        IpsvPreferredTerms="Website management"
+        />
     <link rel="stylesheet" href="style-guide.css" type="text/css"/>
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="content">

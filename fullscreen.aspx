@@ -1,11 +1,15 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="fullscreen.aspx.cs" Inherits="Escc.WebsiteStyleGuide.FullScreen" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <title>Full screen template</title>
+    <Egms:MetadataControl runat="server" 
+        Title="Full screen template" 
+        DateIssued="2014-01-07"
+        IpsvPreferredTerms="Website management"
+        />
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="fullScreenHeading">Full screen template</asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="fullScreenLinks"><p><a href="default.aspx">Back to Style guide</a></p>
-    <p class="accessible"><a href="#">Link to accessible version</a></p>
+    <p class="accessible"><a href="javascript:return false()">Link to accessible version</a></p>
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="content">

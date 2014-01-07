@@ -1,7 +1,11 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="grid.aspx.cs" Inherits="Escc.WebsiteStyleGuide.grid" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
+    <Egms:MetadataControl runat="server" 
+        Title="Responsive design and the grid" 
+        DateIssued="2014-01-07"
+        IpsvPreferredTerms="Website management"
+        />
     <link rel="stylesheet" href="style-guide.css" type="text/css"/> 
-    <title>Responsive design and the grid</title> 
 </asp:Content>
 
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="content">
