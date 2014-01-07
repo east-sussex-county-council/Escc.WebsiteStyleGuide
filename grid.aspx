@@ -32,7 +32,7 @@
                 
                 <p class="button-nav"><a href="javascript:void ((function(){ if (typeof(esccToggleGrid) == 'undefined') { $('<script src=\'/js/grid.js\'></script>').appendTo('head') } esccToggleGrid(); })())">Show the grid</a></p>
                 
-                <p>You can use the <a href="/css/grid.xlsx">grid spreadsheet</a> to work out widths relative to the grid.</p>
+                <p>You can use the <a href="grid.xlsx" type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" class="xls">grid spreadsheet</a> to work out widths relative to the grid.</p>
                 
                 <h2>Baseline grid</h2>
                 <p>The baseline grid gives the page a vertical rhythm, and ensures that when arranging elements in multiple 
@@ -54,7 +54,7 @@
                         <code>border-bottom</code> altogether add another 18 pixels.</li>
                 </ul>
 
-                <p>You can use the <a href="/css/grid.xlsx">grid spreadsheet</a> to work out heights relative to the baseline grid.</p>
+                <p>You can use the <a href="grid.xlsx" type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" class="xls">grid spreadsheet</a> to work out heights relative to the baseline grid.</p>
                 
             </div>
         </article>

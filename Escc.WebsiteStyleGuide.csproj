@@ -212,6 +212,7 @@
   <ItemGroup>
     <Content Include="LICENSE.md" />
     <Content Include="README.md" />
+    <Content Include="grid.xlsx" />
     <None Include="Web.config.example" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
