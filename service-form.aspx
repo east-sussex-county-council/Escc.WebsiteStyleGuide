@@ -14,6 +14,24 @@
             <div class="text">          
                 <h1>Forms using <code>.service-form</code></h1>
 
+                <p>Use <code>.service-form</code> and <code>.form</code> together for collecting and submitting data. These forms may be 
+                    much more complex than a <a href="simple-form.aspx"><code>.simple-form</code></a> or <a href="short-form.aspx"><code>.short-form</code></a>,
+                    spanning multiple sections and even multiple pages.</p>
+                <p>Unlike the other kinds of form, a <code>.service-form</code> should be within a container with the <code>.text</code> 
+                    class applied, meaning standard <a href="text.aspx">text formatting</a> is active.</p>
+                <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/service-form.aspx">View the source of this page</a> to see the HTML and controls used for the following layouts.</p>
+                
+                <div class="errorSummary">
+                    <p>This is how we would like error messages to appear:</p>
+                    <ul>
+                        <li>Required: <span class="errorItem"><a href="#">Missing name</a></span></li>
+                    </ul>
+                </div>
+
+                <ul class="validationSummary">
+                    <li>This is how they usually do appear, using a <code>ValidationSummary</code></li>
+                </ul>
+
                 <div class="form service-form">
                     <h2>Fields in this section have classes which work for all types of form</h2>
 
@@ -29,7 +47,7 @@
                         </div>
 
                         <div class="formPart">
-                            <label for="example25">Name</label>
+                            <label for="example25">Name<span class="requiredField">*</span></label>
                             <input type="text" class="name" id="example25"/>
                         </div>
 
@@ -55,6 +73,22 @@
                                        
                         <p><label>I need <input type="number" class="within-text" /> fields within a sentence.</label></p>
 
+                        <FormControls:DateControl ID="DateControl1" runat="server" Label="Example date" LastYear="2020" FirstYear="2005" />
+                        
+                        <div class="formPart">
+                            <label for="example2">Wide dropdown lists</label>
+                            <select class="too-wide" id="example2">
+                                <option>Apply .too-wide if you have a dropdown list which is too wide for the page. This will stop it hanging over the right edge.</option>
+                            </select>
+                        </div>
+                        
+                        <input type="submit" value="Button inside the box"/>
+                    </div>
+                    
+                    <h2>This section has layouts which are just for a <code>.service-form</code></h2>
+                    <div class="formBox">
+                        <p class="read-only"><span class="formLabel">Fixed:</span> You can't change this. For example, a reference number.</p>
+
                         <div class="formPart">
                             <label for="example1">Standard dropdown lists</label>
                             <select id="example1">
@@ -62,15 +96,6 @@
                             </select>
                         </div>
 
-                        <div class="formPart">
-                            <label for="example2">Wide dropdown lists</label>
-                            <select class="too-wide" id="example2">
-                                <option>Apply .too-wide if you have a dropdown list which is too wide for the page. This will stop it hanging over the right edge.</option>
-                            </select>
-                        </div>
-                    
-                        <FormControls:DateControl ID="DateControl1" runat="server" Label="Example date" LastYear="2020" FirstYear="2005" />
-                        
                         <fieldset>
                             <legend>Horizontal radio buttons for a few, short options</legend>
                             <asp:RadioButtonList runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
@@ -102,13 +127,7 @@
                                 <input type="text" id="example35" />
                             </div>
                         </div>
-
-                        <input type="submit" value="Button inside the box"/>
-                    </div>
                     
-                    <h2>Another section</h2>
-                    <div class="formBox">
-                        <p class="read-only"><span class="formLabel">Fixed:</span> You can't change this</p>
                         <FormControls:FormAddressNonCitizen ID="FormAddressNonCitizen1" runat="server"/>                       
                     </div>
                     <input type="submit" value="Button after the box"/>

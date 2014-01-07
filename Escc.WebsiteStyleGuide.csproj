@@ -62,11 +62,17 @@
   <ItemGroup>
     <CodeAnalysisDictionary Include="CustomDictionary.xml" />
     <Content Include=".gitignore" />
+    <Content Include="colours.aspx" />
     <Content Include="content.aspx" />
+    <Content Include="polls.aspx" />
+    <Content Include="quick-answer.aspx" />
+    <Content Include="social.aspx" />
+    <Content Include="map-county-example.png" />
+    <Content Include="map-example.jpg" />
+    <Content Include="map-example.png" />
     <Content Include="simple-form.aspx" />
     <Content Include="short-form.aspx" />
     <Content Include="service-form.aspx" />
-    <Content Include="forms.aspx" />
     <Content Include="mobile.aspx" />
     <Content Include="maps.aspx" />
     <Content Include="fullscreen.aspx" />
@@ -82,12 +88,40 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="colours.aspx.cs">
+      <DependentUpon>colours.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="colours.aspx.designer.cs">
+      <DependentUpon>colours.aspx</DependentUpon>
+    </Compile>
     <Compile Include="content.aspx.cs">
       <DependentUpon>content.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="content.aspx.designer.cs">
       <DependentUpon>content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="polls.aspx.cs">
+      <DependentUpon>polls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="polls.aspx.designer.cs">
+      <DependentUpon>polls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="quick-answer.aspx.cs">
+      <DependentUpon>quick-answer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="quick-answer.aspx.designer.cs">
+      <DependentUpon>quick-answer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="social.aspx.cs">
+      <DependentUpon>social.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="social.aspx.designer.cs">
+      <DependentUpon>social.aspx</DependentUpon>
     </Compile>
     <Compile Include="simple-form.aspx.cs">
       <DependentUpon>simple-form.aspx</DependentUpon>
@@ -109,13 +143,6 @@
     </Compile>
     <Compile Include="service-form.aspx.designer.cs">
       <DependentUpon>service-form.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="forms.aspx.cs">
-      <DependentUpon>forms.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="forms.aspx.designer.cs">
-      <DependentUpon>forms.aspx</DependentUpon>
     </Compile>
     <Compile Include="mobile.aspx.cs">
       <DependentUpon>mobile.aspx</DependentUpon>

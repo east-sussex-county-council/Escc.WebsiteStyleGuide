@@ -13,7 +13,9 @@
         <article>
             <div class="text">          
                 <h1>Forms using <code>.short-form</code></h1>
-            </div>            
+                <p>Use <code>.short-form</code> and <code>.form</code> together for application interfaces which are too complex for a <a href="simple-form.aspx"><code>.simple-form</code></a>.</p>
+                <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/short-form.aspx">View the source of this page</a> to see the HTML for the following layouts.</p>
+           </div>            
             
             <div class="form short-form">
                 <p><a href="#">View all results</a> or other text here</p>
@@ -24,12 +26,13 @@
                         <option>Option 1</option>
                         <option>Option 2</option>
                     </select>
-                    <label for="example9">Type in a standard box <span class="requiredField">*</span></label>
+                    <label for="example9">Type in a standard box<span class="requiredField">*</span></label>
                     <input type="text" id="example9"/>
                     <label for="example13">Type an email address</label>
                     <input type="email" id="example13" class="email"/>
                     <label for="example14">Type a postcode</label>
                     <input type="text" id="example14" class="postcode"/>
+                    <p>See <a href="service-form.aspx"><code>.service-form</code></a> for more custom field types. They work here too.</p>
                     <label for="example36">Type more text</label>
                     <textarea id="example36"></textarea>
                     <div>
@@ -69,7 +72,7 @@
                         </fieldset>
                     </div>
                     
-                    <p><span class="or">or</span> <a href="#">do this</a></p>
+                    <p><span class="or">or</span> <a href="#">use something else, like a map</a></p>
                 </fieldset>
 
                 <div>

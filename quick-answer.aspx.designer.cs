@@ -10,6 +10,6 @@
 namespace Escc.WebsiteStyleGuide {
     
     
-    public partial class colours {
+    public partial class quickAnswer {
     }
 }

@@ -8,11 +8,12 @@
         <article>
             <div class="text">
                 <h1>Maps based on our GIS</h1>
-                <p>Load extra styles for GIS maps using <code>&lt;Egms:Css runat=&quot;server&quot; Files=&quot;Map&quot; /&gt;</code></p>
+                <p>Include the <code>Maps</code> stylesheet in your page for GIS maps.</p>
 
-                <p>Older GIS maps are rendered on the server-side.</p>
-                <p>Zoom buttons use <code>p.button-nav</code>. The key is a list using <code>ul.key</code>.
-                   The map is contained within <code>.gisMap</code>. There are arrows to move the map, but these are missing when the map is zoomed out.</p>
+                <p>Older GIS maps are rendered on the server-side, and contained within an element with <code>.gisMap</code> applied.</p>
+                <p>Zoom buttons use <code>p.button-nav</code> (see <a href="buttons.aspx">buttons and navigation</a>). The key is a list using <code>ul.key</code>.
+                   There are arrows to move the map, but these are missing when the map is zoomed out.</p>
+                <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/maps.aspx">View the source of this page</a> for examples.</p>
 
                 <p class="button-nav">
                     <input type="submit" value="Zoom in" class="button" />

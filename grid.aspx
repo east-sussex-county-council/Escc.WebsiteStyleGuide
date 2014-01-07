@@ -10,13 +10,13 @@
             <div class="text">
                 <h1>Responsive design and the grid</h1>
                 <p>Our website uses a responsive design, meaning it can adapt to different screen sizes.</p>
-                <p>There are three different layouts, with shortcut styles to make elements appear only at certain ones. 
-                    Resize your browser to see the effect.</p>
-                <p class="small demo-box"><code>.small</code></p>
-                <p class="small medium demo-box"><code>.small</code> and <code>.medium</code></p>
-                <p class="medium demo-box"><code>.medium</code></p>
-                <p class="medium large demo-box"><code>.medium</code> and <code>.large</code></p>
-                <p class="large demo-box"><code>.large</code></p>
+                <p>Styles are defined at small, medium and large sizes, with each set building upon the previous ones.
+                    There are shortcut styles to make elements appear at certain sizes. Resize your browser to see the effect.</p>
+                <p class="small demo-box">Use the <code>.small</code> class to show content only on small screens.</p>
+                <p class="small medium demo-box">Use the <code>.small</code> and <code>.medium</code> classes together to show content all but the largest screens.</p>
+                <p class="medium demo-box">Use the <code>.medium</code> class to show content only on medium screens.</p>
+                <p class="medium large demo-box">Use the <code>.medium</code> and <code>.large</code> classes together to show content on all but the smallest screens.</p>
+                <p class="large demo-box">Use the <code>.large</code> class to show content only on large screens.</p>
                 <h2>Fluid grid</h2>
                 <p>The fluid grid is an important part of the responsive design. All horizontal measurements are specified
                     in % units, relative to the grid. These percentages change at small, medium and large sizes so you often
@@ -35,17 +35,19 @@
                     columns they will line up vertically.</p>
                 <p>We have an 18 pixel grid. That means each line is <code>18px</code> high, and each element you create should be a multiple 
                     of <code>18px</code> in height. Be sure to include the vertical <code>margin</code>, <code>border</code> and <code>padding</code>
-                    as well as the <code>height</code> of the element in your calculation.</p>
+                    as well as the <code>height</code> of the element in your calculations.</p>
                 <p>While you work out the value you want in pixels, you need to specify it in <code>em</code> units, so that the vertical
                     rhythm is maintained when the font size is changed. <code>1em</code> is equal to the current <code>font-size</code>,
                     so you need to be aware of the current <code>font-size</code> whenever you add a style. By default it is <code>13px</code> on our site.
                 </p>
+                <p>If you change the <code>font-size</code>, you must adjust the <code>line-height</code>. Specify a new <code>line-height</code> in <code>em</code> units
+                    relative to the new <code>font-size</code> you are setting, ensuring that the new <code>line-height</code> remains a multiple of <code>18px</code>.</p>
                 
                <p>For example, inside <code>.text</code>:</p>
                 <ul>
                     <li><code>p</code> has a <code>line-height</code> of <code>18px</code>, and <code>margin-top</code> and <code>margin-bottom</code> each set to <code>9px</code> (2 x 18 pixels in total)</li>
-                    <li><code>h1</code> has a <code>line-height</code> of <code>36px</code> (2 x 18 pixels), <code>padding-top</code> and <code>padding-bottom</code> set to <code>7px</code>, 
-                        and <code>border-bottom</code> of <code>4px</code> (altogether another 18 pixels).</li>
+                    <li><code>h1</code> has a <code>line-height</code> of <code>36px</code> (2 x 18 pixels), and <code>padding-top</code>, <code>padding-bottom</code> and 
+                        <code>border-bottom</code> altogether add another 18 pixels.</li>
                 </ul>
 
                 <p>You can use the <a href="/css/grid.xlsx">grid spreadsheet</a> to work out heights relative to the baseline grid.</p>

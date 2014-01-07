@@ -11,14 +11,5 @@ namespace Escc.WebsiteStyleGuide {
     
     
     public partial class content {
-        
-        /// <summary>
-        /// Share1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::EsccWebTeam.EastSussexGovUK.MasterPages.Controls.share Share1;
     }
 }

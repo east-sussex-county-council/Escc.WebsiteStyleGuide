@@ -10,15 +10,6 @@
 namespace Escc.WebsiteStyleGuide {
     
     
-    public partial class forms {
-        
-        /// <summary>
-        /// DateControl1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::eastsussexgovuk.webservices.FormControls.DateControl DateControl1;
+    public partial class polls {
     }
 }

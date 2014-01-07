@@ -13,38 +13,11 @@
                 <h2>Heading 2</h2>
                 <p>A paragraph following the heading.</p>
                 <p>Two consecutive paragraphs. This one includes an <a id="unvisited" runat="server">unvisited link</a> and a <a href="text.aspx">visited link</a>. Try tabbing to them and hovering over them.</p>
-                <h3>Heading 3</h3>
-                <p>A paragraph following the heading.</p>
                 <ul>
                     <li>An unordered list between paragraphs</li>
                     <li>An unordered list between paragraphs</li>
                 </ul>
                 <p>A paragraph following an unordered list.</p>
-                <p>For subscription options, apply <code>.subscribe</code> to the link along with a class for the type of subscription. If there are multiple subscriptions, apply <code>.subscribe</code> to a containing <code>ul</code> too.</p>
-                <ul class="subscribe">
-                    <li><a href="#" class="subscribe hcal">Subscribe to a calendar</a></li>
-                    <li><a href="#" class="subscribe rss">Subscribe to an RSS feed</a></li>
-                    <li><a href="#" class="subscribe email">Subscribe to an email</a></li>
-                    <li><a href="#" class="subscribe rss-email">Subscribe by choosing RSS or email</a></li>
-                </ul>
-                <p>There are icons for certain types of links. For lists of files, apply <code>.download</code> to the <code>li</code> elemnts.</p>
-                <ul>
-                    <li class="download"><a href="#.xml" class="xml">XML file</a></li>
-                    <li class="download"><a href="#.pdf" class="pdf">PDF file <span class="downloadDetail">(PDF, 100K)</span></a></li>
-                    <li class="download"><a href="#.doc" class="doc rtf">DOC or RTF file <span class="downloadDetail">(DOC, 100K)</span></a></li>
-                    <li class="download"><a href="#.xls" class="xls">Excel file <span class="downloadDetail">(XLS, 100K)</span></a></li>
-                    <li class="download"><a href="#.wma" class="wma">Windows media</a></li>
-                    <li class="download"><a href="#.mp3" class="mp3">MP3 file</a></li>
-                    <li class="download"><a href="#.ppt" class="ppt">PowerPoint file <span class="downloadDetail">(PPT, 100K)</span></a></li>
-                    <li class="download"><a href="#.jpg" class="jpg">JPEG image</a></li>
-                    <li class="download"><a href="#" class="html file">Generic file or HTML page</a></li>
-                    <li class="download"><a href="#" class="twitter">Twitter link</a></li>
-                    <li class="download"><a href="#" class="facebook">Facebook link</a></li>
-                    <li class="download"><a href="#" class="youtube">YouTube link</a></li>
-                    <li class="download"><a href="#" class="flickr">Flickr link</a></li>
-                </ul>
-                <h4>Heading 4</h4>
-                <p>A paragraph following the heading.</p>
                 <ol>
                     <li>An ordered list between paragraphs</li>
                     <li>An ordered list between paragraphs
@@ -60,6 +33,30 @@
                     </li>
                 </ol>
                 <p>A paragraph following an ordered list. This one has an <abbr title="It means this">abbreviation</abbr>, some <strong>important text</strong> and a <strong class="warning">warning</strong>.</p>
+                <h3>Heading 3</h3>
+                <p>For subscription options, apply <code>.subscribe</code> to the link along with a class for the type of subscription. If there are multiple subscriptions, apply <code>.subscribe</code> to a containing <code>ul</code> too.</p>
+                <ul class="subscribe">
+                    <li><a href="#" class="subscribe hcal">Subscribe to a calendar</a></li>
+                    <li><a href="#" class="subscribe rss">Subscribe to an RSS feed</a></li>
+                    <li><a href="#" class="subscribe email">Subscribe to an email</a></li>
+                    <li><a href="#" class="subscribe rss-email">Subscribe by choosing RSS or email</a></li>
+                </ul>
+                <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/text.aspx">View the source of this page</a> for an example.</p>
+                <h4>Heading 4</h4>
+                <p>You can apply classes to links to add an appropriate icon. 
+                    When these links occur in a list, apply <code>.download</code> to the <code>li</code> element as well to avoid showing two bullets.</p>
+                <p>An icon indicating that some files open in a new window is added by JavaScript based on the file extension.</p>
+                <ul>
+                    <li class="download"><a href="#.xml" class="xml">XML file</a></li>
+                    <li class="download"><a href="#.pdf" class="pdf">PDF file <span class="downloadDetail">(PDF, 100K)</span></a></li>
+                    <li class="download"><a href="#.doc" class="doc rtf">DOC or RTF file <span class="downloadDetail">(DOC, 100K)</span></a></li>
+                    <li class="download"><a href="#.xls" class="xls">Excel file <span class="downloadDetail">(XLS, 100K)</span></a></li>
+                    <li class="download"><a href="#.wma" class="wma">Windows media</a></li>
+                    <li class="download"><a href="#.mp3" class="mp3">MP3 file</a></li>
+                    <li class="download"><a href="#.ppt" class="ppt">PowerPoint file <span class="downloadDetail">(PPT, 100K)</span></a></li>
+                    <li class="download"><a href="#.jpg" class="jpg">JPEG image</a></li>
+                    <li class="download"><a href="#" class="html file">Generic file or HTML page</a></li>
+                </ul>
                 <h5>Heading 5</h5>
                 <p>A paragraph following the heading.</p>
                 <dl>
@@ -71,7 +68,7 @@
                 <h6>Heading 6</h6>
                 <p>A paragraph following the heading. There's a horizontal rule next.</p>
                 <hr />
-                <small>The small print.</small>
+                <small>This is the small print.</small>
                 <p>Tables highlight alternate rows with different colours, but in IE8 that's not supported so tables look different in that browser.</p>
                 <table>
                     <caption>Table caption</caption>

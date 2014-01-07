@@ -13,6 +13,8 @@
         <article>
             <div class="text">          
                 <h1>Forms using <code>.simple-form</code></h1>
+                <p>Use <code>.simple-form</code> and <code>.form</code> together for interfaces with one or two components, such as a search box. For more complex interfaces use <a href="short-form.aspx"><code>.short-form</code></a>.</p>
+                <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/simple-form.aspx">View the source of this page</a> to see the HTML for the following layouts.</p>
             </div>
 
             <div class="form simple-form">
@@ -39,7 +41,6 @@
             </div>
 
             <div class="form simple-form">
-                <p class="intro">Optional introduction using <code>p.intro</code>.</p>
                 <div class="fields-with-checkbox">
                     <div class="fields">
                         <label for="example3">Search for </label>
@@ -54,6 +55,7 @@
             </div>
                 
             <div class="form simple-form">
+                <p class="intro">Optional introduction using <code>p.intro</code>. The addresses shown here appear only when a postcode crosses two areas, such as electoral divisions.</p>
                 <label for="example4">My postcode is</label>
                 <input type="text" value="TN38 0TA" id="example4" class="postcode" />
 
