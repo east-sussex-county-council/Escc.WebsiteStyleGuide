@@ -4,6 +4,7 @@
         Title="Search and paging" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"
+        IsInSearch="false"
         />
 </asp:Content>
 

@@ -4,6 +4,7 @@
         Title="Set up a new page" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"
+        IsInSearch="false"
         />
     <link rel="stylesheet" href="style-guide.css" type="text/css"/>
 </asp:Content>

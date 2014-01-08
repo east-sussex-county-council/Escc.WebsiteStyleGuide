@@ -4,6 +4,7 @@
         Title="Interfaces for mobile" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"
+        IsInSearch="false"
         />
     <Egms:Css runat="server" Files="MobileControls" />
 </asp:Content>

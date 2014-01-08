@@ -4,6 +4,7 @@
         Title="Maps based on our GIS" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"
+        IsInSearch="false"
         />
     <Egms:Css runat="server" Files="Map" />
 </asp:Content>

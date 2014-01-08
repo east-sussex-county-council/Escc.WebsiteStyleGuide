@@ -8,3 +8,5 @@ sitewide stylesheet and intended for use in more than one application.
 
 It is intended as a reference for designers and developers working on www.eastsussex.gov.uk, 
 and as a test suite for any CSS changes.
+
+This style guide is online at www.eastsussex.gov.uk/styleguide.

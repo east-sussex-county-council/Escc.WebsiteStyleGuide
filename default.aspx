@@ -4,6 +4,7 @@
         Title="Style guide for www.eastsussex.gov.uk" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"
+        IsInSearch="false"
         />
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="content">

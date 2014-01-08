@@ -4,6 +4,7 @@
         Title="Forms using .service-form" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"
+        IsInSearch="false"
         />
     <Egms:Css runat="server" Files="FormsSmall"/>
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">

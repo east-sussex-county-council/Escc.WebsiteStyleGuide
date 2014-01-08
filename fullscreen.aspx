@@ -4,6 +4,7 @@
         Title="Full screen template" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"
+        IsInSearch="false"
         />
 </asp:Content>
 

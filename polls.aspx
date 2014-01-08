@@ -4,6 +4,7 @@
         Title="Polls" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"
+        IsInSearch="false"
         />
     <Egms:Css runat="server" Files="PollSmall" />
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">

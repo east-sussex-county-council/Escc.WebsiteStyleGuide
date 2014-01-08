@@ -4,6 +4,7 @@
         Title="New and related content" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"
+        IsInSearch="false"
         />
 </asp:Content>
 

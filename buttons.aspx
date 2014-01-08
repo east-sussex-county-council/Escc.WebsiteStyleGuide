@@ -4,6 +4,7 @@
         Title="Buttons and navigation" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"
+        IsInSearch="false"
         />
     <Egms:Css runat="server" Files="FormsSmall"/>
     <EastSussexGovUK:ContextContainer ID="ContextContainer1" runat="server" Desktop="true">
