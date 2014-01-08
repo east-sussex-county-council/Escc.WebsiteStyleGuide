@@ -1,0 +1,28 @@
+﻿/* Styles to work with /js/grid.js, which toggles on or off a visualisation of the fluid and baseline grids used for www.eastsussex.gov.uk */
+
+/* Fluid grid */ 
+#escc-grid, .grid-lines { position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 2000px; } 
+.grid-column {float: left; height: 100%;width: 13.50211%; background: black;opacity: .2; }
+.grid-gutter { float: left; height: 100%;width: 3.797468%; background: black;opacity: .4;}
+
+/* Baseline grid */
+.grid-lines div { height: 1.307692em;border-bottom: .076923em solid #777;}
+
+/* Press Escape to exit */
+.grid-escape { position: absolute;margin: .692308em 3.797468%;border-radius: 5px;background: white;opacity: .8;font-weight: bold;}
+.grid-escape a { display: block; padding: .692308em 9px; border-radius: 5px;}
+.grid-escape a:hover, .grid-escape a:focus, .grid-escape a:active { background: #ffc;cursor: pointer; }
+.grid-escape span { background: red;color: white;border-radius: 7px;padding: 0 0 0 4px;font-weight: bold;display: inline-block;}
+
+/* Adjust widths at higher breakpoints */        
+@media only screen and (min-width: 474px) {
+    .grid-column { width: 7.98005%; }
+    .grid-gutter { width: 2.244389%; }
+    .grid-escape { margin: .692308em 2.244389%; }
+}
+
+@media only screen and (min-width: 802px) {
+    .grid-column { width: 6.625259%; }
+    .grid-gutter { width: 1.863354%; }
+    .grid-escape { margin: .692308em 1.863354%; }
+}

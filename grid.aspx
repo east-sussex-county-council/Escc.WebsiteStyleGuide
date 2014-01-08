@@ -31,7 +31,7 @@
                     layout, it's 12 columns. You can see the grid by clicking the link below &#8211; save it as a bookmarklet 
                     and use it to debug your layouts.</p>
                 
-                <p class="button-nav"><a href="javascript:void ((function(){ if (typeof(esccToggleGrid) == 'undefined') { $('<script src=\'/js/grid.js\'></script>').appendTo('head') } esccToggleGrid(); })())">Show the grid</a></p>
+                <p class="button-nav"><a href="javascript:void ((function(){ if (typeof(esccToggleGrid) == 'undefined') { $('<script src=\'/styleguide/grid.js\'></script>').appendTo('head') } esccToggleGrid(); })())">Show the grid</a></p>
                 
                 <p>You can use the <a href="grid.xlsx" type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" class="xls">grid spreadsheet</a> to work out widths relative to the grid.</p>
                 

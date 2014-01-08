@@ -64,6 +64,8 @@
     <Content Include=".gitignore" />
     <Content Include="colours.aspx" />
     <Content Include="content.aspx" />
+    <Content Include="grid.css" />
+    <Content Include="grid.js" />
     <Content Include="polls.aspx" />
     <Content Include="quick-answer.aspx" />
     <Content Include="social.aspx" />
@@ -257,7 +259,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>54222</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/Escc.WebsiteStyleGuide</IISUrl>
+          <IISUrl>http://localhost/StyleGuide</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
