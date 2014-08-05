@@ -13,12 +13,30 @@ namespace Escc.WebsiteStyleGuide {
     public partial class buttons {
         
         /// <summary>
-        /// ContextContainer1 control.
+        /// skin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::EsccWebTeam.EastSussexGovUK.ContextContainer ContextContainer1;
+        protected global::Escc.WebsiteStyleGuide.SkinChooser.Skin skin;
+        
+        /// <summary>
+        /// text control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl text;
+        
+        /// <summary>
+        /// text2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl text2;
     }
 }

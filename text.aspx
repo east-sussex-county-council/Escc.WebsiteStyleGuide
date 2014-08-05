@@ -6,12 +6,14 @@
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
         />
+    <StyleGuide:Metadata runat="server" />
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="content">
+    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="full-page">
         <article>
-            <div class="text">
+            <div id="textClass" runat="server">
                 <h1>Text and tables</h1>
                 <p>Inside an element with <code>.text</code> applied you get standard text styles for all of the elements you see here, including the Heading 1 above.</p>
                 <p class="aural">You can hear this but you can't see it.</p>

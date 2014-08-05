@@ -6,12 +6,14 @@
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
         />
+    <StyleGuide:Metadata runat="server" />
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="content">
+    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="full-page">
         <article>
-            <div class="text">
+            <div id="text" runat="server">
                 <h1>Quick answers</h1>
 
                 <p class="quick-answer"><strong>When most people want one thing: <strong class="quick-answer-datum">use <code>.quick-answer</code></strong></strong></p>

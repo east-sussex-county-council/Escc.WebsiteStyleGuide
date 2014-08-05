@@ -10,12 +10,14 @@
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
         <Egms:Css runat="server" Files="SocialMediaLarge" MediaConfiguration="Large" />
     </EastSussexGovUK:ContextContainer>
+    <StyleGuide:Metadata runat="server" />
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="content">
+    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="article">
         <article>
-            <div class="text">
+            <div id="text" runat="server">
                 <h1>Social media</h1>
 
                <p>You can see examples of Facebook and Twitter controls on this page, but resize your browser because there are separate ones for small and large screens.</p>

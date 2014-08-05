@@ -6,6 +6,7 @@
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
         />
+    <StyleGuide:Metadata runat="server" />
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="fullScreenHeading">Full screen template</asp:Content>

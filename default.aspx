@@ -6,11 +6,13 @@
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
         />
+    <StyleGuide:Metadata runat="server" />
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="content">
+    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="full-page">
         <article>
-            <div class="text">
+            <div id="text" runat="server">
                 <h1>Style guide for www.eastsussex.gov.uk</h1>
                 
                 <p>Our website, www.eastsussex.gov.uk, has a standard header and footer, and between the two there are common patterns, 

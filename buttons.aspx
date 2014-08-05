@@ -6,17 +6,14 @@
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
         />
-    <Egms:Css runat="server" Files="FormsSmall"/>
-    <EastSussexGovUK:ContextContainer ID="ContextContainer1" runat="server" Desktop="true">
-        <Egms:Css runat="server" Files="FormsMedium" MediaConfiguration="Medium"/>
-        <Egms:Css runat="server" Files="FormsLarge" MediaConfiguration="Large"/>
-    </EastSussexGovUK:ContextContainer>
+    <StyleGuide:Metadata runat="server" />
 </asp:Content>
 
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="content">
+    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="full-page">
         <article>
-            <div class="text">
+            <div id="text" runat="server">
                 <h1>Buttons and navigation</h1>
                 <p>A progress bar uses stages set up in <code>web.config</code>, and normally appears just under the <code>h1</code> element. 
                    Look at the <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Web.config.example">web.config for this project</a> for an example.
@@ -44,7 +41,7 @@
                 <li><a href="javascript:return false()">Example link</a></li>
                 <li class="selected"><a href="javascript:return false()">li.selected for current section</a></li>
             </ul>
-            <p class="text">Apply both <code>.button-nav</code> and <code>.application-nav</code> to turn the effect into a navigaton toolbar.
+            <p id="text2" runat="server">Apply both <code>.button-nav</code> and <code>.application-nav</code> to turn the effect into a navigaton toolbar.
                 Again, this should be used outside <code>.text</code>.
             </p>
             <ul class="button-nav application-nav">

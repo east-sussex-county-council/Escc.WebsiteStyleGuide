@@ -41,6 +41,7 @@
         <add tagPrefix="FormControls" namespace="eastsussexgovuk.webservices.FormControls" assembly="EsccWebTeam.FormControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06fad7304560ae6f" />
         <add tagPrefix="FormControls" namespace="eastsussexgovuk.webservices.FormControls.CustomControls" assembly="EsccWebTeam.FormControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06fad7304560ae6f"/>
         <add tagPrefix="NavigationControls" namespace="EsccWebTeam.NavigationControls" assembly="EsccWebTeam.NavigationControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06fad7304560ae6f"/>
+        <add tagPrefix="StyleGuide" tagName="Skin" src="~/SkinChooser/Skin.ascx"/>
       </controls>
     </pages>
   </system.web>

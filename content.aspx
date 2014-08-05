@@ -6,12 +6,14 @@
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
         />
+    <StyleGuide:Metadata runat="server" />
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="content">
+    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="full-page">
         <article>
-            <h1 class="text">New and related content</h1>
+            <h1 id="text1" runat="server">New and related content</h1>
 
             <div class="section-nav">
                 <img src="http://placekitten.com/144/144" alt="example image - a kitten"/>
@@ -21,7 +23,7 @@
                 </ul>
             </div>           
                 
-            <p class="text">Use <code>.section-nav</code> to introduce a set of related pages, either with an image and one list of links, or with no image and two lists.</p>
+            <p id="text2" runat="server">Use <code>.section-nav</code> to introduce a set of related pages, either with an image and one list of links, or with no image and two lists.</p>
 
             <div class="section-nav">
                 <ul>
@@ -46,7 +48,7 @@
             </section>
             </div>
 
-            <div class="text">
+            <div id="text3" runat="server">
                 <h2>Use Microsoft Content Management Server controls</h2>
                 <p>Both <code>.section-nav</code> and <code>.latestBox</code> are normally used on Microsoft Content Management Server pages, 
                     and have standard controls. Refer to the standard topic template in the <code>EastSussexCC</code> project for examples.</p>

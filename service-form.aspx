@@ -6,17 +6,14 @@
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
         />
-    <Egms:Css runat="server" Files="FormsSmall"/>
-    <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
-        <Egms:Css runat="server" Files="FormsMedium" MediaConfiguration="Medium"/>
-        <Egms:Css runat="server" Files="FormsLarge" MediaConfiguration="Large"/>
-    </EastSussexGovUK:ContextContainer>
+    <StyleGuide:Metadata runat="server" />
 </asp:Content>
 
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="content">
+    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="full-page">
         <article>
-            <div class="text">          
+            <div id="text" runat="server">
                 <h1>Forms using <code>.service-form</code></h1>
 
                 <p>Use <code>.service-form</code> and <code>.form</code> together for collecting and submitting data. These forms may be 

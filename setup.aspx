@@ -6,11 +6,12 @@
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
         />
-    <link rel="stylesheet" href="style-guide.css" type="text/css"/>
+    <StyleGuide:Metadata runat="server" />
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="content">
+    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="full-page">
-        <div class="text">
+        <div id="text" runat="server">
             <h1>Set up a new page</h1>
             <p>The overall layout of your page should align with the fluid grid and baseline grid (see <a href="grid.aspx">responsive design and the grid</a>).</p>
             <p>You can use any layout you want so long as it aligns with the grid, but normally you'll want to use one of the standard layouts: <code>.full-page</code> or <code>.article</code>.</p>
@@ -23,7 +24,7 @@
     
     <div class="full-page">
         <p><code>.full-page</code> gives you a white background with a minimum height.</p>
-        <div class="text">
+        <div id="text2" runat="server">
             <h2>Add text formatting</h2>
             <p>Most of the time you'll want to add <code>.text</code> inside <code>.full-page</code> to add the <a href="text.aspx">standard text formatting</a>.</p>
 <pre>
@@ -37,7 +38,7 @@
     </div>
     <div class="article section-demo">
         <p>The other standard layout is <code>.article</code>, which leaves room for a sidebar on large screens.</p>
-        <div class="text">
+        <div id="text3" runat="server">
             <h2>Add text formatting</h2>
             <p>Most of the time you'll want to add <code>.text</code> inside <code>.article</code> to add the <a href="text.aspx">standard text formatting</a>.</p>
 <pre>

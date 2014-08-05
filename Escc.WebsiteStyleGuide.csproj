@@ -68,6 +68,8 @@
     <Content Include="grid.js" />
     <Content Include="polls.aspx" />
     <Content Include="quick-answer.aspx" />
+    <Content Include="SkinChooser\Metadata.ascx" />
+    <Content Include="SkinChooser\Skin.ascx" />
     <Content Include="social.aspx" />
     <Content Include="map-county-example.png" />
     <Content Include="map-example.jpg" />
@@ -118,6 +120,22 @@
     <Compile Include="quick-answer.aspx.designer.cs">
       <DependentUpon>quick-answer.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SkinChooser\Metadata.ascx.cs">
+      <DependentUpon>Metadata.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkinChooser\Metadata.ascx.designer.cs">
+      <DependentUpon>Metadata.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SkinChooser\Skin.ascx.cs">
+      <DependentUpon>Skin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkinChooser\Skin.ascx.designer.cs">
+      <DependentUpon>Skin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SkinChooser\SkinClass.cs" />
+    <Compile Include="SkinChooser\SkinStyle.cs" />
     <Compile Include="social.aspx.cs">
       <DependentUpon>social.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -224,19 +242,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Inetpub\wwwroot\eastsussex.gov.uk.csproj">
+    <ProjectReference Include="..\Escc.EastSussexGovUK\EsccWebTeam.EastSussexGovUK.csproj">
       <Project>{1426fef0-23dc-4c23-ae15-67f2527bd741}</Project>
-      <Name>eastsussex.gov.uk</Name>
+      <Name>EsccWebTeam.EastSussexGovUK</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\VS Projects\_Libraries for re-use\EsccWebTeam.FormControls\EsccWebTeam.FormControls.csproj">
+    <ProjectReference Include="..\Escc.FormControls\EsccWebTeam.FormControls.csproj">
       <Project>{e6d5883f-99ce-4bf5-974a-66c542c43cfb}</Project>
       <Name>EsccWebTeam.FormControls</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\VS Projects\_Libraries for re-use\EsccWebTeam.NavigationControls\EsccWebTeam.NavigationControls.csproj">
+    <ProjectReference Include="..\Escc.NavigationControls\EsccWebTeam.NavigationControls.csproj">
       <Project>{0323f668-1723-44a1-8c94-f91dc59ef315}</Project>
       <Name>EsccWebTeam.NavigationControls</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\VS Projects\_Standards\E-Government Metadata Standard %28E-GMS%29\EsccWebTeam.Egms\EsccWebTeam.Egms.csproj">
+    <ProjectReference Include="..\Escc.Egms\EsccWebTeam.Egms.csproj">
       <Project>{78083dcb-b12f-4950-86c5-3a844d8604f3}</Project>
       <Name>EsccWebTeam.Egms</Name>
     </ProjectReference>

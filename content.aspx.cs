@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using Escc.WebsiteStyleGuide.SkinChooser;
 
 namespace Escc.WebsiteStyleGuide
 {
@@ -11,6 +7,9 @@ namespace Escc.WebsiteStyleGuide
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            this.text1.Attributes["class"] = SkinClass.TextClass(skin.SkinStyle);
+            this.text2.Attributes["class"] = SkinClass.TextClass(skin.SkinStyle);
+            this.text3.Attributes["class"] = SkinClass.TextClass(skin.SkinStyle);
         }
     }
 }

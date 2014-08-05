@@ -7,12 +7,14 @@
         IsInSearch="false"
         />
     <Egms:Css runat="server" Files="MobileControls" />
+    <StyleGuide:Metadata runat="server" />
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="content">
+    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="full-page">
         <article>
-            <div class="text">
+            <div id="text" runat="server">
                 <h1>Interfaces for mobile</h1>
                 <p>There's just one mobile interface element at the moment, which allows a menu visible on a large screen
                     to be hidden by default on mobile.</p>               

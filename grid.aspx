@@ -6,13 +6,14 @@
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
         />
-    <link rel="stylesheet" href="style-guide.css" type="text/css"/> 
+    <StyleGuide:Metadata runat="server" />
 </asp:Content>
 
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="content">
+    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="full-page">
         <article>
-            <div class="text">
+            <div id="text" runat="server">
                 <h1>Responsive design and the grid</h1>
                 <p>Our website uses a responsive design, meaning it can adapt to different screen sizes.</p>
                 <p>Styles are defined at small, medium and large sizes, with each set building upon the previous ones.

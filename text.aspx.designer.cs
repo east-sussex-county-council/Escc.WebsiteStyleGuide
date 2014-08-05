@@ -13,6 +13,24 @@ namespace Escc.WebsiteStyleGuide {
     public partial class text {
         
         /// <summary>
+        /// skin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Escc.WebsiteStyleGuide.SkinChooser.Skin skin;
+        
+        /// <summary>
+        /// textClass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl textClass;
+        
+        /// <summary>
         /// unvisited control.
         /// </summary>
         /// <remarks>

@@ -7,11 +7,13 @@
         IsInSearch="false"
         />
     <Egms:Css runat="server" Files="Map" />
+    <StyleGuide:Metadata runat="server" />
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="content">
+    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="full-page">
         <article>
-            <div class="text">
+            <div id="text" runat="server">
                 <h1>Maps based on our GIS</h1>
                 <p>Include the <code>Maps</code> stylesheet in your page for GIS maps.</p>
 

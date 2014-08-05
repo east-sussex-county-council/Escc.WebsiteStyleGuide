@@ -6,12 +6,13 @@
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
         />
-    <link rel="stylesheet" href="style-guide.css" type="text/css"/>
+    <StyleGuide:Metadata runat="server" />
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="content">
+    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="full-page">
         <article>
-            <div class="text">
+            <div id="text" runat="server">
                 <h1>Colours</h1>
                 <p>Our website has a core brand palette and you should normally choose colours from here. 
                     You can add more options by using <a href="http://0to255.com/">tints of these colours</a>. 

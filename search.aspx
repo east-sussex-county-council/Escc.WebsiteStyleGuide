@@ -6,12 +6,14 @@
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
         />
+    <StyleGuide:Metadata runat="server" />
 </asp:Content>
 
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="content">
+    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="full-page">
         <article>
-            <div class="text">          
+            <div id="text" runat="server">
                 <h1>Search and paging</h1>    
                 <p>For paging through a set of results use <code>EsccWebTeam.NavigationControls.PagingControl</code> above and below the results. It will apply the <code>.infoBar</code> class.</p>
                 <p>The results themselves typically display several fields, and use a <code>dl.itemDetail</code> for each result.

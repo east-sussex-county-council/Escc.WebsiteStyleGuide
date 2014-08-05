@@ -10,12 +10,14 @@
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
         <Egms:Css runat="server" Files="PollLarge" MediaConfiguration="Large" />
     </EastSussexGovUK:ContextContainer>
+    <StyleGuide:Metadata runat="server" />
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="content">
+    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="article">
         <article>
-            <div class="text">
+            <div id="text" runat="server">
                 <h1>Polls</h1>
                 <p>Polls can be added to the right column to add extra interest at large screen sizes. They do not appear on small and medium screens.</p>
                 <p>They are generated using a standard control that is tied to Microsoft Content Management Server 2002. Refer to the standard topic 

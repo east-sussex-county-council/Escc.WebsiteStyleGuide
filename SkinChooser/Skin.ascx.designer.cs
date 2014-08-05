@@ -7,10 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Escc.WebsiteStyleGuide {
+namespace Escc.WebsiteStyleGuide.SkinChooser {
     
     
-    public partial class simpleForm {
+    public partial class Skin {
+        
+        /// <summary>
+        /// smallCss control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::EsccWebTeam.Egms.Css smallCss;
         
         /// <summary>
         /// skin control.
@@ -19,15 +28,6 @@ namespace Escc.WebsiteStyleGuide {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Escc.WebsiteStyleGuide.SkinChooser.Skin skin;
-        
-        /// <summary>
-        /// text control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl text;
+        protected global::System.Web.UI.WebControls.DropDownList skin;
     }
 }
