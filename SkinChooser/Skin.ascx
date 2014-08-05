@@ -2,8 +2,8 @@
 <%@ Import Namespace="Escc.WebsiteStyleGuide.SkinChooser" %>
 <Egms:Css runat="server" Files="FormsSmall" id="smallCss"/>
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
-        <Egms:Css runat="server" Files="FormsMedium" MediaConfiguration="Medium"/>
-        <Egms:Css runat="server" Files="FormsLarge" MediaConfiguration="Large"/>
+        <Egms:Css runat="server" Files="FormsMedium" MediaConfiguration="Medium" id="mediumCss"/>
+        <Egms:Css runat="server" Files="FormsLarge" MediaConfiguration="Large" id="largeCss"/>
     </EastSussexGovUK:ContextContainer>
 
 

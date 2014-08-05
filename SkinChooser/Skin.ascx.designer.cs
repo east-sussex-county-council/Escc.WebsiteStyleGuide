@@ -22,6 +22,24 @@ namespace Escc.WebsiteStyleGuide.SkinChooser {
         protected global::EsccWebTeam.Egms.Css smallCss;
         
         /// <summary>
+        /// mediumCss control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::EsccWebTeam.Egms.Css mediumCss;
+        
+        /// <summary>
+        /// largeCss control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::EsccWebTeam.Egms.Css largeCss;
+        
+        /// <summary>
         /// skin control.
         /// </summary>
         /// <remarks>

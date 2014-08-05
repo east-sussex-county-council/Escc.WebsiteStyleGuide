@@ -45,7 +45,9 @@ namespace Escc.WebsiteStyleGuide.SkinChooser
             switch (SkinStyle)
             {
                 case SkinStyle.CustomerFocus:
-                    smallCss.FileList.Add("Content");
+                    smallCss.FileList.Add("ContentSmall");
+                    mediumCss.FileList.Add("ContentMedium");
+                    largeCss.FileList.Add("ContentLarge");
                     break;
             }
         }

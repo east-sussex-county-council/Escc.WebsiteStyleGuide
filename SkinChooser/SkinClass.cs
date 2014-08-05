@@ -13,7 +13,7 @@ namespace Escc.WebsiteStyleGuide.SkinChooser
         /// <returns></returns>
         public static string TextClass(SkinStyle skin)
         {
-            if (skin == SkinStyle.CustomerFocus) return "content";
+            if (skin == SkinStyle.CustomerFocus) return "content text-content";
             return "text";
         }
     }
