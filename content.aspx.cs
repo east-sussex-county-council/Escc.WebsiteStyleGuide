@@ -1,5 +1,6 @@
 ﻿using System;
 using Escc.WebsiteStyleGuide.SkinChooser;
+using Escc.WebsiteStyleGuide.Skins;
 
 namespace Escc.WebsiteStyleGuide
 {
@@ -7,9 +8,9 @@ namespace Escc.WebsiteStyleGuide
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.text1.Attributes["class"] = SkinClass.TextClass(skin.SkinStyle);
-            this.text2.Attributes["class"] = SkinClass.TextClass(skin.SkinStyle);
-            this.text3.Attributes["class"] = SkinClass.TextClass(skin.SkinStyle);
+            this.text1.Attributes["class"] = Skin.TextClass(Skin.SelectedSkin());
+            this.text2.Attributes["class"] = Skin.TextClass(Skin.SelectedSkin());
+            this.text3.Attributes["class"] = Skin.TextClass(Skin.SelectedSkin());
         }
     }
 }

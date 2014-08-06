@@ -1,5 +1,5 @@
 ﻿using System;
-using Escc.WebsiteStyleGuide.SkinChooser;
+using Escc.WebsiteStyleGuide.Skins;
 
 namespace Escc.WebsiteStyleGuide
 {
@@ -7,7 +7,7 @@ namespace Escc.WebsiteStyleGuide
     {
         protected void Page_PreRender(object sender, EventArgs e)
         {
-            this.text.Attributes["class"] = SkinClass.TextClass(skin.SkinStyle);
+            this.text.Attributes["class"] = Skin.TextClass(Skin.SelectedSkin());
         }
     }
 }

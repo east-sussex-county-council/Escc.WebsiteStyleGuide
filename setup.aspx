@@ -9,7 +9,6 @@
     <StyleGuide:Metadata runat="server" />
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="content">
-    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="full-page">
         <div id="text" runat="server">
             <h1>Set up a new page</h1>

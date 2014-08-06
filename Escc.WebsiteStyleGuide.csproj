@@ -68,8 +68,8 @@
     <Content Include="grid.js" />
     <Content Include="polls.aspx" />
     <Content Include="quick-answer.aspx" />
-    <Content Include="SkinChooser\Metadata.ascx" />
-    <Content Include="SkinChooser\Skin.ascx" />
+    <Content Include="Skins\Metadata.ascx" />
+    <Content Include="Skins\SkinChooser.ascx" />
     <Content Include="social.aspx" />
     <Content Include="map-county-example.png" />
     <Content Include="map-example.jpg" />
@@ -120,22 +120,22 @@
     <Compile Include="quick-answer.aspx.designer.cs">
       <DependentUpon>quick-answer.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SkinChooser\Metadata.ascx.cs">
+    <Compile Include="Skins\Metadata.ascx.cs">
       <DependentUpon>Metadata.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SkinChooser\Metadata.ascx.designer.cs">
+    <Compile Include="Skins\Metadata.ascx.designer.cs">
       <DependentUpon>Metadata.ascx</DependentUpon>
     </Compile>
-    <Compile Include="SkinChooser\Skin.ascx.cs">
-      <DependentUpon>Skin.ascx</DependentUpon>
+    <Compile Include="Skins\SkinChooser.ascx.cs">
+      <DependentUpon>SkinChooser.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SkinChooser\Skin.ascx.designer.cs">
-      <DependentUpon>Skin.ascx</DependentUpon>
+    <Compile Include="Skins\SkinChooser.ascx.designer.cs">
+      <DependentUpon>SkinChooser.ascx</DependentUpon>
     </Compile>
-    <Compile Include="SkinChooser\SkinClass.cs" />
-    <Compile Include="SkinChooser\SkinStyle.cs" />
+    <Compile Include="Skins\Skin.cs" />
+    <Compile Include="Skins\SkinStyle.cs" />
     <Compile Include="social.aspx.cs">
       <DependentUpon>social.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -7,18 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Escc.WebsiteStyleGuide {
+namespace Escc.WebsiteStyleGuide.Skins {
     
     
-    public partial class Maps {
+    public partial class SkinChooser {
         
         /// <summary>
-        /// text control.
+        /// skin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl text;
+        protected global::System.Web.UI.WebControls.DropDownList skin;
     }
 }

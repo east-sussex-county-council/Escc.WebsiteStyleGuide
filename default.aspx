@@ -7,9 +7,13 @@
         IsInSearch="false"
         />
     <StyleGuide:Metadata runat="server" />
+    <Egms:Css runat="server" Files="FormsSmall" />
+    <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
+        <Egms:Css runat="server" Files="FormsMedium" MediaConfiguration="Medium" />
+        <Egms:Css runat="server" Files="FormsLarge" MediaConfiguration="Large" />
+    </EastSussexGovUK:ContextContainer>
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="content">
-    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="full-page">
         <article>
             <div id="text" runat="server">
@@ -23,6 +27,12 @@
                     to see which HTML and controls to use.</p>
                 
                 <p>It is also a test suite for any changes or additions to sitewide CSS.</p>
+
+           </div>
+        
+            <StyleGuide:Skin runat="server" ID="skinChooser" />
+           
+            <div id="text2" runat="server">
                 
                 <h2>Grid-based layout</h2>
                 <ul>

@@ -15,7 +15,6 @@
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="content">
-    <StyleGuide:Skin runat="server" ID="skin" />
     <div id="text" runat="server">
         <p>When you need as much screen space as possible (typically for a map), use the full screen template.</p>
         <p>Apply it by adding the URL of your page to the <code>DesktopMasterPages</code> and <code>MobileMasterPages</code> sections in <code>web.config</code>.</p>

@@ -14,7 +14,6 @@
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="content">
-    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="article">
         <article>
             <div id="text" runat="server">

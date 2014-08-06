@@ -10,7 +10,6 @@
 </asp:Content>
 
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="content">
-    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="full-page">
         <article>
             <div id="text" runat="server">

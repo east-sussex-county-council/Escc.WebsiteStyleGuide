@@ -7,10 +7,14 @@
         IsInSearch="false"
         />
     <StyleGuide:Metadata runat="server" />
+    <Egms:Css runat="server" Files="FormsSmall" />
+    <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
+        <Egms:Css runat="server" Files="FormsMedium" MediaConfiguration="Medium" />
+        <Egms:Css runat="server" Files="FormsLarge" MediaConfiguration="Large" />
+    </EastSussexGovUK:ContextContainer>
 </asp:Content>
 
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="content">
-    <StyleGuide:Skin runat="server" ID="skin" />
     <div class="full-page">
         <article>
             <div id="text" runat="server">
