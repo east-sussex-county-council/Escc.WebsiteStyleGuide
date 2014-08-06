@@ -18,18 +18,18 @@
         </div>
     </div>
 
-    <p>The paragraph shows that area between the header and footer has no styles by default. A CSS reset has been applied. However at large sizes the gradient background will
-        show through, so you'll need to cover it up.
+    <p>The paragraph shows that area between the header and footer has no styles by default. A CSS reset has been applied. However at large sizes using the default skin 
+        the gradient background will show through, so you'll need to cover it up.
     </p>
     
     <div class="full-page">
         <p><code>.full-page</code> gives you a white background with a minimum height.</p>
         <div id="text2" runat="server">
             <h2>Add text formatting</h2>
-            <p>Most of the time you'll want to add <code>.text</code> inside <code>.full-page</code> to add the <a href="text.aspx">standard text formatting</a>.</p>
+            <p>Most of the time you'll want to add <code>.<asp:Literal runat="server" ID="text7" /></code> inside <code>.full-page</code> to add the <a href="text.aspx">standard text formatting</a>.</p>
 <pre>
 &lt;div class=&quot;full-page&quot;&gt;
-    &lt;div class=&quot;text&quot;&gt;
+    &lt;div class=&quot;<asp:Literal runat="server" ID="text4" />&quot;&gt;
         Your content here.
     &lt;/div&gt;
 &lt;/div&gt;
@@ -40,14 +40,15 @@
         <p>The other standard layout is <code>.article</code>, which leaves room for a sidebar on large screens.</p>
         <div id="text3" runat="server">
             <h2>Add text formatting</h2>
-            <p>Most of the time you'll want to add <code>.text</code> inside <code>.article</code> to add the <a href="text.aspx">standard text formatting</a>.</p>
+            <p>Most of the time you'll want to add <code>.<asp:Literal runat="server" ID="text6" /></code> inside <code>.article</code> to add the <a href="text.aspx">standard text formatting</a>.</p>
 <pre>
 &lt;div class=&quot;article&quot;&gt;
-    &lt;div class=&quot;text&quot;&gt;
+    &lt;div class=&quot;<asp:Literal runat="server" ID="text5" />&quot;&gt;
         Your content here.
     &lt;/div&gt;
 &lt;/div&gt;
 </pre>
+            <asp:PlaceHolder runat="server" ID="columns">
             <h2>Columns</h2>
             <div class="tCols">
                 <div class="tCol1">
@@ -68,12 +69,14 @@
                 </div>
 
             </div>
+            </asp:PlaceHolder>
+
         </div>
     </div>
     <div class="supporting section-demo">
         <p>Use <code>.supporting</code> to position content in a sidebar, which sits below <code>.article</code> on smaller screens and next to it on larger screens.</p>
     </div>
-    <div class="supporting supporting-text">
+    <div class="supporting supporting-text" id="supportingText" runat="server">
         <h2>Add text formatting</h2>
         <p>Use <code>.supporting</code> and <code>.supporting-text</code> together to add standard text styles in the sidebar.</p>
         <ul>
