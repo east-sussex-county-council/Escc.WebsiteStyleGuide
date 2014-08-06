@@ -20,7 +20,7 @@
                 
                 <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/quick-answer.aspx">View the source of this page</a> to see how to format a quick answer.</p>
                 <p>The full content of the page follows the quick answer. It may repeat the original answer, but deal with other questions too.</p>
-                <p>Everything is inside <code>.text</code> for its standard <a href="text.aspx">text formatting</a>.</p>
+                <p>Everything is inside <code>.<asp:Literal runat="server" ID="text2" /></code> for its standard <a href="text.aspx">text formatting</a>.</p>
             </div>
         </article>
     </div>

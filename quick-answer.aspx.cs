@@ -8,6 +8,8 @@ namespace Escc.WebsiteStyleGuide
         protected void Page_PreRender(object sender, EventArgs e)
         {
             this.text.Attributes["class"] = SkinClass.TextClass(skin.SkinStyle);
+            ;
+            this.text2.Text = SkinClass.TextClass(skin.SkinStyle).Replace(" ", " .");
         }
     }
 }
