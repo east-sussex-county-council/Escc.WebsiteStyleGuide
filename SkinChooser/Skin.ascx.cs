@@ -26,7 +26,11 @@ namespace Escc.WebsiteStyleGuide.SkinChooser
             get
             {
                 var selected = SkinStyle.Default;
-                if (Session["Skin"] != null)
+                if (!String.IsNullOrEmpty(Request.QueryString["skin"]))
+                {
+                    selected = (SkinStyle)Enum.Parse(typeof(SkinStyle), Request.QueryString["Skin"]);
+                }
+                else if (Session["Skin"] != null)
                 {
                     selected = (SkinStyle)Enum.Parse(typeof(SkinStyle), Session["Skin"].ToString());
                 }
