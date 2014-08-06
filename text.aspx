@@ -15,7 +15,9 @@
         <article>
             <div id="textClass" runat="server">
                 <h1>Text and tables</h1>
-                <p>Inside an element with <code>.text</code> applied you get standard text styles for all of the elements you see here, including the Heading 1 above.</p>
+                <p class="lead">Inside an element with <code>.text</code> or <code>.content-text</code> applied you get standard text styles for all of the elements you see here, including the Heading 1 above.
+                    This is a <code>.lead</code> paragraph so can be styled differently depending on the skin.
+                </p>
                 <p class="aural">You can hear this but you can't see it.</p>
                 <h2>Heading 2</h2>
                 <p>A paragraph following the heading.</p>
@@ -76,7 +78,7 @@
                 <p>A paragraph following the heading. There's a horizontal rule next.</p>
                 <hr />
                 <small>This is the small print.</small>
-                <p>Tables highlight alternate rows with different colours, but in IE8 that's not supported so tables look different in that browser.</p>
+                <p>Tables can highlight alternate rows with different colours, but in IE8 that's not supported so tables look different in that browser.</p>
                 <table>
                     <caption>Table caption</caption>
                     <thead><tr><th>Column header inside <code>thead</code></th><th>Another column</th><th>Use <code>.numeric</code> for numeric data</th></tr></thead>
@@ -90,7 +92,7 @@
                     </tbody>
                 </table>
                 
-                <p>Sometimes tables have row headings instead of column headings, but they're not styled by default.</p>
+                <p>Sometimes tables have row headings instead of column headings.</p>
                 <table>
                     <tbody>
                         <tr><th>Heading</th><td>Data</td><td>Data</td></tr>
@@ -100,7 +102,7 @@
                     </tbody>
                 </table>
                 
-                <p>If the table is particularly complex, use <code>.complexData</code> to add more gridlines.</p>
+                <p>If the table is particularly complex, use <code>.complexData</code> to add more clarity.</p>
                          <table class="complexData">
                     <thead><tr><th>Column header</th><th>Another column</th><th>Another column</th></tr></thead>
                     <tbody>
