@@ -22,13 +22,22 @@ namespace Escc.WebsiteStyleGuide {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl text1;
         
         /// <summary>
-        /// text2 control.
+        /// defaultSkin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl text2;
+        protected global::System.Web.UI.WebControls.PlaceHolder defaultSkin;
+        
+        /// <summary>
+        /// customerFocusSkin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl customerFocusSkin;
         
         /// <summary>
         /// text3 control.

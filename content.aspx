@@ -12,8 +12,11 @@
 <asp:Content runat="server" ContentPlaceHolderID="content">
     <div class="full-page">
         <article>
-            <h1 id="text1" runat="server">New and related content</h1>
+            <div id="text1" runat="server">
+                <h1>New and related content</h1>
+            </div>
 
+            <asp:PlaceHolder runat="server" id="defaultSkin">
             <div class="section-nav">
                 <img src="http://placekitten.com/144/144" alt="example image - a kitten"/>
                 <ul>
@@ -22,7 +25,7 @@
                 </ul>
             </div>           
                 
-            <p id="text2" runat="server">Use <code>.section-nav</code> to introduce a set of related pages, either with an image and one list of links, or with no image and two lists.</p>
+            <p class="text">Use <code>.section-nav</code> to introduce a set of related pages, either with an image and one list of links, or with no image and two lists.</p>
 
             <div class="section-nav">
                 <ul>
@@ -47,11 +50,27 @@
             </section>
             </div>
 
-            <div id="text3" runat="server">
+            <div class="text">
                 <h2>Use Microsoft Content Management Server controls</h2>
                 <p>Both <code>.section-nav</code> and <code>.latestBox</code> are normally used on Microsoft Content Management Server pages, 
                     and have standard controls. Refer to the standard topic template in the <code>EastSussexCC</code> project for examples.</p>
+            </div>
+            </asp:PlaceHolder>
 
+            <div class="content text-content" id="customerFocusSkin" runat="server">
+            <div class="latest">
+            <section>
+                <h2>Latest</h2>
+                <p>Use a <code>.latest</code> box to highlight new or updated content. It appears straight after the Heading 1.
+                    If you need more than a few words, <a href="javascript:return false()">link to a separate page</a>.
+                </p>
+                <ul><li>Authors can add lists.</li></ul>
+                <p>Authors can add multiple paragraphs.</p>
+            </section>
+            </div>
+            </div>
+
+            <div id="text3" runat="server">
                 <h2>How to format the page content</h2>
                 <p>The actual content of the page goes here, inside <code>.text</code> for its standard <a href="text.aspx">text formatting</a>.</p>
                 
