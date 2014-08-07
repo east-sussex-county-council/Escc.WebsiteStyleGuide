@@ -22,6 +22,42 @@ namespace Escc.WebsiteStyleGuide {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl text;
         
         /// <summary>
+        /// mainAction control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal mainAction;
+        
+        /// <summary>
+        /// major control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl major;
+        
+        /// <summary>
+        /// main control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl main;
+        
+        /// <summary>
+        /// text3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal text3;
+        
+        /// <summary>
         /// text2 control.
         /// </summary>
         /// <remarks>
@@ -29,5 +65,14 @@ namespace Escc.WebsiteStyleGuide {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl text2;
+        
+        /// <summary>
+        /// text4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal text4;
     }
 }

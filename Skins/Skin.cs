@@ -39,5 +39,17 @@ namespace Escc.WebsiteStyleGuide.Skins
             if (skin == SkinStyle.CustomerFocus) return "content text-content";
             return "text";
         }
+
+
+        /// <summary>
+        /// Gets a class for the main action button
+        /// </summary>
+        /// <param name="skin">The skin.</param>
+        /// <returns></returns>
+        public static string MainButtonClass(SkinStyle skin)
+        {
+            if (skin == SkinStyle.CustomerFocus) return "main-action";
+            return "major-action";
+        }
     }
 }
