@@ -10,13 +10,14 @@
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="content">
+    
+<asp:PlaceHolder runat="server" id="defaultSkin">
     <div class="full-page">
         <article>
             <div id="text1" runat="server">
                 <h1>New and related content</h1>
             </div>
 
-            <asp:PlaceHolder runat="server" id="defaultSkin">
             <div class="section-nav">
                 <img src="http://placekitten.com/144/144" alt="example image - a kitten"/>
                 <ul>
@@ -54,23 +55,7 @@
                 <h2>Use Microsoft Content Management Server controls</h2>
                 <p>Both <code>.section-nav</code> and <code>.latestBox</code> are normally used on Microsoft Content Management Server pages, 
                     and have standard controls. Refer to the standard topic template in the <code>EastSussexCC</code> project for examples.</p>
-            </div>
-            </asp:PlaceHolder>
 
-            <div class="content text-content" id="customerFocusSkin" runat="server">
-            <div class="latest">
-            <section>
-                <h2>Latest</h2>
-                <p>Use a <code>.latest</code> box to highlight new or updated content. It appears straight after the Heading 1.
-                    If you need more than a few words, <a href="javascript:return false()">link to a separate page</a>.
-                </p>
-                <ul><li>Authors can add lists.</li></ul>
-                <p>Authors can add multiple paragraphs.</p>
-            </section>
-            </div>
-            </div>
-
-            <div id="text3" runat="server">
                 <h2>How to format the page content</h2>
                 <p>The actual content of the page goes here, inside <code>.text</code> for its standard <a href="text.aspx">text formatting</a>.</p>
                 
@@ -96,4 +81,37 @@
             </EastSussexGovUK:Related>
         </article>
     </div>
+</asp:PlaceHolder>
+
+<div class="article" id="customerFocusSkin" runat="server">
+    <article>
+        <div class="content text-content">
+            <h1>New and related content</h1>
+
+            <div class="latest">
+            <section>
+                <h2>Latest</h2>
+                <p>Use a <code>.latest</code> box to highlight new or updated content. It appears straight after the Heading 1.
+                    If you need more than a few words, <a href="javascript:return false()">link to a separate page</a>.
+                </p>
+                <ul><li>Authors can add lists.</li></ul>
+                <p>Authors can add multiple paragraphs.</p>
+            </section>
+            </div>
+                
+            <h2>How to format the page content</h2>
+            <p>The actual content of the page goes here, inside <code>.content .text-content</code> for its standard <a href="text.aspx">text formatting</a>.</p>
+                
+        </div>
+    </article>
+</div>
+    
+<div class="supporting related-links text-content content-small content-medium">
+    <h2 class="aural">Related links</h2>
+    <ul>
+        <li><a href="javascript:return false()">Example link</a></li>
+        <li><a href="javascript:return false()">Example link</a></li>
+    </ul>
+</div>
+
 </asp:Content>

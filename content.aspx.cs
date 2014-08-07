@@ -9,7 +9,6 @@ namespace Escc.WebsiteStyleGuide
         protected void Page_Load(object sender, EventArgs e)
         {
             this.text1.Attributes["class"] = Skin.TextClass(Skin.SelectedSkin());
-            this.text3.Attributes["class"] = Skin.TextClass(Skin.SelectedSkin());
 
             this.defaultSkin.Visible = Skin.SelectedSkin() == SkinStyle.Default;
             this.customerFocusSkin.Visible = !this.defaultSkin.Visible;
