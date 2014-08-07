@@ -20,19 +20,22 @@
                 <h1>Social media</h1>
 
                <p>You can see examples of Facebook and Twitter controls on this page, but resize your browser because there are separate ones for small and large screens.</p>
-               <p>You can apply classes to links to add an appropriate social media icon for <a href="javascript:return false()" class="twitter">Twitter</a>, <a href="javascript:return false()" class="facebook">Facebook</a>,
-                   <a href="javascript:return false()" class="youtube">YouTube</a> and <a href="javascript:return false()" class="flickr">Flickr</a>.</p>
-                <p>The 'Related pages' box is shown because social media on small screens appears between it and the 'Share' box.</p>
+               <p>Links to <a href="javascript:return false()" class="twitter">Twitter</a>, <a href="javascript:return false()" class="facebook">Facebook</a>,
+                   <a href="javascript:return false()" class="youtube">YouTube</a> and <a href="javascript:return false()" class="flickr">Flickr</a> are preceded by an 
+                   appropriate icon. You can add a class to any element to get the same effect.</p>
             </div>
             
-            <EastSussexGovUK:Related runat="server">
-                <PagesTemplate>
-                    <ul>
-                        <li><a href="javascript:return false()">Example link</a></li>
-                        <li><a href="javascript:return false()">Example link</a></li>
-                    </ul>
-                </PagesTemplate>
-            </EastSussexGovUK:Related>
+            <asp:PlaceHolder runat="server" ID="related">
+                <p class="text">The 'Related pages' box is shown because social media on small screens appears between it and the 'Share' box.</p>
+                <EastSussexGovUK:Related runat="server">
+                    <PagesTemplate>
+                        <ul>
+                            <li><a href="javascript:return false()">Example link</a></li>
+                            <li><a href="javascript:return false()">Example link</a></li>
+                        </ul>
+                    </PagesTemplate>
+                </EastSussexGovUK:Related>
+            </asp:PlaceHolder>
             
             <div class="social-mobile text small medium">
                 <p class="facebook">Find us on Facebook: <a href="http://www.facebook.com/eastsussexlibraries" id="ctl00_content_ctl07_fb">www.facebook.com/eastsussexlibraries</a></p>
