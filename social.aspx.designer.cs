@@ -31,12 +31,21 @@ namespace Escc.WebsiteStyleGuide {
         protected global::System.Web.UI.WebControls.PlaceHolder related;
         
         /// <summary>
-        /// Share1 control.
+        /// shareDefault control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::EsccWebTeam.EastSussexGovUK.MasterPages.Controls.share Share1;
+        protected global::EsccWebTeam.EastSussexGovUK.MasterPages.Controls.share shareDefault;
+        
+        /// <summary>
+        /// shareCustomerFocus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl shareCustomerFocus;
     }
 }

@@ -11,7 +11,9 @@ namespace Escc.WebsiteStyleGuide
             var skin = Skin.SelectedSkin();
             this.text.Attributes["class"] = Skin.TextClass(skin);
 
-            this.related.Visible = skin == SkinStyle.Default;
+            this.related.Visible = (skin == SkinStyle.Default);
+            this.shareDefault.Visible = (skin == SkinStyle.Default);
+            this.shareCustomerFocus.Visible = (skin == SkinStyle.CustomerFocus);
         }
     }
 }

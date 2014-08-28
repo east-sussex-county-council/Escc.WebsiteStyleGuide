@@ -42,7 +42,16 @@
                 <p class="twitter">Read updates on Twitter: <a href="https://twitter.com/esccroads" id="ctl00_content_ctl07_tw">Tweets by @esccroads</a></p>
             </div>
 
-            <EastSussexGovUK:Share ID="Share1" runat="server" />
+            <EastSussexGovUK:Share ID="shareDefault" runat="server" />
+            <div class="content text-content" id="shareCustomerFocus" runat="server">
+                <p>Use the <code>_Share</code> partial view to include the share links. It is not used in this style guide because it's MVC and this is a WebForms page, but the links 
+                    below should look identical.</p>
+                <p class="screen share-page">
+                    <a href="https://www.facebook.com">Share</a>
+                    <a href="https://www.twitter.com">Tweet</a>
+                    <a href="https://www.eastsussex.gov.uk/contactus/default.htm" class="email">Email this page</a>
+                </p>
+            </div>
         </article>
     </div>
     
