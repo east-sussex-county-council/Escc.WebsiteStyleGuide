@@ -19,10 +19,31 @@
                     to be hidden by default on mobile.</p>               
                 <p>Include the <code>MobileControls</code> stylesheet in your page for this control. 
                     <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/mobile.aspx">View the source of this page</a> for an example.</p>
-                <p>Your application's script needs to generate a <code>.menu-toggle</code> element.</p>
-                <nav class="menu-toggle small medium"><a href="javascript:return false()">Show menu &#9660;</a></nav>
-                <p>When clicked, the application's script should show the menu and change the text of the <code>.menu-toggle</code> element.</p>
-                <nav class="menu-toggle small medium"><a href="javascript:return false()">Hide menu &#9650;</a></nav>
+                <p>Your application's script needs to generate two <code>.menu-toggle</code> elements, and use them to show or hide some content as in the example script below.</p>
+                <nav class="menu-toggle menu-toggle-show small medium">Show menu</nav><br />
+                <nav class="menu-toggle menu-toggle-hide small medium">Hide menu</nav>
+                
+<pre>
+&lt;script&gt;
+    if (jQuery != 'undefined') {
+        $(function () {
+            var menu = $(".thing-to-hide").hide();
+            var toggle = $('&lt;div class="menu-toggle menu-toggle-show small"&gt;Show menu&lt;/div&gt;');
+
+            toggle.insertBefore(menu).click(function () {
+                if (menu.is(":visible")) {
+                    menu.slideUp();
+                    toggle.removeClass("menu-toggle-hide").addClass("menu-toggle-show").text("Show menu");
+                } else {
+                    menu.slideDown();
+                    toggle.removeClass("menu-toggle-show").addClass("menu-toggle-hide").text("Hide menu");
+                }
+            });
+
+        });
+    }
+&lt;/script&gt;
+</pre>
 
                 <p class="large">It's not needed at this size, where the menu can always be visible, 
                 so make your browser window smaller to see it.</p>
