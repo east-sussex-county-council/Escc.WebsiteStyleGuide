@@ -64,6 +64,7 @@
                     <li class="download"><a href="#.ppt" class="ppt">PowerPoint file <span class="downloadDetail">(PPT, 100K)</span></a></li>
                     <li class="download"><a href="#.jpg" class="jpg">JPEG image</a></li>
                     <li class="download"><a href="#" class="html file">Generic file or HTML page</a></li>
+                    <li class="download"><a href="#/print">Link to a print view of multi-page content</a></li>
                 </ul>
                 <h5>Heading 5</h5>
                 <p>A paragraph following the heading.</p>
