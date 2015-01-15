@@ -2,9 +2,9 @@
     /// <summary>Toggle on or off a visualisation of the fluid and baseline grids used for www.eastsussex.gov.uk</summary>
     //
     //  Use the following bookmarklet to load and trigger this script:
-    //  javascript:void ((function(){ if (typeof(esccToggleGrid) == 'undefined') { $('<script src=\'/js/grid.js\'></script>').appendTo('head') } esccToggleGrid(); })())
+    //  javascript:void ((function(){ if (typeof(esccToggleGrid) == 'undefined') { $.getScript('https://www.eastsussex.gov.uk/styleguide/grid.js').done(function(){esccToggleGrid();}) } else { esccToggleGrid();} })())
     
-    $("<link href=\"/styleguide/grid.css\" rel=\"stylesheet\" type=\"text/css\" />").appendTo('head');
+    $("<link href=\"https://www.eastsussex.gov.uk/styleguide/grid.css\" rel=\"stylesheet\" type=\"text/css\" />").appendTo('head');
 
     var g = document.getElementById('escc-grid');
 
