@@ -1,14 +1,14 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="social.aspx.cs" Inherits="Escc.WebsiteStyleGuide.social" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <Egms:MetadataControl runat="server" 
+    <Metadata:MetadataControl runat="server" 
         Title="Social media" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
         />
-    <Egms:Css runat="server" Files="SocialMediaSmall" />
+    <ClientDependency:Css runat="server" Files="SocialMediaSmall" />
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
-        <Egms:Css runat="server" Files="SocialMediaLarge" MediaConfiguration="Large" />
+        <ClientDependency:Css runat="server" Files="SocialMediaLarge" MediaConfiguration="Large" />
     </EastSussexGovUK:ContextContainer>
     <StyleGuide:Metadata runat="server" />
 </asp:Content>

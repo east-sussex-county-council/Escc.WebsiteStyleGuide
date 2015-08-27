@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="fullscreen.aspx.cs" Inherits="Escc.WebsiteStyleGuide.FullScreen" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <Egms:MetadataControl runat="server" 
+    <Metadata:MetadataControl runat="server" 
         Title="Full screen template" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"

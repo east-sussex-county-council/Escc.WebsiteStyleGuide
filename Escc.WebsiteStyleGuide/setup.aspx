@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="setup.aspx.cs" Inherits="Escc.WebsiteStyleGuide.setup" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <Egms:MetadataControl runat="server" 
+    <Metadata:MetadataControl runat="server" 
         Title="Set up a new page" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"

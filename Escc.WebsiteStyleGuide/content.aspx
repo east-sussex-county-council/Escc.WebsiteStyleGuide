@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="content.aspx.cs" Inherits="Escc.WebsiteStyleGuide.content" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <Egms:MetadataControl runat="server" 
+    <Metadata:MetadataControl runat="server" 
         Title="New and related content" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"

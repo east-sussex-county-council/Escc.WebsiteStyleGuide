@@ -7,36 +7,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Escc.WebsiteStyleGuide.Skins {
+namespace Escc.WebsiteStyleGuide {
     
     
-    public partial class Metadata {
+    public partial class serviceForm {
         
         /// <summary>
-        /// smallCss control.
+        /// text control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::EsccWebTeam.Egms.Css smallCss;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl text;
         
         /// <summary>
-        /// mediumCss control.
+        /// DateControl1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::EsccWebTeam.Egms.Css mediumCss;
+        protected global::Escc.FormControls.WebForms.DateControl DateControl1;
         
         /// <summary>
-        /// largeCss control.
+        /// FormAddressNonCitizen1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::EsccWebTeam.Egms.Css largeCss;
+        protected global::Escc.FormControls.WebForms.FormAddressNonCitizen FormAddressNonCitizen1;
     }
 }

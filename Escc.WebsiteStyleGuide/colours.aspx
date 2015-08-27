@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="colours.aspx.cs" Inherits="Escc.WebsiteStyleGuide.colours" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <Egms:MetadataControl runat="server" 
+    <Metadata:MetadataControl runat="server" 
         Title="Colours" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"

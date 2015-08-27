@@ -1,16 +1,16 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="service-form.aspx.cs" Inherits="Escc.WebsiteStyleGuide.serviceForm" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <Egms:MetadataControl runat="server" 
+    <Metadata:MetadataControl runat="server" 
         Title="Forms using .service-form" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
         />
     <StyleGuide:Metadata runat="server" />
-    <Egms:Css runat="server" Files="FormsSmall" />
+    <ClientDependency:Css runat="server" Files="FormsSmall" />
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
-        <Egms:Css runat="server" Files="FormsMedium" MediaConfiguration="Medium" />
-        <Egms:Css runat="server" Files="FormsLarge" MediaConfiguration="Large" />
+        <ClientDependency:Css runat="server" Files="FormsMedium" MediaConfiguration="Medium" />
+        <ClientDependency:Css runat="server" Files="FormsLarge" MediaConfiguration="Large" />
     </EastSussexGovUK:ContextContainer>
 </asp:Content>
 
@@ -144,5 +144,5 @@
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="javascript">
-    <Egms:Script runat="server" Files="Forms" />   
+    <ClientDependency:Script runat="server" Files="Forms" />   
 </asp:Content>

@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="text.aspx.cs" Inherits="Escc.WebsiteStyleGuide.text" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-<Egms:MetadataControl runat="server" 
+<Metadata:MetadataControl runat="server" 
         Title="Text and tables" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"

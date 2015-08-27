@@ -1,12 +1,12 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="mobile.aspx.cs" Inherits="Escc.WebsiteStyleGuide.mobile" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <Egms:MetadataControl runat="server" 
+    <Metadata:MetadataControl runat="server" 
         Title="Interfaces for mobile" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
         />
-    <Egms:Css runat="server" Files="MobileControls" />
+    <ClientDependency:Css runat="server" Files="MobileControls" />
     <StyleGuide:Metadata runat="server" />
 </asp:Content>
 

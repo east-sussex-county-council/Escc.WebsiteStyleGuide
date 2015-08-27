@@ -1,14 +1,14 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="polls.aspx.cs" Inherits="Escc.WebsiteStyleGuide.polls" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
-    <Egms:MetadataControl runat="server" 
+    <Metadata:MetadataControl runat="server" 
         Title="Polls" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
         />
-    <Egms:Css runat="server" Files="PollSmall" />
+    <ClientDependency:Css runat="server" Files="PollSmall" />
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
-        <Egms:Css runat="server" Files="PollLarge" MediaConfiguration="Large" />
+        <ClientDependency:Css runat="server" Files="PollLarge" MediaConfiguration="Large" />
     </EastSussexGovUK:ContextContainer>
     <StyleGuide:Metadata runat="server" />
 </asp:Content>

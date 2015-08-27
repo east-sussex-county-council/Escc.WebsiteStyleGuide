@@ -37,7 +37,7 @@ namespace Escc.WebsiteStyleGuide {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::EsccWebTeam.EastSussexGovUK.MasterPages.Controls.share shareDefault;
+        protected global::System.Web.UI.UserControl shareDefault;
         
         /// <summary>
         /// shareCustomerFocus control.

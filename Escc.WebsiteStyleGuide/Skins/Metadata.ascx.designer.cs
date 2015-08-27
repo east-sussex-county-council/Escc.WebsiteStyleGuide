@@ -7,36 +7,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Escc.WebsiteStyleGuide {
+namespace Escc.WebsiteStyleGuide.Skins {
     
     
-    public partial class serviceForm {
+    public partial class Metadata {
         
         /// <summary>
-        /// text control.
+        /// smallCss control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl text;
+        protected global::Escc.ClientDependencyFramework.WebForms.Css smallCss;
         
         /// <summary>
-        /// DateControl1 control.
+        /// mediumCss control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::eastsussexgovuk.webservices.FormControls.DateControl DateControl1;
+        protected global::Escc.ClientDependencyFramework.WebForms.Css mediumCss;
         
         /// <summary>
-        /// FormAddressNonCitizen1 control.
+        /// largeCss control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::eastsussexgovuk.webservices.FormControls.CustomControls.FormAddressNonCitizen FormAddressNonCitizen1;
+        protected global::Escc.ClientDependencyFramework.WebForms.Css largeCss;
     }
 }
