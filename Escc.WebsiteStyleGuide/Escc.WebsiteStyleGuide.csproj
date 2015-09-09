@@ -65,6 +65,10 @@
       <HintPath>..\packages\Exceptionless.1.5.2121\lib\net40\Exceptionless.Models.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Exceptionless.Web, Version=1.5.2121.0, Culture=neutral, PublicKeyToken=fc181f0a46f65747, processorArchitecture=MSIL">
+      <HintPath>..\packages\Exceptionless.Web.1.5.2121\lib\net40\Exceptionless.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
@@ -251,8 +255,12 @@
   <ItemGroup>
     <Content Include="grid.xlsx" />
     <Content Include="packages.config" />
-    <Content Include="web.config" />
-    <None Include="Web.example.config" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.example.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Escc.EastSussexGovUK\Escc.EastSussexGovUK\EsccWebTeam.EastSussexGovUK.csproj">
