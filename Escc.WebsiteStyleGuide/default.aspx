@@ -69,7 +69,6 @@
                 <ul>
                     <li><a href="quick-answer.aspx">Quick answers</a></li>
                     <li><a href="social.aspx">Social media</a></li>
-                    <li><a href="polls.aspx">Polls</a></li>
                 </ul>
             </div>
         </article>
