@@ -6,7 +6,7 @@
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
         />
-    <ClientDependency:Css runat="server" Files="Map" />
+    <ClientDependency:Css runat="server" Files="GisMaps" />
     <StyleGuide:Metadata runat="server" />
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="content">
