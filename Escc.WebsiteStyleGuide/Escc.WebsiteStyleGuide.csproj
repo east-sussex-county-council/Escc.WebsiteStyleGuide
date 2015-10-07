@@ -90,6 +90,7 @@
     <CodeAnalysisDictionary Include="CustomDictionary.xml" />
     <Content Include="colours.aspx" />
     <Content Include="content.aspx" />
+    <Content Include="grid-page.js" />
     <Content Include="grid.css" />
     <Content Include="grid.js" />
     <Content Include="polls.aspx" />
