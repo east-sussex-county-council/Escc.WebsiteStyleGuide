@@ -11,3 +11,30 @@
 ul.swatches { list-style-type: none;margin-left: 0; }
 ul.swatches ul { list-style-type: square;margin-top: 0;}
 .swatch { display: inline-block; height: 30px; width: 30px; vertical-align: middle;margin-right: 5px;}
+
+.swatch-00A1DE { background: #00A1DE; }
+.swatch-003C69 { background: #003C69; }
+.swatch-44697D { background: #44697D; }
+.swatch-BED600 { background: #BED600; }
+.swatch-131313 { background: #131313; }
+.swatch-272727 { background: #272727; }
+.swatch-056B0B { background: #056B0B; }
+.swatch-A7CBA9 { background: #A7CBA9; }
+.swatch-CDE1CE { background: #CDE1CE; }
+.swatch-FF5800 { background: #FF5800; }
+.swatch-FFAB7F { background: #FFAB7F; }
+.swatch-FFDDCC { background: #FFDDCC; }
+.swatch-DAE1E5 { background: #DAE1E5; }
+.swatch-C7DBE4 { background: #C7DBE4; }
+.swatch-ECECEC { background: #ECECEC; }
+.swatch-CCEEFA { background: #CCEEFA; }
+.swatch-9C9C9C { background: #9C9C9C; }
+.swatch-B21313 { background: #B21313; }
+.swatch-FBE2E2 { background: #FBE2E2; }
+.swatch-F6F4E8 { background: #F6F4E8; }
+.swatch-1E5B83 { background: #1E5B83; }
+.swatch-0B4164 { background: #0B4164; }
+.swatch-00345F { background: #00345F; }
+.swatch-194C7E { background: #194C7E; }
+.swatch-196BA6 { background: #196BA6; }
+.swatch-6BC8EC { background: #6BC8EC; }

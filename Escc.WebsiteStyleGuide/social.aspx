@@ -65,3 +65,7 @@
         </div>
    </div>
 </asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="javascript">
+    <ClientDependency:Script runat="server" Files="SocialMedia" />
+</asp:Content>

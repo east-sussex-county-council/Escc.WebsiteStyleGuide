@@ -93,7 +93,6 @@
     <Content Include="grid-page.js" />
     <Content Include="grid.css" />
     <Content Include="grid.js" />
-    <Content Include="polls.aspx" />
     <Content Include="quick-answer.aspx" />
     <Content Include="Skins\Metadata.ascx" />
     <Content Include="Skins\SkinChooser.ascx" />
@@ -129,13 +128,6 @@
     </Compile>
     <Compile Include="content.aspx.designer.cs">
       <DependentUpon>content.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="polls.aspx.cs">
-      <DependentUpon>polls.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="polls.aspx.designer.cs">
-      <DependentUpon>polls.aspx</DependentUpon>
     </Compile>
     <Compile Include="quick-answer.aspx.cs">
       <DependentUpon>quick-answer.aspx</DependentUpon>
@@ -264,6 +256,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Escc.Data.Web\EsccWebTeam.Data.Web.csproj">
+      <Project>{9c56d3dd-4952-4a1b-9ad6-907a1142872f}</Project>
+      <Name>EsccWebTeam.Data.Web</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Escc.EastSussexGovUK\Escc.EastSussexGovUK\EsccWebTeam.EastSussexGovUK.csproj">
       <Project>{1426fef0-23dc-4c23-ae15-67f2527bd741}</Project>
       <Name>EsccWebTeam.EastSussexGovUK</Name>
