@@ -1,30 +1,22 @@
 ﻿using System;
 using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace Escc.WebsiteStyleGuide.Skins
 {
     public partial class SkinChooser : System.Web.UI.UserControl
     {
+        protected string SelectedSkinId { get; set; }
+
         protected void Page_Load()
         {
-            if (!IsPostBack) UpdateSelectedSkin();
-        }
+            SelectedSkinId = ((int)Skin.SelectedSkin()).ToString(CultureInfo.InvariantCulture);
 
-        private void UpdateSelectedSkin()
-        {
-            var selectedSkinId = ((int)Skin.SelectedSkin()).ToString(CultureInfo.InvariantCulture);
-            var skinItem = skin.Items.FindByValue(selectedSkinId);
-            if (skinItem != null)
+            if (!String.IsNullOrEmpty(Request.Form["skin"]) && Regex.IsMatch(Request.Form["skin"], "^[0-9]$"))
             {
-                skin.ClearSelection();
-                skinItem.Selected = true;
+                SelectedSkinId = Request.Form["skin"];
+                Session["Skin"] = SelectedSkinId;
             }
-        }
-
-        protected void Update_Clicked(object server, EventArgs e)
-        {
-            Session["Skin"] = skin.SelectedValue;
-            UpdateSelectedSkin();
         }
     }
 }

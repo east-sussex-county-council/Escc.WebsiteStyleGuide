@@ -9,6 +9,11 @@
     <StyleGuide:Metadata runat="server" />
 </asp:Content>
 
+<asp:content runat="server" ContentPlaceHolderID="header">
+    <StyleGuide:Skin runat="server" ID="skin1" />
+    <EastSussexGovUK:MasterPageControl Control="HeaderDesktop" runat="server" EnableViewState="false" />    
+</asp:content>
+
 <asp:Content runat="server" ContentPlaceHolderID="content">
     <div class="full-page">
         <article>

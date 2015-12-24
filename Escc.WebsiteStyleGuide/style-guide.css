@@ -1,4 +1,8 @@
-﻿/* Stack .article and .full-page */
+﻿/* Skin chooser above the header */
+.skin-chooser { background: #FF5800;color: #fff;}
+.skin-chooser div { padding: 18px; }
+
+/* Stack .article and .full-page */
 .section-demo { margin-top: 1.384615em; }
 
 /* Coloured boxes to demo responsive design */
