@@ -84,9 +84,33 @@
 </asp:PlaceHolder>
 
 <div class="article" id="customerFocusSkin" runat="server">
+    <ClientDependency:Css runat="server" Files="NavigationSmall;MobileControls"/>
+    <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
+        <ClientDependency:Css runat="server" Files="NavigationMedium" MediaConfiguration="Medium"/>
+        <ClientDependency:Css runat="server" Files="NavigationLarge" MediaConfiguration="Large"/>
+    </EastSussexGovUK:ContextContainer>
+    <ClientDependency:Script runat="server" Files="Navigation"/>
     <article>
         <div class="content text-content">
             <h1>New and related content</h1>
+            
+            <nav role="navigation" title="All pages in this section">
+                <ol class="guide-nav">
+                    <li class="first-half"><span class="step-number">1.</span><a href="javascript:return false()">A page with a very long title that will wrap onto multiple lines</a></li>
+                    <li class="first-half"><span class="step-number">2.</span><a href="javascript:return false()">A second page</a></li>
+                    <li class="second-half"><span class="step-number">3.</span>Current page</li>
+                    <li class="second-half"><span class="step-number">4.</span><a href="javascript:return false()">Yet another page</a>
+                    </li>
+
+                </ol>
+            </nav>
+
+           <p>Guide navigation (shown above) uses the <code>.guide-nav</code> class, and goes directly under the <code>h1</code>. 
+                It requires the <code>NavigationSmall</code>, <code>NavigationMedium</code> and <code>NavigationLarge</code> stylesheets.</p>
+            <p>If you also load the <code>MobileControls</code> stylesheet and <code>Navigation</code> script, guide navigation will collapse into a dropdown menu on small screens. 
+                Resize this page to see a working example.</p>
+            <p>For Umbraco templates there is a <code>_GuideNavigation.cshtml</code> partial view in the <code>Escc.EastSussexGovUK.UmbracoViews</code> project to handle the HTML.</p>
+
 
             <div class="latest">
             <section>

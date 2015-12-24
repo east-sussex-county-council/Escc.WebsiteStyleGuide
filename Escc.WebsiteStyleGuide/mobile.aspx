@@ -16,37 +16,10 @@
             <div id="text" runat="server">
                 <h1>Interfaces for mobile</h1>
                 <p>There's just one mobile interface element at the moment, which allows a menu visible on a large screen
-                    to be hidden by default on mobile.</p>               
-                <p>Include the <code>MobileControls</code> stylesheet in your page for this control. 
-                    <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/mobile.aspx">View the source of this page</a> for an example.</p>
-                <p>Your application's script needs to generate two <code>.menu-toggle</code> elements, and use them to show or hide some content as in the example script below.</p>
-                <nav class="menu-toggle menu-toggle-show small medium">Show menu</nav><br />
-                <nav class="menu-toggle menu-toggle-hide small medium">Hide menu</nav>
-                
-<pre>
-&lt;script&gt;
-    if (jQuery != 'undefined') {
-        $(function () {
-            var menu = $(".thing-to-hide").hide();
-            var toggle = $('&lt;div class="menu-toggle menu-toggle-show small"&gt;Show menu&lt;/div&gt;');
-
-            toggle.insertBefore(menu).click(function () {
-                if (menu.is(":visible")) {
-                    menu.slideUp();
-                    toggle.removeClass("menu-toggle-hide").addClass("menu-toggle-show").text("Show menu");
-                } else {
-                    menu.slideDown();
-                    toggle.removeClass("menu-toggle-show").addClass("menu-toggle-hide").text("Hide menu");
-                }
-            });
-
-        });
-    }
-&lt;/script&gt;
-</pre>
-
-                <p class="large">It's not needed at this size, where the menu can always be visible, 
-                so make your browser window smaller to see it.</p>
+                    to be hidden by default on mobile.</p>
+                <p>Include the <code>MobileControls</code> stylesheet in your page for this control, though this needs to be merged into the <code>NavigationSmall</code> stylesheet in future.</p> 
+                <p>The guide navigation on the <a href="content.aspx?skin=1">New and related content page (using the customer focus skin)</a> is a working example, and 
+                    <a href="https://github.com/east-sussex-county-council/Escc.EastSussexGovUK/blob/master/Escc.EastSussexGovUK/js/nav.js">nav.js</a> shows the JavaScript code.</p>
             </div>
         </article>
     </div>
