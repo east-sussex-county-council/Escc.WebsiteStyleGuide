@@ -109,7 +109,8 @@
                 It requires the <code>NavigationSmall</code>, <code>NavigationMedium</code> and <code>NavigationLarge</code> stylesheets.</p>
             <p>If you also load the <code>MobileControls</code> stylesheet and <code>Navigation</code> script, guide navigation will collapse into a dropdown menu on small screens. 
                 Resize this page to see a working example.</p>
-            <p>For Umbraco templates there is a <code>_GuideNavigation.cshtml</code> partial view in the <code>Escc.EastSussexGovUK.UmbracoViews</code> project to handle the HTML.</p>
+            <p>For Umbraco templates there is a <a href="https://github.com/east-sussex-county-council/Escc.EastSussexGovUK.UmbracoViews/blob/master/Escc.EastSussexGovUK.UmbracoViews/Views/Layouts/_GuideNavigation.cshtml">_GuideNavigation.cshtml</a> 
+                partial view in the <code>Escc.EastSussexGovUK.UmbracoViews</code> project to handle the HTML.</p>
 
 
             <div class="latest">

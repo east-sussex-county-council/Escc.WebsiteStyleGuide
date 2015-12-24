@@ -59,6 +59,7 @@
                 <h2>Patterns for navigation</h2>
                 <ul>
                     <li><a href="content.aspx">New and related content</a></li>
+                    <li><a href="landing.aspx?skin=1">Landing navigation</a></li>
                     <li><a href="buttons.aspx">Buttons and navigation</a></li>
                     <li><a href="search.aspx">Search and paging</a></li>
                     <li><a href="maps.aspx">Maps based on our GIS</a></li>

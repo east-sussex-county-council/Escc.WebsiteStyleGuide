@@ -93,6 +93,8 @@
     <Content Include="grid-page.js" />
     <Content Include="grid.css" />
     <Content Include="grid.js" />
+    <Content Include="landing.aspx" />
+    <Content Include="landing.js" />
     <Content Include="quick-answer.aspx" />
     <Content Include="Skins\Metadata.ascx" />
     <Content Include="Skins\SkinChooser.ascx" />
@@ -128,6 +130,13 @@
     </Compile>
     <Compile Include="content.aspx.designer.cs">
       <DependentUpon>content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="landing.aspx.cs">
+      <DependentUpon>landing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="landing.aspx.designer.cs">
+      <DependentUpon>landing.aspx</DependentUpon>
     </Compile>
     <Compile Include="quick-answer.aspx.cs">
       <DependentUpon>quick-answer.aspx</DependentUpon>
