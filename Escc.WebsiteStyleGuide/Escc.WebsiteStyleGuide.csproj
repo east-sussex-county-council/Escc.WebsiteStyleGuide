@@ -160,7 +160,6 @@
       <DependentUpon>SkinChooser.ascx</DependentUpon>
     </Compile>
     <Compile Include="Skins\Skin.cs" />
-    <Compile Include="Skins\SkinStyle.cs" />
     <Compile Include="social.aspx.cs">
       <DependentUpon>social.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

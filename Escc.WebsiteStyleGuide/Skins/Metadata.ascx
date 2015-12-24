@@ -6,3 +6,4 @@
     <ClientDependency:Css runat="server" MediaConfiguration="Medium" id="mediumCss" MergeWithSimilar="false"/>
     <ClientDependency:Css runat="server" MediaConfiguration="Large" id="largeCss" MergeWithSimilar="false"/>
 </EastSussexGovUK:ContextContainer>
+<ClientDependency:Script runat="server" id="js" MergeWithSimilar="False"/>

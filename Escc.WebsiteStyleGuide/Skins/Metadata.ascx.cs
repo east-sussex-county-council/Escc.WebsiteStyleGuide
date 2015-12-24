@@ -1,5 +1,4 @@
 ﻿using System;
-using Escc.WebsiteStyleGuide.SkinChooser;
 
 namespace Escc.WebsiteStyleGuide.Skins
 {
@@ -8,13 +7,25 @@ namespace Escc.WebsiteStyleGuide.Skins
 
         protected void Page_PreRender(object sender, EventArgs e)
         {
-            switch (Skin.SelectedSkin())
+            var selectedSkin = Skin.SelectedSkin();
+            foreach (var css in selectedSkin.RequiresCss())
             {
-                case SkinStyle.CustomerFocus:
-                    smallCss.FileList.Add("ContentSmall");
-                    mediumCss.FileList.Add("ContentMedium");
-                    largeCss.FileList.Add("ContentLarge");
-                    break;
+                if (String.IsNullOrEmpty(css.MediaQueryAlias))
+                {
+                    smallCss.FileList.Add(css.CssFileAlias);
+                }
+                else if (css.MediaQueryAlias == "Medium")
+                {
+                    mediumCss.FileList.Add(css.CssFileAlias);    
+                }
+                else if (css.MediaQueryAlias == "Large")
+                {
+                    largeCss.FileList.Add(css.CssFileAlias);
+                }
+            }
+            foreach (var jsFile in selectedSkin.RequiresJavaScript())
+            {
+                js.FileList.Add(jsFile.JsFileAlias);
             }
         }
     }

@@ -1,6 +1,6 @@
 ﻿using System;
-using Escc.WebsiteStyleGuide.SkinChooser;
 using Escc.WebsiteStyleGuide.Skins;
+using EsccWebTeam.EastSussexGovUK.MasterPages;
 
 namespace Escc.WebsiteStyleGuide
 {
@@ -15,8 +15,8 @@ namespace Escc.WebsiteStyleGuide
             this.text4.Text = Skin.TextClass(skin).Replace(" ", " .");
             this.mainAction.Text = Skin.MainButtonClass(skin);
 
-            this.major.Visible = skin == SkinStyle.Default;
-            this.main.Visible = !this.major.Visible;
+            this.major.Visible = skin is DefaultSkin;
+            this.main.Visible = skin is CustomerFocusSkin;
         }
     }
 }

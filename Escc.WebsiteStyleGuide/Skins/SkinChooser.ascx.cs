@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Globalization;
 using System.Text.RegularExpressions;
+using Escc.EastSussexGovUK.MasterPages;
+using EsccWebTeam.EastSussexGovUK.MasterPages;
 
 namespace Escc.WebsiteStyleGuide.Skins
 {
@@ -10,12 +12,11 @@ namespace Escc.WebsiteStyleGuide.Skins
 
         protected void Page_Load()
         {
-            SelectedSkinId = ((int)Skin.SelectedSkin()).ToString(CultureInfo.InvariantCulture);
+            SelectedSkinId = Skin.SelectedSkin().GetType().Name;
 
-            if (!String.IsNullOrEmpty(Request.Form["skin"]) && Regex.IsMatch(Request.Form["skin"], "^[0-9]$"))
+            if (!String.IsNullOrEmpty(Request.Form["skin"]) && Regex.IsMatch(Request.Form["skin"], "^[A-Za-z]+$"))
             {
-                SelectedSkinId = Request.Form["skin"];
-                Session["Skin"] = SelectedSkinId;
+                Session["Skin"] = Request.Form["skin"];
             }
         }
     }

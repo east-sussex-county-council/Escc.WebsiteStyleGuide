@@ -1,5 +1,4 @@
 ﻿using System;
-using Escc.WebsiteStyleGuide.SkinChooser;
 using Escc.WebsiteStyleGuide.Skins;
 
 namespace Escc.WebsiteStyleGuide

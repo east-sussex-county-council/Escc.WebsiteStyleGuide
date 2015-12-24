@@ -1,7 +1,10 @@
 ﻿
 using System;
+using System.Text.RegularExpressions;
 using System.Web;
-using Escc.WebsiteStyleGuide.SkinChooser;
+using Escc.EastSussexGovUK.MasterPages;
+using EsccWebTeam.EastSussexGovUK;
+using EsccWebTeam.EastSussexGovUK.MasterPages;
 
 namespace Escc.WebsiteStyleGuide.Skins
 {
@@ -13,19 +16,29 @@ namespace Escc.WebsiteStyleGuide.Skins
         /// <summary>
         /// Gets the selected skin for the current request or session
         /// </summary>
-        public static SkinStyle SelectedSkin()
+        public static IEsccWebsiteSkin SelectedSkin()
         {
             var context = HttpContext.Current;
-            var selected = SkinStyle.Default;
-            if (!String.IsNullOrEmpty(context.Request.QueryString["skin"]))
+
+            var selected = context.Request.QueryString["skin"];
+            if (!String.IsNullOrEmpty(context.Request.Form["skin"]) && Regex.IsMatch(context.Request.Form["skin"], "^[A-Za-z]+$"))
             {
-                selected = (SkinStyle)Enum.Parse(typeof(SkinStyle), context.Request.QueryString["Skin"]);
+                selected = context.Request.Form["skin"];
             }
-            else if (context.Session["Skin"] != null)
+            if (String.IsNullOrEmpty(selected) && context.Session["Skin"] != null)
             {
-                selected = (SkinStyle)Enum.Parse(typeof(SkinStyle), context.Session["Skin"].ToString());
+                selected = context.Session["Skin"].ToString();
             }
-            return selected;
+
+            if (selected == typeof (CustomerFocusSkin).Name)
+            {
+                return new CustomerFocusSkin(EsccWebsiteView.Unknown);
+            }
+            else if (selected == typeof(CoronerSkin).Name)
+            { 
+                return new CoronerSkin(EsccWebsiteView.Unknown, context.Request.Url);
+            }
+            return new DefaultSkin();
         }
 
 
@@ -34,9 +47,9 @@ namespace Escc.WebsiteStyleGuide.Skins
         /// </summary>
         /// <param name="skin">The skin.</param>
         /// <returns></returns>
-        public static string TextClass(SkinStyle skin)
+        public static string TextClass(IEsccWebsiteSkin skin)
         {
-            if (skin == SkinStyle.CustomerFocus) return "content text-content";
+            if (skin is CustomerFocusSkin) return "content text-content";
             return "text";
         }
 
@@ -46,9 +59,9 @@ namespace Escc.WebsiteStyleGuide.Skins
         /// </summary>
         /// <param name="skin">The skin.</param>
         /// <returns></returns>
-        public static string MainButtonClass(SkinStyle skin)
+        public static string MainButtonClass(IEsccWebsiteSkin skin)
         {
-            if (skin == SkinStyle.CustomerFocus) return "main-action";
+            if (skin is CustomerFocusSkin) return "main-action";
             return "major-action";
         }
     }

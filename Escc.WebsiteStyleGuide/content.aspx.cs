@@ -1,6 +1,6 @@
 ﻿using System;
-using Escc.WebsiteStyleGuide.SkinChooser;
 using Escc.WebsiteStyleGuide.Skins;
+using EsccWebTeam.EastSussexGovUK.MasterPages;
 
 namespace Escc.WebsiteStyleGuide
 {
@@ -10,8 +10,8 @@ namespace Escc.WebsiteStyleGuide
         {
             this.text1.Attributes["class"] = Skin.TextClass(Skin.SelectedSkin());
 
-            this.defaultSkin.Visible = Skin.SelectedSkin() == SkinStyle.Default;
-            this.customerFocusSkin.Visible = !this.defaultSkin.Visible;
+            this.defaultSkin.Visible = Skin.SelectedSkin() is DefaultSkin;
+            this.customerFocusSkin.Visible = Skin.SelectedSkin() is CustomerFocusSkin;
         }
     }
 }
