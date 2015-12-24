@@ -19,7 +19,7 @@
             </div>
 
             <div class="section-nav">
-                <img src="http://placekitten.com/144/144" alt="example image - a kitten"/>
+                <img src="https://placeimg.com/144/144/animals" alt="example image"/>
                 <ul>
                     <li><a href="javascript:return false()">Example link</a></li>
                     <li><a href="javascript:return false()">Example link</a></li>
