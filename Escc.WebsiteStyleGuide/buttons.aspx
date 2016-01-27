@@ -24,11 +24,15 @@
         <article>
             <div id="text" runat="server">
                 <h1>Buttons and navigation</h1>
+                <h2>Left navigation</h2>
+                <p>We have two styles of left navigation in use: on the <a href="https://e-library.eastsussex.gov.uk">e-library</a> and on our <a href="https://democracy.eastsussex.gov.uk">democracy pages</a>.</p>
+                <h2>Progress bars</h2>
                 <p>A progress bar uses stages set up in <code>web.config</code>, and normally appears just under the <code>h1</code> element. 
                    Look at the <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Web.config.example">web.config for this project</a> for an example.
                 </p>
                 <NavigationControls:ProgressBarControl runat="server" />
     
+                <h2>Buttons</h2>
                <p>Most buttons are inside a <a href="simple-form.aspx"><code>.simple-form</code></a>, <a href="short-form.aspx"><code>.short-form</code></a>
                      or <a href="service-form.aspx"><code>.service-form</code></a>, but sometimes applications need extra buttons for navigation.</p>
 
@@ -41,7 +45,8 @@
                 
                 <p>To disable a button use the <code>disabled="disabled"</code> attribute, but add the <code>.buttonDisabled</code> class too for older browsers.</p>
                 <input type="button" value="Example button" class="button buttonDisabled" disabled="disabled"/>
-
+                
+                <h2>Top or bottom navigation</h2>
                 <p>For lesser actions, or to create a navigation bar, group one or more <code>input</code> elements or links inside <code>.button-nav</code>, which can be applied to either a <code>p</code> or a <code>ul</code> element.
                     This grouping includes indentation so should be used outside <code>.<asp:Literal runat="server" ID="text3" /></code>.
                 </p>

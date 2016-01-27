@@ -113,11 +113,14 @@
            <p>Guide navigation (shown above) uses the <code>.guide-nav</code> class, and goes directly under the <code>h1</code>. 
                 It requires the <code>NavigationSmall</code>, <code>NavigationMedium</code> and <code>NavigationLarge</code> stylesheets.</p>
             <p>If you also load the <code>MobileControls</code> stylesheet and <code>Navigation</code> script, guide navigation will collapse into a dropdown menu on small screens. 
-                Resize this page to see a working example.</p>
+                Resize this page to see a working example. (<code>MobileControls</code> needs to be merged into the <code>NavigationSmall</code> stylesheet in future.)</p>
             <p>For Umbraco templates there is a <a href="https://github.com/east-sussex-county-council/Escc.EastSussexGovUK.UmbracoViews/blob/master/Escc.EastSussexGovUK.UmbracoViews/Views/Layouts/_GuideNavigation.cshtml">_GuideNavigation.cshtml</a> 
                 partial view in the <code>Escc.EastSussexGovUK.UmbracoViews</code> project to handle the HTML.</p>
-
-
+            
+            <h2>Collapsible menus without .guide-nav</h2>
+            <p>You can get the same collapsible menu effect without the <code>.guide-nav</code> styling by applying either <code>.nav-menu</code> or <code>.nav-menu-medium</code> to
+                any other kind of menu instead of <code>.guide-nav</code>. The first collapses only on small screens; the second on both small and medium.
+                <a href="https://github.com/east-sussex-county-council/Escc.EastSussexGovUK/blob/master/Escc.EastSussexGovUK/js/nav.js">nav.js</a> shows the JavaScript code.</p>
             <div class="latest">
             <section>
                 <h2>Latest</h2>

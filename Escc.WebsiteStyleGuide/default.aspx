@@ -67,7 +67,6 @@
                     <li><a href="buttons.aspx">Buttons and navigation</a></li>
                     <li><a href="search.aspx">Search and paging</a></li>
                     <li><a href="maps.aspx">Maps based on our GIS</a></li>
-                    <li><a href="mobile.aspx">Interfaces for mobile</a></li>
                 </ul>
                 
                 <h2>Patterns for content</h2>

@@ -105,7 +105,6 @@
     <Content Include="simple-form.aspx" />
     <Content Include="short-form.aspx" />
     <Content Include="service-form.aspx" />
-    <Content Include="mobile.aspx" />
     <Content Include="maps.aspx" />
     <Content Include="fullscreen.aspx" />
     <Content Include="search.aspx" />
@@ -187,13 +186,6 @@
     </Compile>
     <Compile Include="service-form.aspx.designer.cs">
       <DependentUpon>service-form.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="mobile.aspx.cs">
-      <DependentUpon>mobile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="mobile.aspx.designer.cs">
-      <DependentUpon>mobile.aspx</DependentUpon>
     </Compile>
     <Compile Include="maps.aspx.cs">
       <DependentUpon>maps.aspx</DependentUpon>
