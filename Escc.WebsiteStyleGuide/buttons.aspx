@@ -7,10 +7,10 @@
         IsInSearch="false"
         />
     <StyleGuide:Metadata runat="server" />
-    <ClientDependency:Css runat="server" Files="FormsSmall" />
+    <ClientDependency:Css runat="server" Files="FormsSmall;NavigationSmall" />
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
-        <ClientDependency:Css runat="server" Files="FormsMedium" MediaConfiguration="Medium" />
-        <ClientDependency:Css runat="server" Files="FormsLarge" MediaConfiguration="Large" />
+        <ClientDependency:Css runat="server" Files="FormsMedium;NavigationMedium" MediaConfiguration="Medium" />
+        <ClientDependency:Css runat="server" Files="FormsLarge;NavigationLarge" MediaConfiguration="Large" />
     </EastSussexGovUK:ContextContainer>
 </asp:Content>
 
@@ -25,7 +25,9 @@
             <div id="text" runat="server">
                 <h1>Buttons and navigation</h1>
                 <h2>Left navigation</h2>
-                <p>We have two styles of left navigation in use: on the <a href="https://e-library.eastsussex.gov.uk">e-library</a> and on our <a href="https://democracy.eastsussex.gov.uk">democracy pages</a>.</p>
+                <p>We have three styles of left navigation in use: on the <a href="https://e-library.eastsussex.gov.uk">e-library</a>, our <a href="https://democracy.eastsussex.gov.uk">democracy pages</a> and the <a href="https://new.eastsussex.gov.uk/yourcouncil/about/keydocuments/councilplan">Council Plan</a>.
+                    None of these has yet been adopted as a standard style.
+                </p>
                 <h2>Progress bars</h2>
                 <p>A progress bar uses stages set up in <code>web.config</code>, and normally appears just under the <code>h1</code> element. 
                    Look at the <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Web.config.example">web.config for this project</a> for an example.
@@ -64,6 +66,20 @@
                 <li><a href="javascript:return false()">Example link</a></li>
                 <li><em>Emphasis for current section (better)</em></li>
             </ul>
+            <div class="text-content content" id="prevNext" runat="server">
+                <h2>Previous and next pages in a sequence</h2>
+                <p>If a set of pages is designed to be read in order you can use the previous and next navigation style, typically placed at the bottom. 
+                    It's not appropriate for a multi-page form, which should use submit buttons and the HTTP POST method.</p>
+                <p>Load the <code>NavigationSmall</code>, <code>NavigationMedium</code> and <code>NavigationLarge</code> stylesheets, and apply <code>.prev-next</code> 
+                    within the context of <code>.text-content</code>. <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/buttons.aspx">View the source of this page</a> for an example of the HTML.</p>
+                <nav role="navigation">
+                    <div class="prev-next">
+                        <p><a href="javascript:return false()" rel="prev"><em>Previous</em> <span>Title of the previous page</span></a></p>
+
+                        <p><a href="javascript:return false()" rel="next"><em>Next</em> <span>Title of the next page</span></a></p>
+                    </div>
+                </nav>
+            </div>
 
         </article>
     </div>

@@ -17,6 +17,7 @@ namespace Escc.WebsiteStyleGuide
 
             this.major.Visible = skin is DefaultSkin;
             this.main.Visible = skin is CustomerFocusSkin;
+            this.prevNext.Visible = skin is CustomerFocusSkin;
         }
     }
 }
