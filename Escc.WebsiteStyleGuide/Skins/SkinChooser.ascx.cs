@@ -2,6 +2,7 @@
 using System.Globalization;
 using System.Text.RegularExpressions;
 using Escc.EastSussexGovUK.MasterPages;
+using EsccWebTeam.Data.Web;
 using EsccWebTeam.EastSussexGovUK.MasterPages;
 
 namespace Escc.WebsiteStyleGuide.Skins
@@ -17,6 +18,9 @@ namespace Escc.WebsiteStyleGuide.Skins
             if (!String.IsNullOrEmpty(Request.Form["skin"]) && Regex.IsMatch(Request.Form["skin"], "^[A-Za-z]+$"))
             {
                 Session["Skin"] = Request.Form["skin"];
+
+                // Redirect, to avoid a resubmit prompt if the page is refreshed
+                Http.Status303SeeOther(Request.Url.AbsolutePath + "?skin-updated");
             }
         }
     }
