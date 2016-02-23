@@ -23,17 +23,35 @@
     <div class="full-page">
         <article>
             <div id="text" runat="server">
+                <asp:placeholder runat="server" id="customerFocusProgressBar">
+                    <NavigationControls:ProgressBarControl runat="server" ConfigSectionName="ProgressBarCustomerFocus" LinkFutureStages="False" />
+                    <NavigationControls:ProgressBarControl runat="server" ConfigSectionName="ProgressBarCustomerFocusWithLinks" LinkFutureStages="True" />
+                </asp:placeholder>
                 <h1>Buttons and navigation</h1>
+                <asp:placeholder runat="server" ID="defaultProgressBar">
+                    <NavigationControls:ProgressBarControl runat="server" ConfigSectionName="ProgressBar" LinkFutureStages="False"/>
+                    <NavigationControls:ProgressBarControl runat="server" ConfigSectionName="ProgressBarWithLinks" LinkFutureStages="True" />
+                </asp:placeholder>
+                <h2>Progress bars</h2>
+                
+                <asp:placeholder ID="defaultProgressDescription" runat="server">
+                    <p>A progress bar uses stages set up in <code>web.config</code>. It normally appears just under the <code>h1</code> element, and can use plain text or links as shown above. 
+                       Each stage is a fixed width. The <code>FormsSmall</code> stylesheet is required.
+                       Look at the <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Web.config.example">web.config for this project</a> for an example.
+                    </p>
+                </asp:placeholder>
+                <asp:placeholder ID="customerFocusProgressDescription" runat="server">
+                    <p>A progress bar uses stages set up in <code>web.config</code>. It normally appears just above the <code>h1</code> element, and can use plain text or links as shown above. 
+                       Each stage expands to fit the text. 
+                       Look at the <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Web.config.example">web.config for this project</a> for an example.
+                    </p>
+                </asp:placeholder>
+    
                 <h2>Left navigation</h2>
                 <p>We have three styles of left navigation in use: on the <a href="https://e-library.eastsussex.gov.uk">e-library</a>, our <a href="https://democracy.eastsussex.gov.uk">democracy pages</a> and the <a href="https://new.eastsussex.gov.uk/yourcouncil/about/keydocuments/councilplan">Council Plan</a>.
                     None of these has yet been adopted as a standard style.
                 </p>
-                <h2>Progress bars</h2>
-                <p>A progress bar uses stages set up in <code>web.config</code>, and normally appears just under the <code>h1</code> element. 
-                   Look at the <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Web.config.example">web.config for this project</a> for an example.
-                </p>
-                <NavigationControls:ProgressBarControl runat="server" />
-    
+
                 <h2>Buttons</h2>
                <p>Most buttons are inside a <a href="simple-form.aspx"><code>.simple-form</code></a>, <a href="short-form.aspx"><code>.short-form</code></a>
                      or <a href="service-form.aspx"><code>.service-form</code></a>, but sometimes applications need extra buttons for navigation.</p>

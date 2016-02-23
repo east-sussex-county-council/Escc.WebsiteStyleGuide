@@ -31,6 +31,42 @@ namespace Escc.WebsiteStyleGuide {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl text;
         
         /// <summary>
+        /// customerFocusProgressBar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder customerFocusProgressBar;
+        
+        /// <summary>
+        /// defaultProgressBar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder defaultProgressBar;
+        
+        /// <summary>
+        /// defaultProgressDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder defaultProgressDescription;
+        
+        /// <summary>
+        /// customerFocusProgressDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder customerFocusProgressDescription;
+        
+        /// <summary>
         /// mainAction control.
         /// </summary>
         /// <remarks>

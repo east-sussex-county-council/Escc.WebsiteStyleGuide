@@ -15,9 +15,16 @@ namespace Escc.WebsiteStyleGuide
             this.text4.Text = Skin.TextClass(skin).Replace(" ", " .");
             this.mainAction.Text = Skin.MainButtonClass(skin);
 
-            this.major.Visible = skin is DefaultSkin;
-            this.main.Visible = skin is CustomerFocusSkin;
-            this.prevNext.Visible = skin is CustomerFocusSkin;
+            var isDefaultSkin = skin is DefaultSkin;
+            var isCustomerFocusSkin = skin is CustomerFocusSkin;
+
+            this.defaultProgressBar.Visible = isDefaultSkin;
+            this.defaultProgressDescription.Visible = isDefaultSkin;
+            this.customerFocusProgressBar.Visible = isCustomerFocusSkin;
+            this.customerFocusProgressDescription.Visible = isCustomerFocusSkin;
+            this.major.Visible = isDefaultSkin;
+            this.main.Visible = isCustomerFocusSkin;
+            this.prevNext.Visible = isCustomerFocusSkin;
         }
     }
 }
