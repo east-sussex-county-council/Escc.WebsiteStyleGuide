@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Escc.WebsiteStyleGuide</RootNamespace>
     <AssemblyName>Escc.WebsiteStyleGuide</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <CodeAnalysisRuleSet>S:\_Standards\VS.net Code Analysis\EsccWebTeam.CodeAnalysis.WebApp.Strict.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -39,6 +40,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Escc.AddressAndPersonalDetails, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06fad7304560ae6f, processorArchitecture=MSIL">
@@ -50,23 +52,23 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Escc.FormControls.WebForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06fad7304560ae6f, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.FormControls.WebForms.1.1.0\lib\Escc.FormControls.WebForms.dll</HintPath>
+      <HintPath>..\packages\Escc.FormControls.WebForms.1.1.2\lib\Escc.FormControls.WebForms.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Escc.Web.Metadata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06fad7304560ae6f, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.Web.Metadata.1.0.0\lib\Escc.Web.Metadata.dll</HintPath>
+      <HintPath>..\packages\Escc.Web.Metadata.1.0.1\lib\Escc.Web.Metadata.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Exceptionless, Version=1.5.2121.0, Culture=neutral, PublicKeyToken=fc181f0a46f65747, processorArchitecture=MSIL">
-      <HintPath>..\packages\Exceptionless.1.5.2121\lib\net40\Exceptionless.dll</HintPath>
+      <HintPath>..\packages\Exceptionless.1.5.2121\lib\net45\Exceptionless.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Exceptionless.Models, Version=1.5.2121.0, Culture=neutral, PublicKeyToken=fc181f0a46f65747, processorArchitecture=MSIL">
-      <HintPath>..\packages\Exceptionless.1.5.2121\lib\net40\Exceptionless.Models.dll</HintPath>
+      <HintPath>..\packages\Exceptionless.1.5.2121\lib\net45\Exceptionless.Models.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Exceptionless.Web, Version=1.5.2121.0, Culture=neutral, PublicKeyToken=fc181f0a46f65747, processorArchitecture=MSIL">
-      <HintPath>..\packages\Exceptionless.Web.1.5.2121\lib\net40\Exceptionless.Web.dll</HintPath>
+      <HintPath>..\packages\Exceptionless.Web.1.5.2121\lib\net45\Exceptionless.Web.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -77,9 +79,9 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />

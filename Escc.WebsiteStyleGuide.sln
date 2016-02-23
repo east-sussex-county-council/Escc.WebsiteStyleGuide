@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escc.WebsiteStyleGuide", "Escc.WebsiteStyleGuide\Escc.WebsiteStyleGuide.csproj", "{EDC56C79-3CD1-460E-B082-6C8323B6E112}"
 EndProject
@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EsccWebTeam.NavigationContr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EsccWebTeam.Data.ActiveDirectory", "..\Escc.Data.ActiveDirectory\EsccWebTeam.Data.ActiveDirectory.csproj", "{5F1BBB42-C1C6-4110-A3E4-720420A3C27D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EsccWebTeam.Cms", "..\Escc.Cms\EsccWebTeam.Cms.csproj", "{6710E9EE-DEAB-4569-ACE6-F10159D6D447}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9260D273-D655-4BF2-AF17-1360C384EA25}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
@@ -25,8 +23,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		LICENSE.md = LICENSE.md
 		README.md = README.md
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escc.Elibrary", "..\Escc.Elibrary\Escc.Elibrary.csproj", "{3D2240E0-D165-4C52-A97B-730542975D3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,18 +67,6 @@ Global
 		{5F1BBB42-C1C6-4110-A3E4-720420A3C27D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5F1BBB42-C1C6-4110-A3E4-720420A3C27D}.UAT|Any CPU.ActiveCfg = Release|Any CPU
 		{5F1BBB42-C1C6-4110-A3E4-720420A3C27D}.UAT|Any CPU.Build.0 = Release|Any CPU
-		{6710E9EE-DEAB-4569-ACE6-F10159D6D447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6710E9EE-DEAB-4569-ACE6-F10159D6D447}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6710E9EE-DEAB-4569-ACE6-F10159D6D447}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6710E9EE-DEAB-4569-ACE6-F10159D6D447}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6710E9EE-DEAB-4569-ACE6-F10159D6D447}.UAT|Any CPU.ActiveCfg = Release|Any CPU
-		{6710E9EE-DEAB-4569-ACE6-F10159D6D447}.UAT|Any CPU.Build.0 = Release|Any CPU
-		{3D2240E0-D165-4C52-A97B-730542975D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3D2240E0-D165-4C52-A97B-730542975D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3D2240E0-D165-4C52-A97B-730542975D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3D2240E0-D165-4C52-A97B-730542975D3A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3D2240E0-D165-4C52-A97B-730542975D3A}.UAT|Any CPU.ActiveCfg = Release|Any CPU
-		{3D2240E0-D165-4C52-A97B-730542975D3A}.UAT|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
