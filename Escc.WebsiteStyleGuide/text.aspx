@@ -53,6 +53,7 @@
                     <li><a href="#" class="subscribe rss">Subscribe to an RSS feed</a></li>
                     <li><a href="#" class="subscribe email">Subscribe to an email</a></li>
                     <li><a href="#" class="subscribe rss-email">Subscribe by choosing RSS or email</a></li>
+                    <li><a href="#example.vcf" class="subscribe">Save to contacts</a></li>
                 </ul>
                 <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/text.aspx">View the source of this page</a> for an example.</p>
                 <h4>Heading 4</h4>
