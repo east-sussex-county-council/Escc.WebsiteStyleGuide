@@ -20,7 +20,7 @@ namespace Escc.WebsiteStyleGuide.Skins
                 Session["Skin"] = Request.Form["skin"];
 
                 // Redirect, to avoid a resubmit prompt if the page is refreshed
-                Http.Status303SeeOther(Request.Url.AbsolutePath + "?skin-updated");
+                Http.Status303SeeOther(Request.Url.AbsolutePath + "?skin-updated=" + Guid.NewGuid());
             }
         }
     }
