@@ -1,5 +1,6 @@
 ﻿using System;
 using Escc.WebsiteStyleGuide.Skins;
+using EsccWebTeam.EastSussexGovUK.MasterPages;
 
 namespace Escc.WebsiteStyleGuide
 {
@@ -7,7 +8,12 @@ namespace Escc.WebsiteStyleGuide
     {
         protected void Page_PreRender(object sender, EventArgs e)
         {
-            this.text.Attributes["class"] = Skin.TextClass(Skin.SelectedSkin());
+            var skin = Skin.SelectedSkin();
+            this.text.Attributes["class"] = Skin.TextClass(skin);
+            if (skin is CustomerFocusSkin)
+            {
+                this.classAroundForms.Attributes["class"] = Skin.TextClass(skin);
+            }
         }
     }
 }

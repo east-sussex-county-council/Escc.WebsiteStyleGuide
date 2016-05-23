@@ -28,6 +28,7 @@
                 <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/short-form.aspx">View the source of this page</a> to see the HTML for the following layouts.</p>
            </div>            
             
+            <div id="classAroundForms" runat="server">
             <div class="form short-form">
                 <p><a href="javascript:return false()">View all results</a> or other text here</p>
                 <fieldset>
@@ -94,7 +95,7 @@
             <div class="form short-form">
                 <h2>Optional heading</h2>
                 <p><a href="javascript:return false()">List all results</a></p>
-                <fieldset>
+                <fieldset class="checkboxes">
                     <legend>Choose some of these:</legend>
                     <label for="example10">
                         <input type="checkbox" checked="checked" value="1" id="example10" />
@@ -121,6 +122,7 @@
                  <div>
                     <input type="submit" value="Search">
                 </div>         
+            </div>
             </div>
         </article>
     </div>
