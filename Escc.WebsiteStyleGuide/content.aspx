@@ -44,23 +44,7 @@
                 </ul>
             </div>
 
-            <div class="latestBox">
-            <section>
-                <h2 class="latest">Latest</h2>
-                <p>Use a <code>.latestBox</code> to highlight new or updated content. It appears straight after the Heading 1 and, optionally, the <code>.section-nav</code>.
-                    If you need more than a few words, <a href="javascript:return false()">link to a separate page</a>.
-                </p>
-                <ul><li>If there's a list it should appear to be part of the item above.</li></ul>
-                <p>Authors can add multiple items, but the HTML can be unpredictable.</p>
-                <div class="item"><p>So we need to support different variations.</p></div>
-            </section>
-            </div>
-
             <div class="text">
-                <h2>Use Microsoft Content Management Server controls</h2>
-                <p>Both <code>.section-nav</code> and <code>.latestBox</code> are normally used on Microsoft Content Management Server pages, 
-                    and have standard controls. Refer to the standard topic template in the <code>EastSussexCC</code> project for examples.</p>
-
                 <h2>How to format the page content</h2>
                 <p>The actual content of the page goes here, inside <code>.text</code> for its standard <a href="text.aspx">text formatting</a>.</p>
                 
