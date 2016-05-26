@@ -81,15 +81,15 @@
     <div class="supporting section-demo">
         <p>Use <code>.supporting</code> to position content in a sidebar, which sits below <code>.article</code> on smaller screens and next to it on larger screens.</p>
     </div>
-    <div class="supporting supporting-text" id="supportingText" runat="server">
+    <div class="supporting " id="supportingText" runat="server">
         <h2>Add text formatting</h2>
-        <p>Use <code>.supporting</code> and <code>.supporting-text</code> together to add standard text styles in the sidebar.</p>
+        <p>Use the classes shown below to add standard text styles in the sidebar.</p>
         <ul>
             <li>lists look like this</li>
             <li>lists look like this</li>
         </ul>
 <pre>
-&lt;div class=&quot;supporting supporting-text&quot;&gt;
+&lt;div class=&quot;supporting <asp:literal runat="server" id="supportingTextClass" />&quot;&gt;
         Your content here.
 &lt;/div&gt;
 </pre>
