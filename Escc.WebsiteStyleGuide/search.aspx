@@ -19,7 +19,7 @@
         <article>
             <div id="text" runat="server">
                 <h1>Search and paging</h1>    
-                <p>For paging through a set of results use <code>EsccWebTeam.NavigationControls.PagingControl</code> above and below the results. It will apply the <code>.infoBar</code> class.</p>
+                <p>For paging through a set of results use <code>Escc.NavigationControls.WebForms.PagingControl</code> above and below the results. It will apply the <code>.infoBar</code> class.</p>
                 <p>The results themselves typically display several fields, and use a <code>dl.itemDetail</code> for each result.
                     Where there's only one result, add <code>.onlyItem</code> to the <code>dl</code>.</p>
                 <p>Both the paging and results should be outside <code>.text</code>.</p>

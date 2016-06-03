@@ -37,7 +37,7 @@ namespace Escc.WebsiteStyleGuide {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::EsccWebTeam.NavigationControls.PagingController paging;
+        protected global::Escc.NavigationControls.WebForms.PagingController paging;
         
         /// <summary>
         /// pagingTop control.
@@ -46,7 +46,7 @@ namespace Escc.WebsiteStyleGuide {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::EsccWebTeam.NavigationControls.PagingBarControl pagingTop;
+        protected global::Escc.NavigationControls.WebForms.PagingBarControl pagingTop;
         
         /// <summary>
         /// pagingBottom control.
@@ -55,7 +55,7 @@ namespace Escc.WebsiteStyleGuide {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::EsccWebTeam.NavigationControls.PagingBarControl pagingBottom;
+        protected global::Escc.NavigationControls.WebForms.PagingBarControl pagingBottom;
         
         /// <summary>
         /// PagingBarControl1 control.
@@ -64,6 +64,6 @@ namespace Escc.WebsiteStyleGuide {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::EsccWebTeam.NavigationControls.PagingBarControl PagingBarControl1;
+        protected global::Escc.NavigationControls.WebForms.PagingBarControl PagingBarControl1;
     }
 }
