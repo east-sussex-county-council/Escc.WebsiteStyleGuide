@@ -28,9 +28,9 @@
                 <p>Use <code>.service-form</code> and <code>.form</code> together for collecting and submitting data. These forms may be 
                     much more complex than a <a href="simple-form.aspx"><code>.simple-form</code></a> or <a href="short-form.aspx"><code>.short-form</code></a>,
                     spanning multiple sections and even multiple pages.</p>
-                <p>Unlike the other kinds of form, a <code>.service-form</code> should be within a container with the <code>.text</code> 
+                <p id="defaultSkinOnly" runat="server">Unlike the other kinds of form, a <code>.service-form</code> should be within a container with the <code>.text</code> 
                     class applied, meaning standard <a href="text.aspx">text formatting</a> is active.</p>
-                <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/service-form.aspx">View the source of this page</a> to see the HTML and controls used for the following layouts.</p>
+                <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/service-form.aspx">View the source of this page</a> to see the HTML and controls used for the following layouts.</p>
                 
                 <div class="errorSummary">
                     <p>This is how we would like error messages to appear:</p>

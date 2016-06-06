@@ -51,7 +51,7 @@
                 <h2>About related pages</h2>
                 <p>Related pages on other parts of our website, or other websites, go at the bottom of the page. This is <strong>not</strong> meant 
                     for navigation within the current section. Use the <code>Related</code> control to generate this box &#8211; 
-                    <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/content.aspx">view the source of this page</a> for an example.</p>
+                    <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/content.aspx">view the source of this page</a> for an example.</p>
             </div>
 
             <EastSussexGovUK:Related runat="server">

@@ -25,7 +25,7 @@
                 <p>Older GIS maps are rendered on the server-side, and contained within an element with <code>.gisMap</code> applied.</p>
                 <p>Zoom buttons use <code>p.button-nav</code> (see <a href="buttons.aspx">buttons and navigation</a>). The key is a list using <code>ul.key</code>.
                    There are arrows to move the map, but these are missing when the map is zoomed out.</p>
-                <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/maps.aspx">View the source of this page</a> for examples.</p>
+                <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/maps.aspx">View the source of this page</a> for examples.</p>
 
                 <p class="button-nav">
                     <input type="submit" value="Zoom in" class="button" />

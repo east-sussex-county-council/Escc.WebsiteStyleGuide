@@ -55,7 +55,7 @@
                     <li><a href="#" class="subscribe rss-email">Subscribe by choosing RSS or email</a></li>
                     <li><a href="#example.vcf" class="subscribe">Save to contacts</a></li>
                 </ul>
-                <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/text.aspx">View the source of this page</a> for an example.</p>
+                <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/text.aspx">View the source of this page</a> for an example.</p>
                 <h4>Heading 4</h4>
                 <p>You can apply classes to links to add an appropriate icon. 
                     When these links occur in a list, apply <code>.download</code> to the <code>li</code> element as well to avoid showing two bullets.</p>

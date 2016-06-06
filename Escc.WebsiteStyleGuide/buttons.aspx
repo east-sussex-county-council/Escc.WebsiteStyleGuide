@@ -37,13 +37,13 @@
                 <asp:placeholder ID="defaultProgressDescription" runat="server">
                     <p>A progress bar uses stages set up in <code>web.config</code>. It normally appears just under the <code>h1</code> element, and can use plain text or links as shown above. 
                        Each stage is a fixed width. The <code>FormsSmall</code> stylesheet is required.
-                       Look at the <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Web.config.example">web.config for this project</a> for an example.
+                       Look at the <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/Web.config.example">web.config for this project</a> for an example.
                     </p>
                 </asp:placeholder>
                 <asp:placeholder ID="customerFocusProgressDescription" runat="server">
                     <p>A progress bar uses stages set up in <code>web.config</code>. It normally appears just above the <code>h1</code> element, and can use plain text or links as shown above. 
                        Each stage expands to fit the text. 
-                       Look at the <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Web.config.example">web.config for this project</a> for an example.
+                       Look at the <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/Web.config.example">web.config for this project</a> for an example.
                     </p>
                 </asp:placeholder>
     
@@ -89,7 +89,7 @@
                 <p>If a set of pages is designed to be read in order you can use the previous and next navigation style, typically placed at the bottom. 
                     It's not appropriate for a multi-page form, which should use submit buttons and the HTTP POST method.</p>
                 <p>Load the <code>NavigationSmall</code>, <code>NavigationMedium</code> and <code>NavigationLarge</code> stylesheets, and apply <code>.prev-next</code> 
-                    within the context of <code>.text-content</code>. <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/buttons.aspx">View the source of this page</a> for an example of the HTML.</p>
+                    within the context of <code>.text-content</code>. <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/Escc.WebsiteStyleGuide/buttons.aspx">View the source of this page</a> for an example of the HTML.</p>
                 <nav role="navigation">
                     <div class="prev-next">
                         <p><a href="javascript:return false()" rel="prev"><em>Previous</em> <span>Title of the previous page</span></a></p>
