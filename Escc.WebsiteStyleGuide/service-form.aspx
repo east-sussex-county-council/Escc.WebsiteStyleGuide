@@ -93,6 +93,11 @@
                             </select>
                         </div>
                         
+                        <div class="formPart">
+                            <label for="example36">A multi-line textarea</label>
+                            <textarea class="name-title" id="example36"></textarea>
+                        </div>
+                        
                         <input type="submit" value="Button inside the box"/>
                     </div>
                     
