@@ -3,7 +3,7 @@ using System;
 using System.Text.RegularExpressions;
 using System.Web;
 using Escc.EastSussexGovUK.MasterPages;
-using EsccWebTeam.EastSussexGovUK;
+using Escc.Registration.MarriageSkin;
 using EsccWebTeam.EastSussexGovUK.MasterPages;
 
 namespace Escc.WebsiteStyleGuide.Skins
@@ -32,11 +32,15 @@ namespace Escc.WebsiteStyleGuide.Skins
 
             if (selected == typeof (CustomerFocusSkin).Name)
             {
-                return new CustomerFocusSkin(EsccWebsiteView.Unknown);
+                return new CustomerFocusSkin(EsccWebsiteView.Desktop);
             }
-            else if (selected == typeof(CoronerSkin).Name)
+            if (selected == typeof(CoronerSkin).Name)
             { 
-                return new CoronerSkin(EsccWebsiteView.Unknown, context.Request.Url);
+                return new CoronerSkin(EsccWebsiteView.Desktop, context.Request.Url);
+            }
+            if (selected == typeof(MarriageSkin).Name)
+            {
+                return new MarriageSkin(EsccWebsiteView.Desktop);
             }
             return new DefaultSkin();
         }
