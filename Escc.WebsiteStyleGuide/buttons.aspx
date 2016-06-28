@@ -48,7 +48,7 @@
                 </asp:placeholder>
     
                 <h2>Left navigation</h2>
-                <p>We have three styles of left navigation in use: on the <a href="https://e-library.eastsussex.gov.uk">e-library</a>, our <a href="https://democracy.eastsussex.gov.uk">democracy pages</a> and the <a href="https://new.eastsussex.gov.uk/yourcouncil/about/keydocuments/councilplan">Council Plan</a>.
+                <p>We have three styles of left navigation in use: on the <a href="https://e-library.eastsussex.gov.uk">e-library</a>, our <a href="https://democracy.eastsussex.gov.uk">democracy pages</a> and the <a href="https://www.eastsussex.gov.uk/yourcouncil/about/keydocuments/councilplan">Council Plan</a>.
                     None of these has yet been adopted as a standard style.
                 </p>
 
