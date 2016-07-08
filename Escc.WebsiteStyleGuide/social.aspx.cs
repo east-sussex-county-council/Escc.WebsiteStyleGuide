@@ -1,7 +1,7 @@
 ﻿using System;
 using Escc.WebsiteStyleGuide.Skins;
-using EsccWebTeam.Data.Web;
 using System.Web;
+using Escc.Web;
 using EsccWebTeam.EastSussexGovUK.MasterPages;
 
 namespace Escc.WebsiteStyleGuide
@@ -17,11 +17,11 @@ namespace Escc.WebsiteStyleGuide
             this.shareDefault.Visible = (skin is DefaultSkin);
             this.shareCustomerFocus.Visible = (skin is CustomerFocusSkin);
 
-            var policy = new ContentSecurityPolicy(HttpContext.Current.Request.Url);
-            policy.ParsePolicy(HttpContext.Current.Response.Headers["Content-Security-Policy"], true);
-            policy.AppendFromConfig("Facebook");
-            policy.AppendFromConfig("Twitter");
-            policy.UpdateHeader(HttpContext.Current.Response);
+            var policy = new ContentSecurityPolicyHeaders(HttpContext.Current.Response.Headers);
+            var cspConfig = new ContentSecurityPolicyFromConfig();
+            policy.AppendPolicy(cspConfig.Policies["Facebook"]);
+            policy.AppendPolicy(cspConfig.Policies["Twitter"]);
+            policy.UpdateHeaders();
         }
     }
 }
