@@ -17,6 +17,7 @@ namespace Escc.WebsiteStyleGuide
             this.text7.Text = Skin.TextClass(Skin.SelectedSkin()).Replace(" ", " .");
 
             this.columns.Visible = Skin.SelectedSkin() is DefaultSkin;
+            this.columnsNew.Visible = !this.columns.Visible;
             this.supportingText.Attributes["class"] += Skin.SelectedSkin().SupportingTextContentClass;
             this.supportingTextClass.Text = Skin.SelectedSkin().SupportingTextContentClass;
         }

@@ -94,6 +94,15 @@ namespace Escc.WebsiteStyleGuide {
         protected global::System.Web.UI.WebControls.PlaceHolder columns;
         
         /// <summary>
+        /// columnsNew control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder columnsNew;
+        
+        /// <summary>
         /// supportingText control.
         /// </summary>
         /// <remarks>

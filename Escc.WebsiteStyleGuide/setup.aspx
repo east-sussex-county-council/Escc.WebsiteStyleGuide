@@ -75,6 +75,28 @@
 
             </div>
             </asp:PlaceHolder>
+            <asp:PlaceHolder runat="server" ID="columnsNew">
+            <h2>Columns</h2>
+            <div class="columns">
+                <div class="column1">
+                    <p>Within <code>.text-content</code>, use <code>.column1</code> and <code>.column2</code> inside a container element with <code>.columns</code> to create two columns.</p>
+ <pre>
+&lt;div class=&quot;columns&quot;&gt;
+    &lt;div class=&quot;column1&quot;&gt;
+        Your content here.
+    &lt;/div&gt;
+    &lt;div class=&quot;column2&quot;&gt;
+        Your content here.
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+                <div class="column2">
+                    <p>The columns are stacked rather than side-by-side at the smallest level.</p>
+                </div>
+
+            </div>
+            </asp:PlaceHolder>
 
         </div>
     </div>
