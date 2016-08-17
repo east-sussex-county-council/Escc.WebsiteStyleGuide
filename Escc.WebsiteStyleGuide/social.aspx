@@ -30,18 +30,6 @@
                    appropriate icon. You can add a class to any element to get the same effect.</p>
             </div>
             
-            <asp:PlaceHolder runat="server" ID="related">
-                <p class="text">The 'Related pages' box is shown because social media on small screens appears between it and the 'Share' box.</p>
-                <EastSussexGovUK:Related runat="server">
-                    <PagesTemplate>
-                        <ul>
-                            <li><a href="javascript:return false()">Example link</a></li>
-                            <li><a href="javascript:return false()">Example link</a></li>
-                        </ul>
-                    </PagesTemplate>
-                </EastSussexGovUK:Related>
-            </asp:PlaceHolder>
-            
             <div class="social-mobile text small medium">
                 <p class="facebook">Find us on Facebook: <a href="http://www.facebook.com/eastsussexlibraries" id="ctl00_content_ctl07_fb">www.facebook.com/eastsussexlibraries</a></p>
                 <p class="twitter">Read updates on Twitter: <a href="https://twitter.com/esccroads" id="ctl00_content_ctl07_tw">Tweets by @esccroads</a></p>

@@ -47,32 +47,13 @@
             <div class="text">
                 <h2>How to format the page content</h2>
                 <p>The actual content of the page goes here, inside <code>.text</code> for its standard <a href="text.aspx">text formatting</a>.</p>
-                
-                <h2>About related pages</h2>
-                <p>Related pages on other parts of our website, or other websites, go at the bottom of the page. This is <strong>not</strong> meant 
-                    for navigation within the current section. Use the <code>Related</code> control to generate this box &#8211; 
-                    <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/content.aspx">view the source of this page</a> for an example.</p>
             </div>
-
-            <EastSussexGovUK:Related runat="server">
-                <PagesTemplate>
-                    <ul>
-                        <li><a href="javascript:return false()">Example link</a></li>
-                        <li><a href="javascript:return false()">Example link</a></li>
-                    </ul>
-                </PagesTemplate>
-                <WebsitesTemplate>
-                    <ul>
-                        <li><a href="javascript:return false()">Example link</a></li>
-                        <li><a href="javascript:return false()">Example link</a></li>
-                    </ul>
-                </WebsitesTemplate>
-            </EastSussexGovUK:Related>
         </article>
     </div>
 </asp:PlaceHolder>
 
-<div class="article" id="customerFocusSkin" runat="server">
+<asp:placeholder id="customerFocusSkin" runat="server">
+    <div class="article">
     <ClientDependency:Css runat="server" Files="NavigationSmall;MobileControls"/>
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
         <ClientDependency:Css runat="server" Files="NavigationMedium" MediaConfiguration="Medium"/>
@@ -130,5 +111,5 @@
         <li><a href="javascript:return false()">Example link</a></li>
     </ul>
 </div>
-
+    </asp:placeholder>
 </asp:Content>
