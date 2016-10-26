@@ -1,8 +1,8 @@
 ﻿using System;
 using Escc.WebsiteStyleGuide.Skins;
 using System.Web;
+using Escc.EastSussexGovUK.Skins;
 using Escc.Web;
-using EsccWebTeam.EastSussexGovUK.MasterPages;
 
 namespace Escc.WebsiteStyleGuide
 {

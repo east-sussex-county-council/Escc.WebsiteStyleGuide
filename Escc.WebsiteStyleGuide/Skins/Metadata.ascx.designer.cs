@@ -11,41 +11,5 @@ namespace Escc.WebsiteStyleGuide.Skins {
     
     
     public partial class Metadata {
-        
-        /// <summary>
-        /// smallCss control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Escc.ClientDependencyFramework.WebForms.Css smallCss;
-        
-        /// <summary>
-        /// mediumCss control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Escc.ClientDependencyFramework.WebForms.Css mediumCss;
-        
-        /// <summary>
-        /// largeCss control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Escc.ClientDependencyFramework.WebForms.Css largeCss;
-        
-        /// <summary>
-        /// js control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Escc.ClientDependencyFramework.WebForms.Script js;
     }
 }

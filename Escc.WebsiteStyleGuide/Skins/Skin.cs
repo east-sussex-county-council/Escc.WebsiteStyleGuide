@@ -2,9 +2,9 @@
 using System;
 using System.Text.RegularExpressions;
 using System.Web;
-using Escc.EastSussexGovUK.MasterPages;
+using Escc.EastSussexGovUK.Skins;
+using Escc.EastSussexGovUK.Views;
 using Escc.Registration.MarriageSkin;
-using EsccWebTeam.EastSussexGovUK.MasterPages;
 
 namespace Escc.WebsiteStyleGuide.Skins
 {

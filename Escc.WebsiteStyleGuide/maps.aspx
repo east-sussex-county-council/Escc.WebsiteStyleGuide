@@ -43,14 +43,14 @@
 
                 <div class="gisMap" id="gisMap">
                     <input type="image" class="map" src="map-example.png" alt="Map" />
-                    <input type="image" title="move north west" class="panNW" src="//www.eastsussex.gov.uk/eastsussexcc/pics/forms/pan-nw.gif" alt="move north west" />
-                    <input type="image" title="move north" class="panN" src="//www.eastsussex.gov.uk/eastsussexcc/pics/forms/pan-n.gif" alt="move north" />
-                    <input type="image" title="move north east" class="panNE" src="//www.eastsussex.gov.uk/eastsussexcc/pics/forms/pan-ne.gif" alt="move north east" />
-                    <input type="image" title="move west" class="panW" src="//www.eastsussex.gov.uk/eastsussexcc/pics/forms/pan-w.gif" alt="move west" />
-                    <input type="image" title="move east" class="panE" src="//www.eastsussex.gov.uk/eastsussexcc/pics/forms/pan-e.gif" alt="move east" />
-                    <input type="image" title="move south west" class="panSW" src="//www.eastsussex.gov.uk/eastsussexcc/pics/forms/pan-sw.gif" alt="move south west" />
-                    <input type="image" title="move south" class="panS" src="//www.eastsussex.gov.uk/eastsussexcc/pics/forms/pan-s.gif" alt="move south" />
-                    <input type="image" title="move south east" class="panSE" src="//www.eastsussex.gov.uk/eastsussexcc/pics/forms/pan-se.gif" alt="move south east" />
+                    <input type="image" title="move north west" class="panNW" src="//www.eastsussex.gov.uk/img/body/pan-nw.gif" alt="move north west" />
+                    <input type="image" title="move north" class="panN" src="//www.eastsussex.gov.uk/img/body/pan-n.gif" alt="move north" />
+                    <input type="image" title="move north east" class="panNE" src="//www.eastsussex.gov.uk/img/body/pan-ne.gif" alt="move north east" />
+                    <input type="image" title="move west" class="panW" src="//www.eastsussex.gov.uk/img/body/pan-w.gif" alt="move west" />
+                    <input type="image" title="move east" class="panE" src="//www.eastsussex.gov.uk/img/body/pan-e.gif" alt="move east" />
+                    <input type="image" title="move south west" class="panSW" src="//www.eastsussex.gov.uk/img/body/pan-sw.gif" alt="move south west" />
+                    <input type="image" title="move south" class="panS" src="//www.eastsussex.gov.uk/img/body/pan-s.gif" alt="move south" />
+                    <input type="image" title="move south east" class="panSE" src="//www.eastsussex.gov.uk/img/body/pan-se.gif" alt="move south east" />
                 </div>
 
                 <p>Newer GIS maps are rendered on the client-side, contained within <code>.jsMap</code>. They don't need the zoom buttons but can use <code>ul.key</code>.</p>

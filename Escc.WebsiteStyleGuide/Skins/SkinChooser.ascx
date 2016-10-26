@@ -1,7 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SkinChooser.ascx.cs" Inherits="Escc.WebsiteStyleGuide.Skins.SkinChooser" %>
-<%@ Import Namespace="Escc.EastSussexGovUK.MasterPages" %>
+<%@ Import Namespace="Escc.EastSussexGovUK.Skins" %>
 <%@ Import Namespace="Escc.Registration.MarriageSkin" %>
-<%@ Import Namespace="EsccWebTeam.EastSussexGovUK.MasterPages" %>
 <form method="post" class="skin-chooser">
     <div class="container">
     <label for="skin">Apply a custom skin, layered on top of the default skin:

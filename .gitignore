@@ -33,3 +33,5 @@ _ReSharper*/
 [Ss]cripts*/
 packages/
 .vs/*
+App_Data
+MarriageSkin

@@ -2,7 +2,6 @@
 using System.Reflection;
 using System.Web.UI;
 using Escc.WebsiteStyleGuide.Skins;
-using EsccWebTeam.EastSussexGovUK.MasterPages;
 
 namespace Escc.WebsiteStyleGuide
 {
