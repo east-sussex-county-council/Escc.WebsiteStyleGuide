@@ -38,11 +38,11 @@
                 </ul>
 
                 <div class="gisMap" id="Div1">
-                    <input type="image" class="map" src="map-county-example.png" alt="Map" />
+                    <input type="image" class="map" src="images/map-county-example.png" alt="Map" />
                 </div>
 
                 <div class="gisMap" id="gisMap">
-                    <input type="image" class="map" src="map-example.png" alt="Map" />
+                    <input type="image" class="map" src="images/map-example.png" alt="Map" />
                     <input type="image" title="move north west" class="panNW" src="//www.eastsussex.gov.uk/img/body/pan-nw.gif" alt="move north west" />
                     <input type="image" title="move north" class="panN" src="//www.eastsussex.gov.uk/img/body/pan-n.gif" alt="move north" />
                     <input type="image" title="move north east" class="panNE" src="//www.eastsussex.gov.uk/img/body/pan-ne.gif" alt="move north east" />
@@ -57,7 +57,7 @@
                 <p>They can use the <a href="fullscreen.aspx">full screen template</a> instead.</p>
                 
                 <div class="jsMap">
-                    <img src="map-example.jpg" alt="image of a client-side map"/>
+                    <img src="images/map-example.jpg" alt="image of a client-side map"/>
                 </div>
             </div>
         </article>
@@ -65,5 +65,5 @@
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="javascript">
-    <script src="<%= ResolveUrl("~/style-guide.js") %>"></script>
+    <script src="style-guide.js"></script>
 </asp:Content>

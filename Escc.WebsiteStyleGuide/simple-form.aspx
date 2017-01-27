@@ -103,5 +103,5 @@
 
 <asp:Content runat="server" ContentPlaceHolderID="javascript">
     <ClientDependency:Script runat="server" Files="Forms" />   
-    <script src="<%= ResolveUrl("~/style-guide.js") %>"></script>
+    <script src="style-guide.js"></script>
 </asp:Content>

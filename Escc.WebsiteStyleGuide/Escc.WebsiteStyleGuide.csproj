@@ -51,6 +51,10 @@
       <HintPath>..\packages\ClientDependency.1.9.9.2\lib\net45\ClientDependency.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="ClientDependency.Core.Mvc, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClientDependency-Mvc5.1.8.0.0\lib\net45\ClientDependency.Core.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Dapper, Version=1.40.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Dapper.1.42\lib\net45\Dapper.dll</HintPath>
       <Private>True</Private>
@@ -85,6 +89,10 @@
     </Reference>
     <Reference Include="Escc.EastSussexGovUK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.EastSussexGovUK.1.0.2\lib\Escc.EastSussexGovUK.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Escc.EastSussexGovUK.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Escc.EastSussexGovUK.Mvc.2.0.5\lib\Escc.EastSussexGovUK.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Escc.EastSussexGovUK.WebForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -167,12 +175,40 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Xml" />
@@ -189,9 +225,12 @@
     <CodeAnalysisDictionary Include="CustomDictionary.xml" />
     <Content Include="colours.aspx" />
     <Content Include="content.aspx" />
+    <Content Include="full-width-background.js" />
+    <Content Include="Global.asax" />
     <Content Include="grid-page.js" />
     <Content Include="grid.css" />
     <Content Include="grid.js" />
+    <Content Include="images\header-background.png" />
     <Content Include="landing.aspx" />
     <Content Include="landing.js" />
     <Content Include="MarriageSkin\css\min\marriage-skin-medium.css" />
@@ -204,16 +243,15 @@
     <Content Include="Skins\Metadata.ascx" />
     <Content Include="Skins\SkinChooser.ascx" />
     <Content Include="social.aspx" />
-    <Content Include="map-county-example.png" />
-    <Content Include="map-example.jpg" />
-    <Content Include="map-example.png" />
+    <Content Include="images\map-county-example.png" />
+    <Content Include="images\map-example.jpg" />
+    <Content Include="images\map-example.png" />
     <Content Include="simple-form.aspx" />
     <Content Include="short-form.aspx" />
     <Content Include="service-form.aspx" />
     <Content Include="maps.aspx" />
     <Content Include="fullscreen.aspx" />
     <Content Include="search.aspx" />
-    <Content Include="default.aspx" />
     <Content Include="buttons.aspx" />
     <Content Include="grid.aspx" />
     <Content Include="setup.aspx" />
@@ -222,7 +260,9 @@
     <Content Include="text.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\EastSussexGovUK_Mvc.cs" />
     <Compile Include="App_Start\EastSussexGovUK_WebForms.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="colours.aspx.cs">
       <DependentUpon>colours.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -237,6 +277,10 @@
     <Compile Include="content.aspx.designer.cs">
       <DependentUpon>content.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="landing.aspx.cs">
       <DependentUpon>landing.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -244,6 +288,7 @@
     <Compile Include="landing.aspx.designer.cs">
       <DependentUpon>landing.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\FullWidthBackgroundController.cs" />
     <Compile Include="quick-answer.aspx.cs">
       <DependentUpon>quick-answer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -315,13 +360,6 @@
     <Compile Include="search.aspx.designer.cs">
       <DependentUpon>search.aspx</DependentUpon>
     </Compile>
-    <Compile Include="default.aspx.cs">
-      <DependentUpon>default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="default.aspx.designer.cs">
-      <DependentUpon>default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="buttons.aspx.cs">
       <DependentUpon>buttons.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -344,6 +382,7 @@
     <Compile Include="setup.aspx.designer.cs">
       <DependentUpon>setup.aspx</DependentUpon>
     </Compile>
+    <Compile Include="StyleGuidePage.cs" />
     <Compile Include="text.aspx.cs">
       <DependentUpon>text.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -361,6 +400,10 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="MarriageSkin\img\web.config" />
+    <Content Include="Views\web.config" />
+    <Content Include="Views\FullWidthBackground\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <None Include="Views\web.example.config" />
     <None Include="Web.example.config">
       <SubType>Designer</SubType>
     </None>

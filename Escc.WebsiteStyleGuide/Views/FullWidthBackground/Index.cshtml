@@ -1,0 +1,44 @@
+﻿@using ClientDependency.Core.Mvc
+@using Escc.EastSussexGovUK.Mvc.Views.EastSussexGovUK
+@using Escc.EastSussexGovUK.Views
+@using Escc.WebsiteStyleGuide.Skins
+@model Escc.WebsiteStyleGuide.StyleGuidePage
+@{
+    Model.EsccWebsiteSkin = Skin.SelectedSkin(ViewEngine.Mvc);
+
+    Model.Metadata.Title = "Full-width headers and backgrounds";
+    Model.Metadata.DateCreated = "2017-01-27";
+    Model.Metadata.IpsvPreferredTerms = "Website management";
+    Model.Metadata.IsInSearch = false;
+
+    Html.RequiresJs("~/style-guide.js");
+    Html.RequiresJs("~/full-width-background.js");
+}
+@section Metadata {
+    @{ Html.RenderPartial("~/Skins/Metadata.ascx"); }
+}
+@section Header {
+    @{
+        Html.RenderPartial("~/Skins/SkinChooser.ascx");
+        Html.RenderPartial("~/Views/EastSussexGovUK/MasterPageControl.ascx", new MasterPageControlData { Control = "HeaderDesktop", BreadcrumbProvider = Model.BreadcrumbProvider });
+    }
+}
+@section BodyClass {page-with-header}
+<div class="page-header"></div>
+<div class="full-page">
+    <div class="content text-content">
+        <h1>Full-width headers and backgrounds</h1>
+        <p>
+            Some sections use a full-width header or background image. This is achieved by setting a background image on <code>.body</code>.
+            You can then use the classes described on <a href="@Url.Content("~/setup.aspx")">set up a new page</a> to create a layout, based on
+            the <a href="@Url.Content("~/grid.aspx")">grid</a>, which overlays the full-width background image.
+        </p>
+    <p>     <strong>The breadcrumb trail can push content down beyond the background image.</strong> It's typically one line, but it can be absent on high level pages or wrap onto multiple lines on deeper pages.
+            <a href="#" id="toggle-breadcrumb" class="toggle-text" data-toggle="Show the breadcrumb trail">Try hiding the breadcrumb trail</a>, or <a href="#" id="long-breadcrumb" class="toggle-text" data-toggle="test a short breadcrumb">test a long breadcrumb</a>.
+            If your page doesn't need a breadcrumb trail you can hide it by specifying a custom MVC section with no content:
+            <code>
+                <p>@@section Breadcrumb { }</p>
+            </code>
+        </p>
+    </div>
+</div>

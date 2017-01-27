@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Text.RegularExpressions;
+using System.Web.Mvc;
 using Escc.EastSussexGovUK.WebForms;
 using Escc.Web;
 
 namespace Escc.WebsiteStyleGuide.Skins
 {
-    public partial class SkinChooser : System.Web.UI.UserControl
+    public partial class SkinChooser : ViewUserControl
     {
         protected string SelectedSkinId { get; set; }
 

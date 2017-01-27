@@ -96,5 +96,5 @@
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="javascript">
-    <script src="<%= ResolveUrl("~/style-guide.js") %>"></script>
+    <script src="style-guide.js"></script>
 </asp:Content>

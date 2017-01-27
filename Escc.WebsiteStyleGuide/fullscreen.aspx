@@ -10,7 +10,7 @@
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="fullScreenHeading">Full screen template</asp:Content>
-<asp:Content runat="server" ContentPlaceHolderID="fullScreenLinks"><p><a href="default.aspx">Back to Style guide</a></p>
+<asp:Content runat="server" ContentPlaceHolderID="fullScreenLinks"><p><a href="~/" runat="server">Back to Style guide</a></p>
     <p class="accessible"><a href="javascript:return false()">Link to accessible version</a></p>
 </asp:Content>
 
@@ -26,5 +26,5 @@
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="javascript">
-    <script src="<%= ResolveUrl("~/style-guide.js") %>"></script>
+    <script src="style-guide.js"></script>
 </asp:Content>

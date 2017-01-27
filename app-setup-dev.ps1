@@ -42,6 +42,7 @@ CreateWebsite $projectName "$pathOfThisScript\$projectName"
 CreateHTTPSBinding $projectName "localhost"
 CreateVirtualDirectory $projectName "img" "$parentFolderOfThisScript\Escc.EastSussexGovUK\Escc.EastSussexGovUK\img" true
 CopyConfig "$projectName\Web.example.config" "$projectName\web.config"
+CopyConfig "$projectName\Views\Web.example.config" "$projectName\Views\web.config"
 
 Write-Host
 Write-Host "Done." -ForegroundColor "Green"

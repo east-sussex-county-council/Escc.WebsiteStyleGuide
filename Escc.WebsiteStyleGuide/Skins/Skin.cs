@@ -16,7 +16,9 @@ namespace Escc.WebsiteStyleGuide.Skins
         /// <summary>
         /// Gets the selected skin for the current request or session
         /// </summary>
-        public static IEsccWebsiteSkin SelectedSkin()
+        /// <param name="viewEngine">The view engine.</param>
+        /// <returns></returns>
+        public static IEsccWebsiteSkin SelectedSkin(ViewEngine viewEngine=ViewEngine.WebForms)
         {
             var context = HttpContext.Current;
 
@@ -42,7 +44,7 @@ namespace Escc.WebsiteStyleGuide.Skins
             {
                 return new MarriageSkin(EsccWebsiteView.Desktop);
             }
-            return new DefaultSkin();
+            return viewEngine == ViewEngine.WebForms ? new DefaultSkin() : (IEsccWebsiteSkin)new CustomerFocusSkin(EsccWebsiteView.Desktop);
         }
 
 

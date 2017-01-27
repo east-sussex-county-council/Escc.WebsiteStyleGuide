@@ -5,7 +5,9 @@
     <div class="container">
     <label for="skin">Apply a custom skin, layered on top of the default skin:
         <select id="skin" name="skin">
+            <% if (Page.Master != null) { %>
             <option value="<%= typeof(DefaultSkin).Name %>">Default</option>
+            <% } %>
             <option value="<%= typeof(CustomerFocusSkin).Name %>"<%= (SelectedSkinId==typeof(CustomerFocusSkin).Name) ? " selected=\"selected\"" : String.Empty %>>Customer focus</option>
             <option value="<%= typeof(CoronerSkin).Name %>"<%= (SelectedSkinId==typeof(CoronerSkin).Name) ? " selected=\"selected\"" : String.Empty %>>Coroner</option>
             <option value="<%= typeof(MarriageSkin).Name %>"<%= (SelectedSkinId==typeof(MarriageSkin).Name) ? " selected=\"selected\"" : String.Empty %>>Marriage</option>
