@@ -218,6 +218,7 @@
     <Content Include="grid.aspx" />
     <Content Include="setup.aspx" />
     <Content Include="style-guide.css" />
+    <Content Include="style-guide.js" />
     <Content Include="text.aspx" />
   </ItemGroup>
   <ItemGroup>

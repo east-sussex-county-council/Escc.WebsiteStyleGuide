@@ -2,6 +2,9 @@
 .skin-chooser { background: #FF5800;color: #fff;}
 .skin-chooser div { padding: 18px; }
 
+/* Skin chooser includes an 'add an alert' button */
+.skin-chooser input[type='button'] { margin-left: 2em; }
+
 /* Stack .article and .full-page */
 .section-demo { margin-top: 1.384615em; }
 

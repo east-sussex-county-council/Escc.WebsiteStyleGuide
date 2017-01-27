@@ -122,3 +122,7 @@
         </article>
     </div>
 </asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="javascript">
+    <script src="<%= ResolveUrl("~/style-guide.js") %>"></script>
+</asp:Content>

@@ -24,3 +24,7 @@
             and the <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/fullscreen.aspx">source of this page</a> for an example.</p>
     </div>
 </asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="javascript">
+    <script src="<%= ResolveUrl("~/style-guide.js") %>"></script>
+</asp:Content>

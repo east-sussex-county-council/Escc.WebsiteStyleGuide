@@ -70,4 +70,5 @@
 <asp:Content runat="server" ContentPlaceHolderID="javascript">
     <script src="grid.js"></script>
     <script src="grid-page.js"></script>
+    <script src="<%= ResolveUrl("~/style-guide.js") %>"></script>
 </asp:Content>
