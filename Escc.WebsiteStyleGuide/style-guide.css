@@ -47,7 +47,7 @@ ul.swatches ul { list-style-type: square;margin-top: 0;}
 .swatch-6BC8EC { background: #6BC8EC; }
 
 /* For FullWidthBackground/Index.cshtml */
-.page-with-header .body { background: #fff url(../images/header-background.png) repeat-x center top;}
+.page-with-header .body { background: #fff url(images/header-background.png) repeat-x center top;}
 .page-with-header .breadcrumb li, .page-with-header .breadcrumb a:link, .page-with-header .breadcrumb a:visited { color: #fff; }
 .page-header { min-height: 110px; }
 
