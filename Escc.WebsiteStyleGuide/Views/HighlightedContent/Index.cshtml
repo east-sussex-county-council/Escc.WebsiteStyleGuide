@@ -1,0 +1,59 @@
+﻿@using ClientDependency.Core.Mvc
+@using Escc.ClientDependencyFramework
+@using Escc.EastSussexGovUK.Mvc.Views.EastSussexGovUK
+@using Escc.EastSussexGovUK.Views
+@using Escc.Web
+@using Escc.WebsiteStyleGuide.Skins
+@model Escc.WebsiteStyleGuide.StyleGuidePage
+@{
+    Model.EsccWebsiteSkin = Skin.SelectedSkin(ViewEngine.Mvc);
+
+    Model.Metadata.Title = "Highlighted content";
+    Model.Metadata.DateCreated = "2017-01-27";
+    Model.Metadata.IpsvPreferredTerms = "Website management";
+    Model.Metadata.IsInSearch = false;
+
+    Html.RequiresJs("~/style-guide.js");
+    Html.RequiresCss(CssFileAlias.Resolve("TilesSmall"));
+    Html.RequiresCss(CssFileAlias.Resolve("TilesMedium"), MediaQueryAlias.Resolve("Medium"));
+}
+@section Metadata {
+    @{ Html.RenderPartial("~/Skins/Metadata.ascx"); }
+}
+@section Header {
+    @{
+        Html.RenderPartial("~/Skins/SkinChooser.ascx");
+        Html.RenderPartial("~/Views/EastSussexGovUK/MasterPageControl.ascx", new MasterPageControlData { Control = "HeaderDesktop", BreadcrumbProvider = Model.BreadcrumbProvider });
+    }
+}
+<div class="full-page">
+    <div class="content text-content">
+        <h1>Highlighted content</h1>
+
+        <div class="latest">
+            <section>
+                <h2>Latest</h2>
+                <p>
+                    Use a <code>.latest</code> box to highlight new or updated content. It appears straight after the Heading 1.
+                    If you need more than a few words, <a href="javascript:return false()">link to a separate page</a>.
+                </p>
+                <ul><li>Authors can add lists.</li></ul>
+                <p>Authors can add multiple paragraphs.</p>
+            </section>
+        </div>
+
+        <p>
+            A <code>.feature-tile</code> is a linked image with an overlaid caption. The <code>TilesSmall</code> and <code>TilesMedium</code> stylesheets are required.
+            It adapts to the width of its container (set to <code>300px</code> here), so can be used in responsive layouts.
+        </p>
+
+        <div class="feature-tile">
+            <a href="#">
+                <img src="@Url.Content("~/images/feature-tile-example.jpg")" alt="Example image" />
+                <div class="caption">
+                    <p><span>Get alerts about disruption to services</span></p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="content.aspx.cs" Inherits="Escc.WebsiteStyleGuide.content" %>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
     <Metadata:MetadataControl runat="server" 
-        Title="New and related content" 
+        Title="Linking to related content" 
         DateIssued="2014-01-07"
         IpsvPreferredTerms="Website management"
         IsInSearch="false"
@@ -20,7 +20,7 @@
     <div class="full-page">
         <article>
             <div id="text1" runat="server">
-                <h1>New and related content</h1>
+                <h1>Linking to related content</h1>
             </div>
 
             <div class="section-nav">
@@ -62,7 +62,7 @@
     <ClientDependency:Script runat="server" Files="Navigation"/>
     <article>
         <div class="content text-content">
-            <h1>New and related content</h1>
+            <h1>Linking to related content</h1>
             
             <nav role="navigation" title="All pages in this section">
                 <ol class="guide-nav">
@@ -80,23 +80,13 @@
             <p>If you also load the <code>MobileControls</code> stylesheet and <code>Navigation</code> script, guide navigation will collapse into a dropdown menu on small screens. 
                 Resize this page to see a working example. (<code>MobileControls</code> needs to be merged into the <code>NavigationSmall</code> stylesheet in future.)</p>
             <p>For Umbraco templates there is a <a href="https://github.com/east-sussex-county-council/Escc.EastSussexGovUK.UmbracoViews/blob/master/Escc.EastSussexGovUK.UmbracoViews/Views/Layouts/_GuideNavigation.cshtml">_GuideNavigation.cshtml</a> 
-                partial view in the <code>Escc.EastSussexGovUK.UmbracoViews</code> project to handle the HTML.</p>
+                partial view in the <code>Escc.EastSussexGovUK.Umbraco</code> project to handle the HTML.</p>
             
             <h2>Collapsible menus without .guide-nav</h2>
             <p>You can get the same collapsible menu effect without the <code>.guide-nav</code> styling by applying either <code>.nav-menu</code> or <code>.nav-menu-medium</code> to
                 any other kind of menu instead of <code>.guide-nav</code>. The first collapses only on small screens; the second on both small and medium.
                 <a href="https://github.com/east-sussex-county-council/Escc.EastSussexGovUK/blob/master/Escc.EastSussexGovUK/js/nav.js">nav.js</a> shows the JavaScript code.</p>
-            <div class="latest">
-            <section>
-                <h2>Latest</h2>
-                <p>Use a <code>.latest</code> box to highlight new or updated content. It appears straight after the Heading 1.
-                    If you need more than a few words, <a href="javascript:return false()">link to a separate page</a>.
-                </p>
-                <ul><li>Authors can add lists.</li></ul>
-                <p>Authors can add multiple paragraphs.</p>
-            </section>
-            </div>
-                
+            
             <h2>How to format the page content</h2>
             <p>The actual content of the page goes here, inside <code>.content .text-content</code> for its standard <a href="text.aspx">text formatting</a>.</p>
                 

@@ -230,6 +230,7 @@
     <Content Include="grid-page.js" />
     <Content Include="grid.css" />
     <Content Include="grid.js" />
+    <Content Include="images\feature-tile-example.jpg" />
     <Content Include="images\header-background.png" />
     <Content Include="landing.aspx" />
     <Content Include="landing.js" />
@@ -277,6 +278,7 @@
     <Compile Include="content.aspx.designer.cs">
       <DependentUpon>content.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\HighlightedContentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -403,6 +405,7 @@
     <Content Include="Views\web.config" />
     <Content Include="Views\FullWidthBackground\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\HighlightedContent\Index.cshtml" />
     <None Include="Views\web.example.config" />
     <None Include="Web.example.config">
       <SubType>Designer</SubType>
