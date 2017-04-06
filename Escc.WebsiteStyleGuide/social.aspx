@@ -48,7 +48,7 @@
     
     <div class="social large">
         <div class="supporting">
-            <div id="ctl00_content_ctl10_ctl01_facebook" class="fb-like-box" data-width="252" data-header="true" data-href="http://www.facebook.com/eastsussexlibraries" data-show-faces="false" data-stream="true"></div>
+            <div class="fb-page" data-href="http://www.facebook.com/eastsussexlibraries" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="http://www.facebook.com/eastsussexlibraries" class="fb-xfbml-parse-ignore"><a href="http://www.facebook.com/eastsussexlibraries">Find us on Facebook</a></blockquote></div>
         </div>
 
         <div class="supporting"><a class="twitter-timeline" data-dnt=true href="https://twitter.com/esccroads" data-widget-id="256045302744743936">Tweets by @esccroads</a>
