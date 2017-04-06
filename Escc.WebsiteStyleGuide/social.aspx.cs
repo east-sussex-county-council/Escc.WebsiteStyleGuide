@@ -13,7 +13,6 @@ namespace Escc.WebsiteStyleGuide
             var skin = Skin.SelectedSkin();
             this.text.Attributes["class"] = Skin.TextClass(skin);
 
-            this.shareDefault.Visible = (skin is DefaultSkin);
             this.shareCustomerFocus.Visible = (skin is CustomerFocusSkin);
 
             var policy = new ContentSecurityPolicyHeaders(HttpContext.Current.Response.Headers);

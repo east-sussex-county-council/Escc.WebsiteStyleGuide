@@ -31,15 +31,6 @@ namespace Escc.WebsiteStyleGuide {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl text;
         
         /// <summary>
-        /// shareDefault control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Escc.EastSussexGovUK.WebForms.share shareDefault;
-        
-        /// <summary>
         /// shareCustomerFocus control.
         /// </summary>
         /// <remarks>
@@ -47,5 +38,14 @@ namespace Escc.WebsiteStyleGuide {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl shareCustomerFocus;
+        
+        /// <summary>
+        /// shareDefault control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Escc.EastSussexGovUK.WebForms.share shareDefault;
     }
 }
