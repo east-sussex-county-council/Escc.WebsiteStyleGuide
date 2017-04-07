@@ -39,8 +39,8 @@
             <div id="shareCustomerFocus" runat="server">
                 <div class="content text-content">
                     <p>Use the <code>~/share.ascx</code> usercontrol in WebForms (shown here) or <code>EastSussexGovUK/Features/_Share.cshtml</code> partial view in MVC to include the share links.</p>
+                    <EastSussexGovUK:Share ID="shareDefault" runat="server" />
                 </div>
-                <EastSussexGovUK:Share ID="shareDefault" runat="server" />
             </div>
 
         </article>
