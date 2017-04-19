@@ -1,5 +1,6 @@
 ﻿using System;
 using Escc.WebsiteStyleGuide.Skins;
+using Escc.EastSussexGovUK.Skins;
 
 namespace Escc.WebsiteStyleGuide
 {
@@ -8,6 +9,7 @@ namespace Escc.WebsiteStyleGuide
         protected void Page_Load(object sender, EventArgs e)
         {
             this.unvisited.HRef = "#" + Guid.NewGuid().ToString();
+            this.customerService1.Visible = Skin.SelectedSkin() is CustomerFocusSkin;
         }
         protected void Page_PreRender(object sender, EventArgs e)
         {
