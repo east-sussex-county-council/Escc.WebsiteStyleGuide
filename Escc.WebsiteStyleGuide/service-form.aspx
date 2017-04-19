@@ -155,8 +155,5 @@
 
 <asp:Content runat="server" ContentPlaceHolderID="javascript">
     <ClientDependency:Script runat="server" Files="Forms" />   
-</asp:Content>
-
-<asp:Content runat="server" ContentPlaceHolderID="javascript">
     <script src="style-guide.js"></script>
 </asp:Content>
