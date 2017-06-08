@@ -27,6 +27,7 @@
 
                <p>You can see examples of Facebook and Twitter controls on this page, but resize your browser because there are separate ones for small and large screens.</p>
                <p>Links to <a href="javascript:return false()" class="twitter">Twitter</a>, <a href="javascript:return false()" class="facebook">Facebook</a>,
+                   <a href="javascript:return false()" class="instagram">Instagram</a>, 
                    <a href="javascript:return false()" class="youtube">YouTube</a> and <a href="javascript:return false()" class="flickr">Flickr</a> are preceded by an 
                    appropriate icon. You can add a class to any element to get the same effect.</p>
             </div>
