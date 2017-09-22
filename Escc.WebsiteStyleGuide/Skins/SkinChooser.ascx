@@ -1,6 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SkinChooser.ascx.cs" Inherits="Escc.WebsiteStyleGuide.Skins.SkinChooser" %>
 <%@ Import Namespace="Escc.EastSussexGovUK.Skins" %>
-<%@ Import Namespace="Escc.Registration.MarriageSkin" %>
 <form method="post" class="skin-chooser">
     <div class="container">
     <label for="skin">Apply a custom skin, layered on top of the default skin:
@@ -10,7 +9,6 @@
             <% } %>
             <option value="<%= typeof(CustomerFocusSkin).Name %>"<%= (SelectedSkinId==typeof(CustomerFocusSkin).Name) ? " selected=\"selected\"" : String.Empty %>>Customer focus</option>
             <option value="<%= typeof(CoronerSkin).Name %>"<%= (SelectedSkinId==typeof(CoronerSkin).Name) ? " selected=\"selected\"" : String.Empty %>>Coroner</option>
-            <option value="<%= typeof(MarriageSkin).Name %>"<%= (SelectedSkinId==typeof(MarriageSkin).Name) ? " selected=\"selected\"" : String.Empty %>>Marriage</option>
        </select>
     </label>
     <input type="submit" value="Update" />

@@ -4,7 +4,6 @@ using System.Text.RegularExpressions;
 using System.Web;
 using Escc.EastSussexGovUK.Skins;
 using Escc.EastSussexGovUK.Views;
-using Escc.Registration.MarriageSkin;
 
 namespace Escc.WebsiteStyleGuide.Skins
 {
@@ -39,10 +38,6 @@ namespace Escc.WebsiteStyleGuide.Skins
             if (selected == typeof(CoronerSkin).Name)
             { 
                 return new CoronerSkin(EsccWebsiteView.Desktop, context.Request.Url);
-            }
-            if (selected == typeof(MarriageSkin).Name)
-            {
-                return new MarriageSkin(EsccWebsiteView.Desktop);
             }
             return viewEngine == ViewEngine.WebForms ? new DefaultSkin() : (IEsccWebsiteSkin)new CustomerFocusSkin(EsccWebsiteView.Desktop);
         }

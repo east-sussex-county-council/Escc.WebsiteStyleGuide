@@ -116,10 +116,6 @@
       <HintPath>..\packages\Escc.Redirects.1.1.0\lib\Escc.Redirects.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Escc.Registration.MarriageSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.Registration.MarriageSkin.1.0.3\lib\Escc.Registration.MarriageSkin.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Escc.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06fad7304560ae6f, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.Web.1.0.1\lib\Escc.Web.dll</HintPath>
       <Private>True</Private>
@@ -235,12 +231,6 @@
     <Content Include="images\header-background.png" />
     <Content Include="landing.aspx" />
     <Content Include="landing.js" />
-    <Content Include="MarriageSkin\css\min\marriage-skin-medium.css" />
-    <Content Include="MarriageSkin\css\min\marriage-skin-small.css" />
-    <Content Include="MarriageSkin\img\marriage-banner.jpg" />
-    <Content Include="MarriageSkin\img\marriage-landing-blue.jpg" />
-    <Content Include="MarriageSkin\img\marriage-landing-red.jpg" />
-    <Content Include="MarriageSkin\js\min\marriage-skin.js" />
     <Content Include="quick-answer.aspx" />
     <Content Include="Skins\Metadata.ascx" />
     <Content Include="Skins\SkinChooser.ascx" />
@@ -403,7 +393,6 @@
     <Content Include="web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="MarriageSkin\img\web.config" />
     <Content Include="Views\FullWidthBackground\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\HighlightedContent\Index.cshtml" />
@@ -433,12 +422,10 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="..\packages\Escc.Registration.MarriageSkin.1.0.3\build\Escc.Registration.MarriageSkin.targets" Condition="Exists('..\packages\Escc.Registration.MarriageSkin.1.0.3\build\Escc.Registration.MarriageSkin.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Escc.Registration.MarriageSkin.1.0.3\build\Escc.Registration.MarriageSkin.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Escc.Registration.MarriageSkin.1.0.3\build\Escc.Registration.MarriageSkin.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
