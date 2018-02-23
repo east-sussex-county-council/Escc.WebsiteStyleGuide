@@ -23,95 +23,28 @@
     <div class="full-page">
         <article>
             <div id="text" runat="server">
-                <h1>Forms using <code>.service-form</code></h1>
+                <h1>Forms using <code>.service-form</code> (WebForms)</h1>
 
                 <p>Use <code>.service-form</code> and <code>.form</code> together for collecting and submitting data. These forms may be 
                     much more complex than a <a href="simple-form.aspx"><code>.simple-form</code></a> or <a href="short-form.aspx"><code>.short-form</code></a>,
                     spanning multiple sections and even multiple pages.</p>
                 <p id="defaultSkinOnly" runat="server">Unlike the other kinds of form, a <code>.service-form</code> should be within a container with the <code>.text</code> 
                     class applied, meaning standard <a href="text.aspx">text formatting</a> is active.</p>
-                <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/service-form.aspx">View the source of this page</a> to see the HTML and controls used for the following layouts.</p>
                 
-                <div class="errorSummary">
-                    <p>This is how we would like error messages to appear:</p>
-                    <ul>
-                        <li>Required: <span class="errorItem"><a href="javascript:return false()">Missing name</a></span></li>
-                    </ul>
-                </div>
+                <p>You should also refer to the <a href="<%= ResolveUrl("~/serviceform") %>">MVC version of this page</a>, as the HTML is the same for both. 
+                    This page shows only where WebForms controls can be used to achieve the HTML for some field types.</p>
 
-                <ul class="validationSummary">
-                    <li>This is how they usually do appear, using a <code>ValidationSummary</code></li>
-                </ul>
+                <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/service-form.aspx">View the source of this page</a> to see the controls used for the following layouts.</p>
 
                 <div class="form service-form">
                     <h2>Fields in this section have classes which work for all types of form</h2>
 
                     <div class="formBox">
-                        <div class="formPart">
-                            <label for="example23">Type a number</label>
-                            <input type="text" class="numeric" id="example23"/>
-                        </div>
-
-                        <div class="formPart">
-                            <label for="example24">Title (Mr, Ms, Miss, Mrs)</label>
-                            <input type="text" class="name-title" id="example24"/>
-                        </div>
-
-                        <div class="formPart">
-                            <label for="example25">Name<span class="requiredField">*</span></label>
-                            <input type="text" class="name" id="example25"/>
-                        </div>
-
-                        <div class="formPart">
-                            <label for="example26">Phone</label>
-                            <input type="text" class="phone" id="example26"/>
-                        </div>
-
-                        <div class="formPart">
-                            <label for="example27">Email</label>
-                            <input type="text" class="email" id="example27"/>
-                        </div>
-
-                        <div class="formPart">
-                            <label for="example28">URL</label>
-                            <input type="text" class="url" id="example28"/>
-                        </div>
-
-                        <div class="formPart">
-                            <label for="example29">Currency</label>
-                            £ <input type="text" class="currency" id="example29"/>
-                        </div>
-                                       
-                        <p><label>I need <input type="number" class="within-text" /> fields within a sentence.</label></p>
-
                         <FormControls:DateControl ID="DateControl1" runat="server" Label="Example date" LastYear="2020" FirstYear="2005" />
-                        
-                        <div class="formPart">
-                            <label for="example2">Wide dropdown lists</label>
-                            <select class="too-wide" id="example2">
-                                <option>Apply .too-wide if you have a dropdown list which is too wide for the page. This will stop it hanging over the right edge.</option>
-                            </select>
-                        </div>
-                        
-                        <div class="formPart">
-                            <label for="example36">A multi-line textarea</label>
-                            <textarea class="name-title" id="example36"></textarea>
-                        </div>
-                        
-                        <input type="submit" value="Button inside the box"/>
                     </div>
                     
                     <h2>This section has layouts which are just for a <code>.service-form</code></h2>
                     <div class="formBox">
-                        <p class="read-only"><span class="formLabel">Fixed:</span> You can't change this. For example, a reference number.</p>
-
-                        <div class="formPart">
-                            <label for="example1">Standard dropdown lists</label>
-                            <select id="example1">
-                                <option>Example option</option>
-                            </select>
-                        </div>
-
                         <fieldset>
                             <legend>Horizontal radio buttons for a few, short options</legend>
                             <asp:RadioButtonList runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
@@ -129,24 +62,8 @@
                             </asp:RadioButtonList>
                         </fieldset>
                 
-                        <span class="radioButtonList checkbox">
-                            <label for="example30"><input type="checkbox" checked="checked" value="1" id="example30" /> A checkbox on its own</label>
-                        </span>
-                        
-                         <div class="radioButtonList">
-                            <input type="radio" id="example31" name="example31" /><label for="example31">Example</label>
-                            <input type="radio" id="example32" name="example31" /><label for="example32" class="contains-field">Show me </label> <label><input type="number" class="within-text" /> examples</label>
-                            <input type="radio" id="example34" name="example31" /><label for="example34">Other</label>
-            
-                            <div class="not-radio">
-                                <label for="example35">If other, please state</label>
-                                <input type="text" id="example35" />
-                            </div>
-                        </div>
-                    
                         <FormControls:FormAddressNonCitizen ID="FormAddressNonCitizen1" runat="server"/>                       
                     </div>
-                    <input type="submit" value="Button after the box"/>
                 </div>
             </div>
         </article>

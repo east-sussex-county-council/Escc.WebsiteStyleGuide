@@ -1,0 +1,168 @@
+﻿@using ClientDependency.Core.Mvc
+@using Escc.ClientDependencyFramework
+@using Escc.EastSussexGovUK.Mvc.Views.EastSussexGovUK
+@using Escc.EastSussexGovUK.Views
+@using Escc.WebsiteStyleGuide.Skins
+@model Escc.WebsiteStyleGuide.StyleGuidePage
+@{
+    Model.EsccWebsiteSkin = Skin.SelectedSkin(ViewEngine.Mvc);
+
+    Model.Metadata.Title = "Style guide for www.eastsussex.gov.uk";
+    Model.Metadata.DateCreated = "2014-01-07";
+    Model.Metadata.IpsvPreferredTerms = "Website management";
+    Model.Metadata.IsInSearch = false;
+
+    Html.RequiresCss(CssFileAlias.Resolve("FormsSmall"));
+    Html.RequiresCss(CssFileAlias.Resolve("FormsMedium"), MediaQueryAlias.Resolve("Medium"));
+    Html.RequiresCss(CssFileAlias.Resolve("FormsLarge"), MediaQueryAlias.Resolve("Large"));
+    Html.RequiresJs("~/style-guide.js");
+}
+@section Header {
+    @{
+        Html.RenderPartial("~/Skins/SkinChooser.ascx");
+        Html.RenderPartial("~/Views/EastSussexGovUK/MasterPageControl.ascx", new MasterPageControlData { Control = "HeaderDesktop", BreadcrumbProvider = Model.BreadcrumbProvider });
+    }
+}
+@section Metadata {
+    @{ Html.RenderPartial("~/Skins/Metadata.ascx"); }
+}
+<div class="full-page">
+    <article>
+        <div class="@Skin.TextClass(Model.EsccWebsiteSkin)">
+            <h1>Forms using <code>.service-form</code></h1>
+            <hr />
+            <p><strong>Note: </strong>This is for MVC applications. There is also a <a href="@Url.Content("~/service-form.aspx")">WebForms version of this page</a> for legacy applications.</p>
+            <hr />
+            <p>
+                Use <code>.service-form</code> and <code>.form</code> together for collecting and submitting data. These forms may be
+                much more complex than a <a href="@Url.Content("~/simple-form.aspx")"><code>.simple-form</code></a> or <a href="@Url.Content("~/short-form.aspx")"><code>.short-form</code></a>,
+                spanning multiple sections and even multiple pages.
+            </p>
+            <p id="defaultSkinOnly" runat="server">
+                Unlike the other kinds of form, a <code>.service-form</code> should be within a container with the <code>.text-content</code>
+                class applied, meaning standard <a href="@Url.Content("~/text.aspx")">text formatting</a> is active.
+            </p>
+            <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/Views/ServiceForm/Index.cshtml">View the source of this page</a> to see the HTML and controls used for the following layouts.</p>
+
+            <div class="errorSummary">
+                <p>This is how we would like error messages to appear:</p>
+                <ul>
+                    <li>Required: <span class="errorItem"><a href="javascript:return false()">Missing name</a></span></li>
+                </ul>
+            </div>
+
+            <ul class="validationSummary">
+                <li>This is how they usually do appear, using a <code>ValidationSummary</code></li>
+            </ul>
+
+            <div class="form service-form">
+                <h2>Fields in this section have classes which work for all types of form</h2>
+
+                <div class="formBox">
+                    <div class="formPart">
+                        <label for="example23">Type a number</label>
+                        <input type="text" class="numeric" id="example23" />
+                    </div>
+
+                    <div class="formPart">
+                        <label for="example24">Title (Mr, Ms, Miss, Mrs)</label>
+                        <input type="text" class="name-title" id="example24" />
+                    </div>
+
+                    <div class="formPart">
+                        <label for="example25">Name<span class="requiredField">*</span></label>
+                        <input type="text" class="name" id="example25" />
+                    </div>
+
+                    <div class="formPart">
+                        <label for="example26">Phone</label>
+                        <input type="text" class="phone" id="example26" />
+                    </div>
+
+                    <div class="formPart">
+                        <label for="example27">Email</label>
+                        <input type="text" class="email" id="example27" />
+                    </div>
+
+                    <div class="formPart">
+                        <label for="example28">URL</label>
+                        <input type="text" class="url" id="example28" />
+                    </div>
+
+                    <div class="formPart">
+                        <label for="example29">Currency</label>
+                        £ <input type="text" class="currency" id="example29" />
+                    </div>
+
+                    <p><label>I need <input type="number" class="within-text" /> fields within a sentence.</label></p>
+
+                    <div class="formPart">
+                        <label for="example2">Wide dropdown lists</label>
+                        <select class="too-wide" id="example2">
+                            <option>Apply .too-wide if you have a dropdown list which is too wide for the page. This will stop it hanging over the right edge.</option>
+                        </select>
+                    </div>
+
+                    <div class="formPart">
+                        <label for="example36">A multi-line textarea</label>
+                        <textarea class="name-title" id="example36"></textarea>
+                    </div>
+
+                    <input type="submit" value="Button inside the box" />
+                </div>
+
+                <h2>This section has layouts which are just for a <code>.service-form</code></h2>
+                <div class="formBox">
+                    <p class="read-only"><span class="formLabel">Fixed:</span> You can't change this. For example, a reference number.</p>
+
+                    <div class="formPart">
+                        <label for="example1">Standard dropdown lists</label>
+                        <select id="example1">
+                            <option>Example option</option>
+                        </select>
+                    </div>
+
+                    <fieldset>
+                        <legend>Horizontal radio buttons for a few, short options</legend>
+                        <span>
+                        <input id="content_ctl00_0" type="radio" name="ctl00$content$ctl00" value="Yes">
+                        <label for="content_ctl00_0">Yes</label>
+                        <input id="content_ctl00_1" type="radio" name="ctl00$content$ctl00" value="No">
+                        <label for="content_ctl00_1">No</label></span>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Vertical radio buttons and checkboxes should be preferred most of the time. Just add <code>.radioButtonList</code>.</legend>
+                        <span class="radioButtonList">
+                            <input id="content_ctl01_0" type="radio" name="ctl00$content$ctl01" value="Option 1">
+                            <label for="content_ctl01_0">Option 1</label>
+                            <input id="content_ctl01_1" type="radio" name="ctl00$content$ctl01" value="Option 2">
+                            <label for="content_ctl01_1">Option 2</label>
+                            <input id="content_ctl01_2" type="radio" name="ctl00$content$ctl01" value="Option 3">
+                            <label for="content_ctl01_2">Option 3</label>
+                        </span>
+                    </fieldset>
+
+                    <span class="radioButtonList checkbox">
+                        <label for="example30"><input type="checkbox" checked="checked" value="1" id="example30" /> A checkbox on its own</label>
+                    </span>
+
+                    <div class="radioButtonList">
+                        <input type="radio" id="example31" name="example31" /><label for="example31">Example</label>
+                        <input type="radio" id="example32" name="example31" /><label for="example32" class="contains-field">Show me </label> <label><input type="number" class="within-text" /> examples</label>
+                        <input type="radio" id="example34" name="example31" /><label for="example34">Other</label>
+
+                        <div class="not-radio">
+                            <label for="example35">If other, please state</label>
+                            <input type="text" id="example35" />
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <input type="submit" value="Button after the box" />
+            </div>
+        </div>
+    </article>
+</div>
+

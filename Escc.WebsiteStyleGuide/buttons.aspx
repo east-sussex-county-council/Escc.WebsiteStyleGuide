@@ -54,7 +54,7 @@
 
                 <h2>Buttons</h2>
                <p>Most buttons are inside a <a href="simple-form.aspx"><code>.simple-form</code></a>, <a href="short-form.aspx"><code>.short-form</code></a>
-                     or <a href="service-form.aspx"><code>.service-form</code></a>, but sometimes applications need extra buttons for navigation.</p>
+                     or <a href="<%= ResolveUrl("~/serviceform") %>"><code>.service-form</code></a>, but sometimes applications need extra buttons for navigation.</p>
 
                 <p>When there's only one thing you want people to do on the page, you can use <code>.<asp:Literal runat="server" ID="mainAction" /></code> on the parent element of the link:</p>
                 <p class="major-action" id="major" runat="server"><a href="javascript:return false()">Wow, that's big!</a></p>

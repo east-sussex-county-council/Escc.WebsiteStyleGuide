@@ -271,6 +271,7 @@
     </Compile>
     <Compile Include="Controllers\HighlightedContentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ServiceFormController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -397,6 +398,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\HighlightedContent\Index.cshtml" />
     <Content Include="Views\web.config" />
+    <Content Include="Views\ServiceForm\Index.cshtml" />
     <None Include="Views\web.example.config" />
     <None Include="Web.example.config">
       <SubType>Designer</SubType>

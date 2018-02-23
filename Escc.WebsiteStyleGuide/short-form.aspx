@@ -44,7 +44,7 @@
                     <input type="email" id="example13" class="email"/>
                     <label for="example14">Type a postcode</label>
                     <input type="text" id="example14" class="postcode"/>
-                    <p>See <a href="service-form.aspx"><code>.service-form</code></a> for more custom field types. They work here too.</p>
+                    <p>See <a href="<%= ResolveUrl("~/serviceform") %>"><code>.service-form</code></a> for more custom field types. They work here too.</p>
                     <label for="example36">Type more text</label>
                     <textarea id="example36"></textarea>
                     <div>
