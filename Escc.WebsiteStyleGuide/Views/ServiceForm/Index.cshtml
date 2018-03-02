@@ -3,6 +3,7 @@
 @using Escc.EastSussexGovUK.Mvc.Views.EastSussexGovUK
 @using Escc.EastSussexGovUK.Views
 @using Escc.WebsiteStyleGuide.Skins
+@using Escc.FindAddress.Mvc
 @model Escc.WebsiteStyleGuide.StyleGuidePage
 @{
     Model.EsccWebsiteSkin = Skin.SelectedSkin(ViewEngine.Mvc);
@@ -158,8 +159,12 @@
                         </div>
                     </div>
 
-                    
-                </div>
+                    @Html.Partial("_FindAddress", null, new ViewDataDictionary()
+                    {
+                        TemplateInfo = new FindAddressConfiguration() { HtmlFieldPrefix = "Address1", Required = true, Label = "Address lookup" }
+                    })
+                    <p>The address lookup is <a href="https://github.com/east-sussex-county-council/Escc.FindAddress.Mvc/blob/master/README.md">documented in the Escc.FindAddress.Mvc project</a>.</p>
+               </div>
                 <input type="submit" value="Button after the box" />
             </div>
         </div>

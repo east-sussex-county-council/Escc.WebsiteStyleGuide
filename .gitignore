@@ -35,3 +35,5 @@ packages/
 .vs/*
 App_Data
 MarriageSkin
+*/Views/Shared/_FindAddress.cshtml
+*/js/libs/*
