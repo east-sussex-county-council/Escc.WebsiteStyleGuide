@@ -161,9 +161,9 @@
 
                     @Html.Partial("_FindAddress", null, new ViewDataDictionary()
                     {
-                        TemplateInfo = new FindAddressConfiguration() { HtmlFieldPrefix = "Address1", Required = true, Label = "Address lookup" }
+                        TemplateInfo = new FindAddressConfiguration() { HtmlFieldPrefix = "Address1", Required = true, Label = "Address lookup", ApiControllerUrl = new Uri(Url.Content("~/api/FindAddress/"), UriKind.Relative) }
                     })
-                    <p>The address lookup is <a href="https://github.com/east-sussex-county-council/Escc.FindAddress.Mvc/blob/master/README.md">documented in the Escc.FindAddress.Mvc project</a>.</p>
+                    <p>The address lookup is <a href="https://github.com/east-sussex-county-council/Escc.FindAddress.Mvc/">documented in the Escc.FindAddress.Mvc project</a>.</p>
                </div>
                 <input type="submit" value="Button after the box" />
             </div>
