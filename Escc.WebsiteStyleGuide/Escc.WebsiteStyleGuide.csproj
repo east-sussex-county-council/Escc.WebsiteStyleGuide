@@ -97,7 +97,7 @@
       <HintPath>..\packages\Escc.EastSussexGovUK.WebForms.1.2.1\lib\Escc.EastSussexGovUK.WebForms.dll</HintPath>
     </Reference>
     <Reference Include="Escc.FindAddress.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.FindAddress.Mvc.1.0.0\lib\net452\Escc.FindAddress.Mvc.dll</HintPath>
+      <HintPath>..\packages\Escc.FindAddress.Mvc.1.0.1\lib\net452\Escc.FindAddress.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Escc.FormControls.WebForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06fad7304560ae6f, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.FormControls.WebForms.2.0.0\lib\Escc.FormControls.WebForms.dll</HintPath>
@@ -425,9 +425,9 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-    <Error Condition="!Exists('..\packages\Escc.FindAddress.Mvc.1.0.0\build\Escc.FindAddress.Mvc.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Escc.FindAddress.Mvc.1.0.0\build\Escc.FindAddress.Mvc.targets'))" />
+    <Error Condition="!Exists('..\packages\Escc.FindAddress.Mvc.1.0.1\build\Escc.FindAddress.Mvc.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Escc.FindAddress.Mvc.1.0.1\build\Escc.FindAddress.Mvc.targets'))" />
   </Target>
-  <Import Project="..\packages\Escc.FindAddress.Mvc.1.0.0\build\Escc.FindAddress.Mvc.targets" Condition="Exists('..\packages\Escc.FindAddress.Mvc.1.0.0\build\Escc.FindAddress.Mvc.targets')" />
+  <Import Project="..\packages\Escc.FindAddress.Mvc.1.0.1\build\Escc.FindAddress.Mvc.targets" Condition="Exists('..\packages\Escc.FindAddress.Mvc.1.0.1\build\Escc.FindAddress.Mvc.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
