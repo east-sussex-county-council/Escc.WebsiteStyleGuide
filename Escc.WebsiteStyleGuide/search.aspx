@@ -38,10 +38,16 @@
                 </dl>
 
                 <dl class="itemDetail">
-                    <dt>Field</dt>
-                    <dd>Value</dd>
-                    <dt>Field</dt>
-                    <dd>Value</dd>
+                    <dt>Field 1</dt>
+                    <dd>Value 1</dd>
+                    <dt>Field 2 with a long label that goes onto multiple lines</dt>
+                    <dd>Value 2</dd>
+                    <dt>Field 3</dt>
+                    <dd>Value 3</dd>
+                    <dt>Field 4</dt>
+                    <dd>Value 4 which is really long and goes onto multiple lines, and needs to wrap neatly and not overlap or be out of line with its label</dd>
+                    <dt>Field 5</dt>
+                    <dd>Value 5</dd>
                 </dl>
             
                 <dl class="itemDetail">
