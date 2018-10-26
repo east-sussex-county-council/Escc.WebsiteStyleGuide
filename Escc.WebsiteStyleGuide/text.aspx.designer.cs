@@ -13,13 +13,13 @@ namespace Escc.WebsiteStyleGuide {
     public partial class text {
         
         /// <summary>
-        /// textClass control.
+        /// skin1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl textClass;
+        protected global::Escc.WebsiteStyleGuide.Skins.SkinChooser skin1;
         
         /// <summary>
         /// unvisited control.
@@ -29,14 +29,5 @@ namespace Escc.WebsiteStyleGuide {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor unvisited;
-        
-        /// <summary>
-        /// customerService1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder customerService1;
     }
 }

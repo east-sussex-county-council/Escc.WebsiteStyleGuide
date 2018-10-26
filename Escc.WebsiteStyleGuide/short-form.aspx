@@ -22,13 +22,13 @@
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="content">
     <div class="full-page">
         <article>
-            <div id="text" runat="server">
+            <div class="content text-content">
                 <h1>Forms using <code>.short-form</code></h1>
                 <p>Use <code>.short-form</code> and <code>.form</code> together for application interfaces which are too complex for a <a href="simple-form.aspx"><code>.simple-form</code></a>.</p>
                 <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/short-form.aspx">View the source of this page</a> to see the HTML for the following layouts.</p>
            </div>            
             
-            <div id="classAroundForms" runat="server">
+            <div class="content text-content">
             <div class="form short-form">
                 <p><a href="javascript:return false()">View all results</a> or other text here</p>
                 <fieldset>

@@ -8,12 +8,6 @@ namespace Escc.WebsiteStyleGuide
     {
         protected void Page_PreRender(object sender, EventArgs e)
         {
-            var skin = Skin.SelectedSkin();
-            this.text.Attributes["class"] = Skin.TextClass(skin);
-            if (skin is CustomerFocusSkin)
-            {
-                this.classAroundForms.Attributes["class"] = Skin.TextClass(skin);
-            }
         }
     }
 }

@@ -22,7 +22,7 @@
 <asp:Content runat="server" ContentPlaceHolderID="content">
     <div class="full-page">
         <article>
-            <div id="text" runat="server">
+            <div class="content text-content">
                 <h1>Landing navigation</h1>
                 <p>Landing navigation is a reusable component only in the customer focus skin, so this page loads with that skin by default.</p>
                 <p>It requires the <code>NavigationSmall</code>, <code>NavigationMedium</code> and <code>NavigationLarge</code> stylesheets, and

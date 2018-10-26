@@ -22,14 +22,12 @@
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="content">
     <div class="full-page">
         <article>
-            <div id="text" runat="server">
+            <div class="content text-content">
                 <h1>Forms using <code>.service-form</code> (WebForms)</h1>
 
                 <p>Use <code>.service-form</code> and <code>.form</code> together for collecting and submitting data. These forms may be 
                     much more complex than a <a href="simple-form.aspx"><code>.simple-form</code></a> or <a href="short-form.aspx"><code>.short-form</code></a>,
                     spanning multiple sections and even multiple pages.</p>
-                <p id="defaultSkinOnly" runat="server">Unlike the other kinds of form, a <code>.service-form</code> should be within a container with the <code>.text</code> 
-                    class applied, meaning standard <a href="text.aspx">text formatting</a> is active.</p>
                 
                 <p>You should also refer to the <a href="<%= ResolveUrl("~/serviceform") %>">MVC version of this page</a>, as the HTML is the same for both. 
                     This page shows only where WebForms controls can be used to achieve the HTML for some field types.</p>

@@ -6,7 +6,7 @@
 @using Escc.FindAddress.Mvc
 @model Escc.WebsiteStyleGuide.StyleGuidePage
 @{
-    Model.EsccWebsiteSkin = Skin.SelectedSkin(ViewEngine.Mvc);
+    Model.EsccWebsiteSkin = Skin.SelectedSkin();
 
     Model.Metadata.Title = "Style guide for www.eastsussex.gov.uk";
     Model.Metadata.DateCreated = "2014-01-07";
@@ -29,7 +29,7 @@
 }
 <div class="full-page">
     <article>
-        <div class="@Skin.TextClass(Model.EsccWebsiteSkin)">
+        <div class="content text-content">
             <h1>Forms using <code>.service-form</code></h1>
             <hr />
             <p><strong>Note: </strong>This is for MVC applications. There is also a <a href="@Url.Content("~/service-form.aspx")">WebForms version of this page</a> for legacy applications.</p>

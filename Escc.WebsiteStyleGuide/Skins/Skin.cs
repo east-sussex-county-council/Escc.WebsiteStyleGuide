@@ -15,9 +15,8 @@ namespace Escc.WebsiteStyleGuide.Skins
         /// <summary>
         /// Gets the selected skin for the current request or session
         /// </summary>
-        /// <param name="viewEngine">The view engine.</param>
         /// <returns></returns>
-        public static IEsccWebsiteSkin SelectedSkin(ViewEngine viewEngine=ViewEngine.WebForms)
+        public static IEsccWebsiteSkin SelectedSkin()
         {
             var context = HttpContext.Current;
 
@@ -33,37 +32,13 @@ namespace Escc.WebsiteStyleGuide.Skins
 
             if (selected == typeof (CustomerFocusSkin).Name)
             {
-                return new CustomerFocusSkin(EsccWebsiteView.Desktop);
+                return new CustomerFocusSkin();
             }
             if (selected == typeof(CoronerSkin).Name)
             { 
-                return new CoronerSkin(EsccWebsiteView.Desktop, context.Request.Url);
+                return new CoronerSkin(context.Request.Url);
             }
-            return viewEngine == ViewEngine.WebForms ? new DefaultSkin() : (IEsccWebsiteSkin)new CustomerFocusSkin(EsccWebsiteView.Desktop);
-        }
-
-
-        /// <summary>
-        /// Gets a class for text content
-        /// </summary>
-        /// <param name="skin">The skin.</param>
-        /// <returns></returns>
-        public static string TextClass(IEsccWebsiteSkin skin)
-        {
-            if (skin is CustomerFocusSkin) return "content text-content";
-            return "text";
-        }
-
-
-        /// <summary>
-        /// Gets a class for the main action button
-        /// </summary>
-        /// <param name="skin">The skin.</param>
-        /// <returns></returns>
-        public static string MainButtonClass(IEsccWebsiteSkin skin)
-        {
-            if (skin is CustomerFocusSkin) return "main-action";
-            return "major-action";
+            return new CustomerFocusSkin();
         }
     }
 }

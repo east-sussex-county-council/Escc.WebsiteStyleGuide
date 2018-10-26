@@ -8,10 +8,6 @@ namespace Escc.WebsiteStyleGuide
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.text1.Attributes["class"] = Skin.TextClass(Skin.SelectedSkin());
-
-            this.defaultSkin.Visible = Skin.SelectedSkin() is DefaultSkin;
-            this.customerFocusSkin.Visible = Skin.SelectedSkin() is CustomerFocusSkin;
         }
     }
 }

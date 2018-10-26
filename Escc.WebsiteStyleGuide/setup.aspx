@@ -16,7 +16,7 @@
 
 <asp:Content runat="server" ContentPlaceHolderID="content">
     <div class="full-page">
-        <div id="text" runat="server">
+        <div class="content text-content">
             <h1>Set up a new page</h1>
             <p>The overall layout of your page should align with the fluid grid and baseline grid (see <a href="grid.aspx">responsive design and the grid</a>).</p>
             <p>You can use any layout you want so long as it aligns with the grid, but normally you'll want to use one of the standard layouts: <code>.full-page</code> or <code>.article</code>.</p>
@@ -29,12 +29,12 @@
     
     <div class="full-page">
         <p><code>.full-page</code> gives you a white background with a minimum height.</p>
-        <div id="text2" runat="server">
+        <div class="content text-content">
             <h2>Add text formatting</h2>
-            <p>Most of the time you'll want to add <code>.<asp:Literal runat="server" ID="text7" /></code> inside <code>.full-page</code> to add the <a href="text.aspx">standard text formatting</a>.</p>
+            <p>Most of the time you'll want to add <code>.content .text-content</code> inside <code>.full-page</code> to add the <a href="text.aspx">standard text formatting</a>.</p>
 <pre>
 &lt;div class=&quot;full-page&quot;&gt;
-    &lt;div class=&quot;<asp:Literal runat="server" ID="text4" />&quot;&gt;
+    &lt;div class=&quot;content text-content&quot;&gt;
         Your content here.
     &lt;/div&gt;
 &lt;/div&gt;
@@ -43,39 +43,16 @@
     </div>
     <div class="article section-demo">
         <p>The other standard layout is <code>.article</code>, which leaves room for a sidebar on large screens.</p>
-        <div id="text3" runat="server">
+        <div class="content text-content">
             <h2>Add text formatting</h2>
-            <p>Most of the time you'll want to add <code>.<asp:Literal runat="server" ID="text6" /></code> inside <code>.article</code> to add the <a href="text.aspx">standard text formatting</a>.</p>
+            <p>Most of the time you'll want to add <code>.content .text-content</code> inside <code>.article</code> to add the <a href="text.aspx">standard text formatting</a>.</p>
 <pre>
 &lt;div class=&quot;article&quot;&gt;
-    &lt;div class=&quot;<asp:Literal runat="server" ID="text5" />&quot;&gt;
+    &lt;div class=&quot;content text-content&quot;&gt;
         Your content here.
     &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-            <asp:PlaceHolder runat="server" ID="columns">
-            <h2>Columns</h2>
-            <div class="tCols">
-                <div class="tCol1">
-                    <p>Within <code>.text</code>, use <code>.tCol1</code> and <code>.tCol2</code> inside a container element with <code>.tCols</code> to create two columns.</p>
- <pre>
-&lt;div class=&quot;tCols&quot;&gt;
-    &lt;div class=&quot;tCol1&quot;&gt;
-        Your content here.
-    &lt;/div&gt;
-    &lt;div class=&quot;tCol2&quot;&gt;
-        Your content here.
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre>
-                </div>
-                <div class="tCol2">
-                    <p>The columns are stacked rather than side-by-side at the smallest level.</p>
-                </div>
-
-            </div>
-            </asp:PlaceHolder>
-            <asp:PlaceHolder runat="server" ID="columnsNew">
             <h2>Columns</h2>
             <div class="columns">
                 <div class="column1">
@@ -96,14 +73,13 @@
                 </div>
 
             </div>
-            </asp:PlaceHolder>
 
         </div>
     </div>
     <div class="supporting section-demo">
         <p>Use <code>.supporting</code> to position content in a sidebar, which sits below <code>.article</code> on smaller screens and next to it on larger screens.</p>
     </div>
-    <div class="supporting " id="supportingText" runat="server">
+    <div class="supporting text-content content-small content-medium">
         <h2>Add text formatting</h2>
         <p>Use the classes shown below to add standard text styles in the sidebar.</p>
         <ul>
@@ -111,7 +87,7 @@
             <li>lists look like this</li>
         </ul>
 <pre>
-&lt;div class=&quot;supporting <asp:literal runat="server" id="supportingTextClass" />&quot;&gt;
+&lt;div class=&quot;supporting text-content content-small content-medium&quot;&gt;
         Your content here.
 &lt;/div&gt;
 </pre>

@@ -6,7 +6,7 @@
 @using Escc.Web
 @model Escc.WebsiteStyleGuide.StyleGuidePage
 @{
-    Model.EsccWebsiteSkin = Skin.SelectedSkin(ViewEngine.Mvc);
+    Model.EsccWebsiteSkin = Skin.SelectedSkin();
 
     Model.Metadata.Title = "Social media";
     Model.Metadata.DateCreated = "2014-01-07";
@@ -35,7 +35,7 @@
 }
 <div class="article">
     <article>
-        <div class="@Skin.TextClass(Model.EsccWebsiteSkin)">
+        <div class="content text-content">
             <h1>Social media and partner sites</h1>
 
             <p>You can see examples of Facebook and Twitter controls on this page, but resize your browser because there are separate ones for small and large screens.</p>
@@ -47,7 +47,7 @@
             </p>
         </div>
 
-        <div class="social-mobile small medium @Skin.TextClass(Model.EsccWebsiteSkin)">
+        <div class="social-mobile small medium content text-content">
             <p class="facebook">Find us on Facebook: <a href="http://www.facebook.com/eastsussexlibraries" id="ctl00_content_ctl07_fb">www.facebook.com/eastsussexlibraries</a></p>
             <p class="twitter">Read updates on Twitter: <a href="https://twitter.com/esccroads" id="ctl00_content_ctl07_tw">Tweets by @@esccroads</a></p>
         </div>

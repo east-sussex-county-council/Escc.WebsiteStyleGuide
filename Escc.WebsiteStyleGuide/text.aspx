@@ -17,7 +17,7 @@
 <asp:Content runat="server" ContentPlaceHolderID="content">
     <div class="full-page">
         <article>
-            <div id="textClass" runat="server">
+            <div class="content text-content">
                 <h1>Text and tables</h1>
                 <p class="lead">Inside an element with <code>.text</code> or <code>.content-text</code> applied you get standard text styles for all of the elements you see here, including the Heading 1 above.
                     This is a <code>.lead</code> paragraph so can be styled differently depending on the skin.
@@ -46,10 +46,8 @@
                     </li>
                 </ol>
                 <p>A paragraph following an ordered list. This one has an <abbr title="It means this">abbreviation</abbr>, some <strong>important text</strong> and a <strong class="warning">warning</strong>.</p>
-                <asp:placeholder runat="server" id="customerService1">
                 <p><a href="#" id="toggle-breadcrumb-mobile" class="toggle-text" data-toggle="Show the mobile breadcrumb trail">Try hiding the mobile breadcrumb trail</a> or <a href="#" id="toggle-breadcrumb" class="toggle-text" data-toggle="Show the desktop breadcrumb trail">try hiding the desktop breadcrumb trail</a> 
                     to see how the spacing between the site header and the heading 1 changes. Note that <code>.no-breadcrumb</code> should be applied to a container for the page to get the spacing right when there's no breadcrumb.</p>
-                </asp:placeholder>
                 <h3>Heading 3</h3>
                 <p>For subscription options, apply <code>.subscribe</code> to the link along with a class for the type of subscription. If there are multiple subscriptions, apply <code>.subscribe</code> to a containing <code>ul</code> too.</p>
                 <ul class="subscribe">

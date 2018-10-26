@@ -17,7 +17,7 @@
 <asp:Content runat="server" ContentPlaceHolderID="content">
     <div class="full-page">
         <article>
-            <div id="text" runat="server">
+            <div class="content text-content">
                 <h1>Colours</h1>
                 <p>Our website has a core brand palette and you should normally choose colours from here. 
                     You can add more options by using <a href="http://0to255.com/">tints of these colours</a>. 

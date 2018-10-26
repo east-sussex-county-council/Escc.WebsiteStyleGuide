@@ -17,7 +17,7 @@
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="content">
     <div class="full-page">
         <article>
-            <div id="text" runat="server">
+            <div class="content text-content">
                 <h1>Responsive design and the grid</h1>
                 <p>Our website uses a responsive design, meaning it can adapt to different screen sizes.</p>
                 <p>Styles are defined at small, medium and large sizes, with each set building upon the previous ones.

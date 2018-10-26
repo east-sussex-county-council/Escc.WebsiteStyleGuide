@@ -15,44 +15,6 @@
 </asp:content>
 
 <asp:Content runat="server" ContentPlaceHolderID="content">
-    
-<asp:PlaceHolder runat="server" id="defaultSkin">
-    <div class="full-page">
-        <article>
-            <div id="text1" runat="server">
-                <h1>Linking to related content</h1>
-            </div>
-
-            <div class="section-nav">
-                <img src="https://placeimg.com/144/144/animals" alt="example image"/>
-                <ul>
-                    <li><a href="javascript:return false()">Example link</a></li>
-                    <li><a href="javascript:return false()">Example link</a></li>
-                </ul>
-            </div>           
-                
-            <p class="text">Use <code>.section-nav</code> to introduce a set of related pages, either with an image and one list of links, or with no image and two lists.</p>
-
-            <div class="section-nav">
-                <ul>
-                    <li><a href="javascript:return false()">Example link</a></li>
-                    <li><a href="javascript:return false()">Example link</a></li>
-                </ul>
-                <ul>
-                    <li><a href="javascript:return false()">Example link</a></li>
-                    <li><a href="javascript:return false()">Example link</a></li>
-                </ul>
-            </div>
-
-            <div class="text">
-                <h2>How to format the page content</h2>
-                <p>The actual content of the page goes here, inside <code>.text</code> for its standard <a href="text.aspx">text formatting</a>.</p>
-            </div>
-        </article>
-    </div>
-</asp:PlaceHolder>
-
-<asp:placeholder id="customerFocusSkin" runat="server">
     <div class="article">
     <ClientDependency:Css runat="server" Files="NavigationSmall;MobileControls"/>
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
@@ -101,7 +63,6 @@
         <li><a href="javascript:return false()">Example link</a></li>
     </ul>
 </div>
-    </asp:placeholder>
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="javascript">

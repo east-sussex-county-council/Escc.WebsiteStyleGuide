@@ -18,7 +18,7 @@
 <asp:Content runat="server" ContentPlaceHolderID="content">
     <div class="full-page">
         <article>
-            <div id="text" runat="server">
+            <div class="content text-content">
                 <h1>Maps based on our GIS</h1>
                 <p>Include the <code>Maps</code> stylesheet in your page for GIS maps.</p>
 
