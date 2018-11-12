@@ -85,7 +85,7 @@
       <HintPath>..\packages\Escc.EastSussexGovUK.Mvc.5.0.2\lib\net462\Escc.EastSussexGovUK.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Escc.EastSussexGovUK.WebForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.EastSussexGovUK.WebForms.3.0.2\lib\net462\Escc.EastSussexGovUK.WebForms.dll</HintPath>
+      <HintPath>..\packages\Escc.EastSussexGovUK.WebForms.4.0.0\lib\net462\Escc.EastSussexGovUK.WebForms.dll</HintPath>
     </Reference>
     <Reference Include="Escc.FindAddress.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.FindAddress.Mvc.2.0.0\lib\net452\Escc.FindAddress.Mvc.dll</HintPath>
