@@ -11,7 +11,7 @@
 
 <asp:content runat="server" ContentPlaceHolderID="header">
     <StyleGuide:Skin runat="server" ID="skin1" />
-    <EastSussexGovUK:MasterPageControl Control="HeaderDesktop" runat="server" EnableViewState="false" />    
+    <EastSussexGovUK:MasterPageControl Control="HeaderDesktop" runat="server" EnableViewState="false" ID="headerDesktop" />    
 </asp:content>
 
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="content">

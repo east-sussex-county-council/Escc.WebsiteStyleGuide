@@ -1,4 +1,5 @@
 ﻿using System;
+using Escc.EastSussexGovUK.Features;
 
 namespace Escc.WebsiteStyleGuide
 {
@@ -7,6 +8,7 @@ namespace Escc.WebsiteStyleGuide
     {
         protected void Page_PreRender(object sender, EventArgs e)
         {
+            this.headerDesktop.HtmlControlProvider = RemoteMasterPageHelper.LoadRemoteMasterPageHtmlProvider();
         }
     }
 }

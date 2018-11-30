@@ -1,6 +1,7 @@
 ﻿@using ClientDependency.Core.Mvc
+@using Escc.EastSussexGovUK
+@using Escc.EastSussexGovUK.Features
 @using Escc.EastSussexGovUK.Mvc.Views.EastSussexGovUK
-@using Escc.EastSussexGovUK.Views
 @using Escc.WebsiteStyleGuide.Skins
 @model Escc.WebsiteStyleGuide.StyleGuidePage
 @{
@@ -13,6 +14,11 @@
 
     Html.RequiresJs("~/style-guide.js");
     Html.RequiresJs("~/full-width-background.js");
+
+    // Configure the client that loads elements of the remote master page
+    var textSize = new TextSize(Request.Cookies, Request.QueryString).CurrentTextSize();
+    var isLibraryCatalogueRequest = new LibraryCatalogueContext(Request.UserAgent).RequestIsFromLibraryCatalogueMachine();
+    var remoteMasterPageClient = Escc.WebsiteStyleGuide.RemoteMasterPageHelper.LoadRemoteMasterPageHtmlProvider();
 }
 @section Metadata {
     @{ Html.RenderPartial("~/Skins/Metadata.ascx"); }
@@ -20,7 +26,7 @@
 @section Header {
     @{
         Html.RenderPartial("~/Skins/SkinChooser.ascx");
-        Html.RenderPartial("~/Views/EastSussexGovUK/MasterPageControl.ascx", new MasterPageControlData { Control = "HeaderDesktop", BreadcrumbProvider = Model.BreadcrumbProvider });
+        Html.RenderPartial("~/Views/EastSussexGovUK/_MasterPageControl.cshtml", new MasterPageControlData { Control = "HeaderDesktop", BreadcrumbProvider = Model.BreadcrumbProvider, HtmlControlProvider = remoteMasterPageClient, TextSize = textSize, IsLibraryCatalogueRequest = isLibraryCatalogueRequest });
     }
 }
 @section BodyClass {page-with-header}
@@ -33,12 +39,13 @@
             You can then use the classes described on <a href="@Url.Content("~/setup.aspx")">set up a new page</a> to create a layout, based on
             the <a href="@Url.Content("~/grid.aspx")">grid</a>, which overlays the full-width background image.
         </p>
-    <p>     <strong>The breadcrumb trail can push content down beyond the background image.</strong> It's typically one line, but it can be absent on high level pages or wrap onto multiple lines on deeper pages.
+        <p>
+            <strong>The breadcrumb trail can push content down beyond the background image.</strong> It's typically one line, but it can be absent on high level pages or wrap onto multiple lines on deeper pages.
             <a href="#" id="toggle-breadcrumb" class="toggle-text" data-toggle="Show the breadcrumb trail">Try hiding the breadcrumb trail</a>, or <a href="#" id="long-breadcrumb" class="toggle-text" data-toggle="test a short breadcrumb">test a long breadcrumb</a>.
             If your page doesn't need a breadcrumb trail you can hide it by specifying a custom MVC section with no content:
             <code>
-                <p>@@section Breadcrumb { }</p>
-            </code>
+        <p>@@section Breadcrumb { }</p>
+        </code>
         </p>
     </div>
 </div>

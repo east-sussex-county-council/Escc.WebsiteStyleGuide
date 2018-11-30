@@ -1,7 +1,8 @@
 ﻿@using ClientDependency.Core.Mvc
 @using Escc.ClientDependencyFramework
+@using Escc.EastSussexGovUK
+@using Escc.EastSussexGovUK.Features
 @using Escc.EastSussexGovUK.Mvc.Views.EastSussexGovUK
-@using Escc.EastSussexGovUK.Views
 @using Escc.WebsiteStyleGuide.Skins
 @using Escc.Web
 @model Escc.WebsiteStyleGuide.StyleGuidePage
@@ -23,6 +24,10 @@
     policy.AppendPolicy(cspConfig.Policies["Twitter"]);
     policy.UpdateHeaders();
 
+    // Configure the client that loads elements of the remote master page
+    var textSize = new TextSize(Request.Cookies, Request.QueryString).CurrentTextSize();
+    var isLibraryCatalogueRequest = new LibraryCatalogueContext(Request.UserAgent).RequestIsFromLibraryCatalogueMachine();
+    var remoteMasterPageClient = Escc.WebsiteStyleGuide.RemoteMasterPageHelper.LoadRemoteMasterPageHtmlProvider();
 }
 @section Metadata {
     @{ Html.RenderPartial("~/Skins/Metadata.ascx"); }
@@ -30,7 +35,7 @@
 @section Header {
     @{
         Html.RenderPartial("~/Skins/SkinChooser.ascx");
-        Html.RenderPartial("~/Views/EastSussexGovUK/MasterPageControl.ascx", new MasterPageControlData { Control = "HeaderDesktop", BreadcrumbProvider = Model.BreadcrumbProvider });
+        Html.RenderPartial("~/Views/EastSussexGovUK/_MasterPageControl.cshtml", new MasterPageControlData { Control = "HeaderDesktop", BreadcrumbProvider = Model.BreadcrumbProvider, HtmlControlProvider = remoteMasterPageClient, TextSize = textSize, IsLibraryCatalogueRequest = isLibraryCatalogueRequest });
     }
 }
 <div class="article">

@@ -79,13 +79,13 @@
       <HintPath>..\packages\Escc.Dates.3.0.0\lib\netstandard2.0\Escc.Dates.dll</HintPath>
     </Reference>
     <Reference Include="Escc.EastSussexGovUK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.EastSussexGovUK.5.0.0\lib\net452\Escc.EastSussexGovUK.dll</HintPath>
+      <HintPath>..\packages\Escc.EastSussexGovUK.6.0.0\lib\net452\Escc.EastSussexGovUK.dll</HintPath>
     </Reference>
     <Reference Include="Escc.EastSussexGovUK.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.EastSussexGovUK.Mvc.5.0.2\lib\net462\Escc.EastSussexGovUK.Mvc.dll</HintPath>
+      <HintPath>..\packages\Escc.EastSussexGovUK.Mvc.5.0.3\lib\net462\Escc.EastSussexGovUK.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Escc.EastSussexGovUK.WebForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.EastSussexGovUK.WebForms.4.0.0\lib\net462\Escc.EastSussexGovUK.WebForms.dll</HintPath>
+      <HintPath>..\packages\Escc.EastSussexGovUK.WebForms.4.0.1\lib\net462\Escc.EastSussexGovUK.WebForms.dll</HintPath>
     </Reference>
     <Reference Include="Escc.FindAddress.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.FindAddress.Mvc.2.0.0\lib\net452\Escc.FindAddress.Mvc.dll</HintPath>
@@ -427,6 +427,7 @@
     <Compile Include="text.aspx.designer.cs">
       <DependentUpon>text.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RemoteMasterPageHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="grid.xlsx" />
@@ -442,8 +443,8 @@
     <Content Include="Views\HighlightedContent\Index.cshtml" />
     <Content Include="Views\ServiceForm\Index.cshtml" />
     <Content Include="Views\SocialMedia\Index.cshtml" />
-    <Content Include="Views\web.config" />
     <Content Include="Views\Shared\_FindAddress.cshtml" />
+    <Content Include="Views\web.config" />
     <None Include="Views\web.example.config" />
     <None Include="Web.example.config">
       <SubType>Designer</SubType>

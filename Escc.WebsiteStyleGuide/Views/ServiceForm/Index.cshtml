@@ -1,7 +1,8 @@
 ﻿@using ClientDependency.Core.Mvc
 @using Escc.ClientDependencyFramework
+@using Escc.EastSussexGovUK
+@using Escc.EastSussexGovUK.Features
 @using Escc.EastSussexGovUK.Mvc.Views.EastSussexGovUK
-@using Escc.EastSussexGovUK.Views
 @using Escc.WebsiteStyleGuide.Skins
 @using Escc.FindAddress.Mvc
 @model Escc.WebsiteStyleGuide.StyleGuidePage
@@ -17,11 +18,16 @@
     Html.RequiresCss(CssFileAlias.Resolve("FormsMedium"), MediaQueryAlias.Resolve("Medium"));
     Html.RequiresCss(CssFileAlias.Resolve("FormsLarge"), MediaQueryAlias.Resolve("Large"));
     Html.RequiresJs("~/style-guide.js");
+
+    // Configure the client that loads elements of the remote master page
+    var textSize = new TextSize(Request.Cookies, Request.QueryString).CurrentTextSize();
+    var isLibraryCatalogueRequest = new LibraryCatalogueContext(Request.UserAgent).RequestIsFromLibraryCatalogueMachine();
+    var remoteMasterPageClient = Escc.WebsiteStyleGuide.RemoteMasterPageHelper.LoadRemoteMasterPageHtmlProvider();
 }
 @section Header {
     @{
         Html.RenderPartial("~/Skins/SkinChooser.ascx");
-        Html.RenderPartial("~/Views/EastSussexGovUK/MasterPageControl.ascx", new MasterPageControlData { Control = "HeaderDesktop", BreadcrumbProvider = Model.BreadcrumbProvider });
+        Html.RenderPartial("~/Views/EastSussexGovUK/_MasterPageControl.cshtml", new MasterPageControlData { Control = "HeaderDesktop", BreadcrumbProvider = Model.BreadcrumbProvider, HtmlControlProvider = remoteMasterPageClient, TextSize = textSize, IsLibraryCatalogueRequest = isLibraryCatalogueRequest });
     }
 }
 @section Metadata {
@@ -126,10 +132,11 @@
                     <fieldset>
                         <legend>Horizontal radio buttons for a few, short options</legend>
                         <span>
-                        <input id="content_ctl00_0" type="radio" name="ctl00$content$ctl00" value="Yes">
-                        <label for="content_ctl00_0">Yes</label>
-                        <input id="content_ctl00_1" type="radio" name="ctl00$content$ctl00" value="No">
-                        <label for="content_ctl00_1">No</label></span>
+                            <input id="content_ctl00_0" type="radio" name="ctl00$content$ctl00" value="Yes">
+                            <label for="content_ctl00_0">Yes</label>
+                            <input id="content_ctl00_1" type="radio" name="ctl00$content$ctl00" value="No">
+                            <label for="content_ctl00_1">No</label>
+                        </span>
                     </fieldset>
 
                     <fieldset>
@@ -164,7 +171,7 @@
                         TemplateInfo = new FindAddressConfiguration() { HtmlFieldPrefix = "Address1", Required = true, Label = "Address lookup", ApiControllerUrl = new Uri(Url.Content("~/api/FindAddress/"), UriKind.Relative) }
                     })
                     <p>The address lookup is <a href="https://github.com/east-sussex-county-council/Escc.FindAddress.Mvc/">documented in the Escc.FindAddress.Mvc project</a>.</p>
-               </div>
+                </div>
                 <input type="submit" value="Button after the box" />
             </div>
         </div>
