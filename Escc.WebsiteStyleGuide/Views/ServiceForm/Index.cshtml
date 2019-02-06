@@ -27,8 +27,8 @@
 @section Header {
     @{
         Html.RenderPartial("~/Skins/SkinChooser.ascx");
-        Html.RenderPartial("~/Views/EastSussexGovUK/_MasterPageControl.cshtml", new MasterPageControlData { Control = "HeaderDesktop", BreadcrumbProvider = Model.BreadcrumbProvider, HtmlControlProvider = remoteMasterPageClient, TextSize = textSize, IsLibraryCatalogueRequest = isLibraryCatalogueRequest });
     }
+    @Model.TemplateHtml.Header
 }
 @section Metadata {
     @{ Html.RenderPartial("~/Skins/Metadata.ascx"); }
