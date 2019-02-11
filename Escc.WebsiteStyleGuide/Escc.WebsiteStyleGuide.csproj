@@ -262,7 +262,7 @@
     <Content Include="images\feature-tile-example.jpg" />
     <Content Include="images\header-background.png" />
     <Content Include="js\libs\find-address.min.js" />
-    <None Include="Views\Landing\Index.cshtml" />
+    <Content Include="Views\Landing\Index.cshtml" />
     <Content Include="js\landing.js" />
     <Content Include="quick-answer.aspx" />
     <Content Include="Skins\Metadata.ascx" />
