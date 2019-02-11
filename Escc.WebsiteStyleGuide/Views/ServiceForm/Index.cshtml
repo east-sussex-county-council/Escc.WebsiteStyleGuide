@@ -1,8 +1,5 @@
 ﻿@using ClientDependency.Core.Mvc
 @using Escc.ClientDependencyFramework
-@using Escc.EastSussexGovUK
-@using Escc.EastSussexGovUK.Features
-@using Escc.EastSussexGovUK.Mvc.Views.EastSussexGovUK
 @using Escc.WebsiteStyleGuide.Skins
 @using Escc.FindAddress.Mvc
 @model Escc.WebsiteStyleGuide.StyleGuidePage
@@ -18,11 +15,6 @@
     Html.RequiresCss(CssFileAlias.Resolve("FormsMedium"), MediaQueryAlias.Resolve("Medium"));
     Html.RequiresCss(CssFileAlias.Resolve("FormsLarge"), MediaQueryAlias.Resolve("Large"));
     Html.RequiresJs("~/style-guide.js");
-
-    // Configure the client that loads elements of the remote master page
-    var textSize = new TextSize(Request.Cookies?["textsize"]?.Value, Request.QueryString).CurrentTextSize();
-    var isLibraryCatalogueRequest = new LibraryCatalogueContext(Request.UserAgent).RequestIsFromLibraryCatalogueMachine();
-    var remoteMasterPageClient = Escc.WebsiteStyleGuide.RemoteMasterPageHelper.LoadRemoteMasterPageHtmlProvider();
 }
 @section Header {
     @{

@@ -75,14 +75,14 @@
     <Reference Include="Escc.Dates, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.Dates.3.0.0\lib\netstandard2.0\Escc.Dates.dll</HintPath>
     </Reference>
-    <Reference Include="Escc.EastSussexGovUK, Version=11.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.EastSussexGovUK.11.0.0\lib\netstandard2.0\Escc.EastSussexGovUK.dll</HintPath>
+    <Reference Include="Escc.EastSussexGovUK, Version=12.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Escc.EastSussexGovUK.12.0.0\lib\netstandard2.0\Escc.EastSussexGovUK.dll</HintPath>
     </Reference>
     <Reference Include="Escc.EastSussexGovUK.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.EastSussexGovUK.Mvc.7.0.0\lib\net462\Escc.EastSussexGovUK.Mvc.dll</HintPath>
+      <HintPath>..\packages\Escc.EastSussexGovUK.Mvc.8.0.0\lib\net462\Escc.EastSussexGovUK.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Escc.EastSussexGovUK.WebForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.EastSussexGovUK.WebForms.5.0.3\lib\net462\Escc.EastSussexGovUK.WebForms.dll</HintPath>
+      <HintPath>..\packages\Escc.EastSussexGovUK.WebForms.6.0.0\lib\net462\Escc.EastSussexGovUK.WebForms.dll</HintPath>
     </Reference>
     <Reference Include="Escc.FindAddress.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.FindAddress.Mvc.3.0.0\lib\net452\Escc.FindAddress.Mvc.dll</HintPath>
@@ -262,8 +262,8 @@
     <Content Include="images\feature-tile-example.jpg" />
     <Content Include="images\header-background.png" />
     <Content Include="js\libs\find-address.min.js" />
-    <Content Include="landing.aspx" />
-    <Content Include="landing.js" />
+    <None Include="Views\Landing\Index.cshtml" />
+    <Content Include="js\landing.js" />
     <Content Include="quick-answer.aspx" />
     <Content Include="Skins\Metadata.ascx" />
     <Content Include="Skins\SkinChooser.ascx" />
@@ -302,19 +302,13 @@
     <Compile Include="content.aspx.designer.cs">
       <DependentUpon>content.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\LandingController.cs" />
     <Compile Include="Controllers\SocialMediaController.cs" />
     <Compile Include="Controllers\HighlightedContentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ServiceFormController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="landing.aspx.cs">
-      <DependentUpon>landing.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="landing.aspx.designer.cs">
-      <DependentUpon>landing.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controllers\FullWidthBackgroundController.cs" />
     <Compile Include="quick-answer.aspx.cs">
