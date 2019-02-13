@@ -1,0 +1,27 @@
+﻿@using Escc.EastSussexGovUK.Skins
+@using Escc.WebsiteStyleGuide
+@using System.Text.RegularExpressions
+@using Escc.Web
+@{
+    var selectedSkinId = Skin.SelectedSkin().GetType().Name;
+
+    if (!String.IsNullOrEmpty(Request.Form["skin"]) && Regex.IsMatch(Request.Form["skin"], "^[A-Za-z]+$"))
+    {
+        Session["Skin"] = Request.Form["skin"];
+
+        // Redirect, to avoid a resubmit prompt if the page is refreshed
+        new HttpStatus().SeeOther(Request.Url.AbsolutePath + "?skin-updated=" + Guid.NewGuid());
+    }
+}
+<form method="post" class="skin-chooser">
+    <div class="container">
+        <label for="skin">
+            Apply a custom skin, layered on top of the default skin:
+            <select id="skin" name="skin">
+                <option value="@typeof(CustomerFocusSkin).Name"@((selectedSkinId==typeof(CustomerFocusSkin).Name) ? " selected=\"selected\"" : String.Empty)>Customer focus</option>
+                <option value="@typeof(CoronerSkin).Name"@((selectedSkinId==typeof(CoronerSkin).Name) ? " selected=\"selected\"" : String.Empty)>Coroner</option>
+            </select>
+        </label>
+        <input type="submit" value="Update" />
+    </div>
+</form>

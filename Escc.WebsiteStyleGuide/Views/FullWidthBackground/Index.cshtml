@@ -1,8 +1,5 @@
 ﻿@using ClientDependency.Core.Mvc
-@using Escc.EastSussexGovUK
-@using Escc.EastSussexGovUK.Features
-@using Escc.EastSussexGovUK.Mvc.Views.EastSussexGovUK
-@using Escc.WebsiteStyleGuide.Skins
+@using Escc.WebsiteStyleGuide
 @model Escc.WebsiteStyleGuide.StyleGuidePage
 @{
     Model.EsccWebsiteSkin = Skin.SelectedSkin();
@@ -12,20 +9,14 @@
     Model.Metadata.IpsvPreferredTerms = "Website management";
     Model.Metadata.IsInSearch = false;
 
-    Html.RequiresJs("~/style-guide.js");
-    Html.RequiresJs("~/full-width-background.js");
-
-    // Configure the client that loads elements of the remote master page
-    var textSize = new TextSize(Request.Cookies?["textsize"]?.Value, Request.QueryString).CurrentTextSize();
-    var isLibraryCatalogueRequest = new LibraryCatalogueContext(Request.UserAgent).RequestIsFromLibraryCatalogueMachine();
-    var remoteMasterPageClient = Escc.WebsiteStyleGuide.RemoteMasterPageHelper.LoadRemoteMasterPageHtmlProvider();
+    Html.RequiresJs("~/js/full-width-background.js");
 }
 @section Metadata {
-    @{ Html.RenderPartial("~/Skins/Metadata.ascx"); }
+    @{ Html.RenderPartial("~/Views/Shared/_Metadata.cshtml"); }
 }
 @section Header {
     @{
-        Html.RenderPartial("~/Skins/SkinChooser.ascx");
+        Html.RenderPartial("~/Views/Shared/_SkinChooser.cshtml");
     }
     @Model.TemplateHtml.Header
 }
@@ -36,8 +27,8 @@
         <h1>Full-width headers and backgrounds</h1>
         <p>
             Some sections use a full-width header or background image. This is achieved by setting a background image on <code>.body</code>.
-            You can then use the classes described on <a href="@Url.Content("~/setup.aspx")">set up a new page</a> to create a layout, based on
-            the <a href="@Url.Content("~/grid.aspx")">grid</a>, which overlays the full-width background image.
+            You can then use the classes described on <a href="@Url.Action("Index", "Setup")">set up a new page</a> to create a layout, based on
+            the <a href="@Url.Action("Index", "Grid")">grid</a>, which overlays the full-width background image.
         </p>
         <p>
             <strong>The breadcrumb trail can push content down beyond the background image.</strong> It's typically one line, but it can be absent on high level pages or wrap onto multiple lines on deeper pages.

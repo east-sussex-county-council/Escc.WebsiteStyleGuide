@@ -1,9 +1,6 @@
 ﻿@using ClientDependency.Core.Mvc
 @using Escc.ClientDependencyFramework
-@using Escc.EastSussexGovUK
-@using Escc.EastSussexGovUK.Features
-@using Escc.EastSussexGovUK.Mvc.Views.EastSussexGovUK
-@using Escc.WebsiteStyleGuide.Skins
+@using Escc.WebsiteStyleGuide
 @using Escc.Web
 @model Escc.WebsiteStyleGuide.StyleGuidePage
 @{
@@ -14,7 +11,6 @@
     Model.Metadata.IpsvPreferredTerms = "Website management";
     Model.Metadata.IsInSearch = false;
 
-    Html.RequiresJs("~/style-guide.js");
     Html.RequiresJs(JsFileAlias.Resolve("SocialMedia"));
     Html.RequiresCss(CssFileAlias.Resolve("SocialMediaLarge"), MediaQueryAlias.Resolve("Large"));
 
@@ -23,18 +19,13 @@
     policy.AppendPolicy(cspConfig.Policies["Facebook"]);
     policy.AppendPolicy(cspConfig.Policies["Twitter"]);
     policy.UpdateHeaders();
-
-    // Configure the client that loads elements of the remote master page
-    var textSize = new TextSize(Request.Cookies?["textsize"]?.Value, Request.QueryString).CurrentTextSize();
-    var isLibraryCatalogueRequest = new LibraryCatalogueContext(Request.UserAgent).RequestIsFromLibraryCatalogueMachine();
-    var remoteMasterPageClient = Escc.WebsiteStyleGuide.RemoteMasterPageHelper.LoadRemoteMasterPageHtmlProvider();
 }
 @section Metadata {
-    @{ Html.RenderPartial("~/Skins/Metadata.ascx"); }
+    @{ Html.RenderPartial("~/Views/Shared/_Metadata.cshtml"); }
 }
 @section Header {
     @{
-        Html.RenderPartial("~/Skins/SkinChooser.ascx");
+        Html.RenderPartial("~/Views/Shared/_SkinChooser.cshtml");
     }
     @Model.TemplateHtml.Header
 }

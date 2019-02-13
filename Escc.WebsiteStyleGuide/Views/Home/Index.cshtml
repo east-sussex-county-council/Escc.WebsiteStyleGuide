@@ -1,10 +1,6 @@
 ﻿@using ClientDependency.Core.Mvc
 @using Escc.ClientDependencyFramework
-@using Escc.EastSussexGovUK
-@using Escc.EastSussexGovUK.Features
-@using Escc.EastSussexGovUK.Mvc.Views.EastSussexGovUK
-@using Escc.EastSussexGovUK.Views
-@using Escc.WebsiteStyleGuide.Skins
+@using Escc.WebsiteStyleGuide
 @model Escc.WebsiteStyleGuide.StyleGuidePage
 @{
     Model.EsccWebsiteSkin = Skin.SelectedSkin();
@@ -14,27 +10,18 @@
     Model.Metadata.IpsvPreferredTerms = "Website management";
     Model.Metadata.IsInSearch = false;
 
-    if (Model.EsccWebsiteView != EsccWebsiteView.Plain)
-    {
-        Html.RequiresCss(CssFileAlias.Resolve("FormsSmall"));
-        Html.RequiresCss(CssFileAlias.Resolve("FormsMedium"), MediaQueryAlias.Resolve("Medium"));
-        Html.RequiresCss(CssFileAlias.Resolve("FormsLarge"), MediaQueryAlias.Resolve("Large"));
-    }
-    Html.RequiresJs("~/style-guide.js");
-
-    // Configure the client that loads elements of the remote master page
-    var textSize = new TextSize(Request.Cookies?["textsize"]?.Value, Request.QueryString).CurrentTextSize();
-    var isLibraryCatalogueRequest = new LibraryCatalogueContext(Request.UserAgent).RequestIsFromLibraryCatalogueMachine();
-    var remoteMasterPageClient = Escc.WebsiteStyleGuide.RemoteMasterPageHelper.LoadRemoteMasterPageHtmlProvider();
+    Html.RequiresCss(CssFileAlias.Resolve("FormsSmall"));
+    Html.RequiresCss(CssFileAlias.Resolve("FormsMedium"), MediaQueryAlias.Resolve("Medium"));
+    Html.RequiresCss(CssFileAlias.Resolve("FormsLarge"), MediaQueryAlias.Resolve("Large"));
 }
 @section Header {
     @{
-        Html.RenderPartial("~/Skins/SkinChooser.ascx");
+        Html.RenderPartial("~/Views/Shared/_SkinChooser.cshtml");
     }
     @Model.TemplateHtml.Header
 }
 @section Metadata {
-    @{ Html.RenderPartial("~/Skins/Metadata.ascx"); }
+    @{ Html.RenderPartial("~/Views/Shared/_Metadata.cshtml"); }
 }
 <div class="full-page">
     <article>
@@ -60,40 +47,40 @@
 
             <h2>Grid-based layout</h2>
             <ul>
-                <li><a href="@Url.Content("~/grid.aspx")">Responsive design and the grid</a></li>
-                <li><a href="@Url.Content("~/setup.aspx")">Set up a new page</a></li>
-                <li><a href="@Url.Content("~/fullscreen.aspx")">The full screen template</a></li>
+                <li><a href="@Url.Action("Index", "Grid")">Responsive design and the grid</a></li>
+                <li><a href="@Url.Action("Index", "Setup")">Set up a new page</a></li>
+                <li><a href="@Url.Action("Index", "FullScreen")">The full screen template</a></li>
             </ul>
 
             <h2>Text and colours</h2>
             <ul>
-                <li><a href="@Url.Content("~/text.aspx")">Text and tables</a></li>
-                <li><a href="@Url.Content("~/colours.aspx")">Colours</a></li>
+                <li><a href="@Url.Action("Index", "Text")">Text and tables</a></li>
+                <li><a href="@Url.Action("Index", "Colours")">Colours</a></li>
             </ul>
 
             <h2>Forms</h2>
             <p>There are three types of form, for three different scenarios:</p>
             <ul>
-                <li><a href="@Url.Content("~/simple-form.aspx")"><code>.simple-form</code></a> for interfaces with one or two components, such as a search box</li>
-                <li><a href="@Url.Content("~/short-form.aspx")"><code>.short-form</code></a> for more complex application interfaces</li>
-                <li><a href="@Url.Content("~/serviceform")"><code>.service-form</code></a> for collecting and submitting data</li>
+                <li><a href="@Url.Action("Index", "SimpleForm")"><code>.simple-form</code></a> for interfaces with one or two components, such as a search box</li>
+                <li><a href="@Url.Action("Index", "ShortForm")"><code>.short-form</code></a> for more complex application interfaces</li>
+                <li><a href="@Url.Action("Index", "ServiceForm")"><code>.service-form</code></a> for collecting and submitting data</li>
             </ul>
             <p>Whichever one you use, apply the class to a container element along with <code>.form</code>.</p>
 
             <h2>Patterns for navigation</h2>
             <ul>
                 <li><a href="@Url.Action("Index", "Landing")">Landing navigation</a></li>
-                <li><a href="@Url.Content("~/buttons.aspx")">Buttons and navigation</a></li>
-                <li><a href="@Url.Content("~/content.aspx")">Linking to related content</a></li>
+                <li><a href="@Url.Action("Index", "Buttons")">Buttons and navigation</a></li>
+                <li><a href="@Url.Action("Index", "Content")">Linking to related content</a></li>
                 <li><a href="@Url.Action("Index", "HighlightedContent")">Highlighted content</a></li>
-                <li><a href="@Url.Content("~/search.aspx")">Search and paging</a></li>
-                <li><a href="@Url.Content("~/maps.aspx")">Maps based on our GIS</a></li>
+                <li><a href="@Url.Action("Index", "Search")">Search and paging</a></li>
+                <li><a href="@Url.Action("Index", "Maps")">Maps based on our GIS</a></li>
             </ul>
 
             <h2>Patterns for content</h2>
             <ul>
                 <li><a href="@Url.Action("Index", "FullWidthBackground")">Full-width headers and backgrounds</a></li>
-                <li><a href="@Url.Content("~/quick-answer.aspx")">Quick answers</a></li>
+                <li><a href="@Url.Action("Index", "QuickAnswer")">Quick answers</a></li>
                 <li><a href="@Url.Action("Index", "SocialMedia")">Social media and partner sites</a></li>
             </ul>
         </div>

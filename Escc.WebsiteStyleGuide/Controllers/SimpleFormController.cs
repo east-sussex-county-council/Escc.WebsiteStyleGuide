@@ -8,13 +8,14 @@ using Escc.EastSussexGovUK.Mvc;
 
 namespace Escc.WebsiteStyleGuide.Controllers
 {
-    public class LandingController : Controller
+    public class SimpleFormController : Controller
     {
-        // GET: Landing
+        // GET: SimpleForm
         public async Task<ActionResult> Index()
         {
             var templateRequest = new EastSussexGovUKTemplateRequest(Request);
-            var model = new StyleGuidePage() {
+            var model = new StyleGuidePage()
+            {
                 TemplateHtml = await templateRequest.RequestTemplateHtmlAsync(),
                 WebChat = await templateRequest.RequestWebChatSettingsAsync()
             };

@@ -1,12 +1,12 @@
 ﻿@using ClientDependency.Core.Mvc
 @using Escc.ClientDependencyFramework
-@using Escc.WebsiteStyleGuide.Skins
+@using Escc.WebsiteStyleGuide
 @using Escc.FindAddress.Mvc
 @model Escc.WebsiteStyleGuide.StyleGuidePage
 @{
     Model.EsccWebsiteSkin = Skin.SelectedSkin();
 
-    Model.Metadata.Title = "Style guide for www.eastsussex.gov.uk";
+    Model.Metadata.Title = "Forms using .service-form";
     Model.Metadata.DateCreated = "2014-01-07";
     Model.Metadata.IpsvPreferredTerms = "Website management";
     Model.Metadata.IsInSearch = false;
@@ -14,32 +14,28 @@
     Html.RequiresCss(CssFileAlias.Resolve("FormsSmall"));
     Html.RequiresCss(CssFileAlias.Resolve("FormsMedium"), MediaQueryAlias.Resolve("Medium"));
     Html.RequiresCss(CssFileAlias.Resolve("FormsLarge"), MediaQueryAlias.Resolve("Large"));
-    Html.RequiresJs("~/style-guide.js");
 }
 @section Header {
     @{
-        Html.RenderPartial("~/Skins/SkinChooser.ascx");
+        Html.RenderPartial("~/Views/Shared/_SkinChooser.cshtml");
     }
     @Model.TemplateHtml.Header
 }
 @section Metadata {
-    @{ Html.RenderPartial("~/Skins/Metadata.ascx"); }
+    @{ Html.RenderPartial("~/Views/Shared/_Metadata.cshtml"); }
 }
 <div class="full-page">
     <article>
         <div class="content text-content">
             <h1>Forms using <code>.service-form</code></h1>
-            <hr />
-            <p><strong>Note: </strong>This is for MVC applications. There is also a <a href="@Url.Content("~/service-form.aspx")">WebForms version of this page</a> for legacy applications.</p>
-            <hr />
             <p>
                 Use <code>.service-form</code> and <code>.form</code> together for collecting and submitting data. These forms may be
-                much more complex than a <a href="@Url.Content("~/simple-form.aspx")"><code>.simple-form</code></a> or <a href="@Url.Content("~/short-form.aspx")"><code>.short-form</code></a>,
+                much more complex than a <a href="@Url.Action("Index", "SimpleForm")"><code>.simple-form</code></a> or <a href="@Url.Action("Index", "ShortForm")"><code>.short-form</code></a>,
                 spanning multiple sections and even multiple pages.
             </p>
             <p id="defaultSkinOnly" runat="server">
                 Unlike the other kinds of form, a <code>.service-form</code> should be within a container with the <code>.text-content</code>
-                class applied, meaning standard <a href="@Url.Content("~/text.aspx")">text formatting</a> is active.
+                class applied, meaning standard <a href="@Url.Action("Index", "Text")">text formatting</a> is active.
             </p>
             <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/Views/ServiceForm/Index.cshtml">View the source of this page</a> to see the HTML and controls used for the following layouts.</p>
 
@@ -129,10 +125,11 @@
                             <input id="content_ctl00_1" type="radio" name="ctl00$content$ctl00" value="No">
                             <label for="content_ctl00_1">No</label>
                         </span>
+                        <p><small>In WebForms use <code>&lt;asp:RadioButtonList RepeatDirection=&quot;Horizontal&quot; RepeatLayout=&quot;Flow&quot; /&gt;</code>.</small></p>
                     </fieldset>
 
                     <fieldset>
-                        <legend>Vertical radio buttons and checkboxes should be preferred most of the time. Just add <code>.radioButtonList</code>.</legend>
+                        <legend>Vertical radio buttons and checkboxes should be preferred most of the time.</legend> Just add <code>.radioButtonList</code> to a <code>&lt;span /&gt;</code> surrounding the <code>&lt;input /&gt;</code> and <code>&lt;label /&gt;</code> elements.</legend>
                         <span class="radioButtonList">
                             <input id="content_ctl01_0" type="radio" name="ctl00$content$ctl01" value="Option 1">
                             <label for="content_ctl01_0">Option 1</label>
@@ -141,6 +138,7 @@
                             <input id="content_ctl01_2" type="radio" name="ctl00$content$ctl01" value="Option 3">
                             <label for="content_ctl01_2">Option 3</label>
                         </span>
+                        <p><small>In WebForms, apply <code>.radioButtonList</code> to the <code>&lt;asp:RadioButtonList RepeatDirection=&quot;Horizontal&quot; RepeatLayout=&quot;Flow&quot; /&gt;</code> control.</small></p>
                     </fieldset>
 
                     <span class="radioButtonList checkbox">
@@ -163,6 +161,7 @@
                         TemplateInfo = new FindAddressConfiguration() { HtmlFieldPrefix = "Address1", Required = true, Label = "Address lookup", ApiControllerUrl = new Uri(Url.Content("~/api/FindAddress/"), UriKind.Relative) }
                     })
                     <p>The address lookup is <a href="https://github.com/east-sussex-county-council/Escc.FindAddress.Mvc/">documented in the Escc.FindAddress.Mvc project</a>.</p>
+                    <p><small>In WebForms use <code>&lt;FormControls:FormAddressNonCitizen ID="example" runat="server" /&gt;</code>.</small></p>
                 </div>
                 <input type="submit" value="Button after the box" />
             </div>

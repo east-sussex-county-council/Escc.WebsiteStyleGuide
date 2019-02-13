@@ -1,0 +1,11 @@
+﻿@using ClientDependency.Core.Mvc
+@using Escc.Web
+@{ 
+    Html.RequiresJs("~/js/style-guide.js");
+    Html.RequiresCss("~/css/style-guide.css");
+
+    var policy = new ContentSecurityPolicyHeaders(Response.Headers);
+    var cspConfig = new ContentSecurityPolicyFromConfig();
+    policy.AppendPolicy(cspConfig.Policies["Typekit"]);
+    policy.UpdateHeaders();
+}

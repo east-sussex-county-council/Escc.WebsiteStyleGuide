@@ -1,7 +1,6 @@
 ﻿@using ClientDependency.Core.Mvc
 @using Escc.ClientDependencyFramework
-@using Escc.WebsiteStyleGuide.Skins
-@using Escc.FindAddress.Mvc
+@using Escc.WebsiteStyleGuide
 @model Escc.WebsiteStyleGuide.StyleGuidePage
 @{
     Model.EsccWebsiteSkin = Skin.SelectedSkin();
@@ -14,23 +13,23 @@
     Html.RequiresCss(CssFileAlias.Resolve("NavigationSmall"));
     Html.RequiresCss(CssFileAlias.Resolve("NavigationMedium"), MediaQueryAlias.Resolve("Medium"));
     Html.RequiresCss(CssFileAlias.Resolve("NavigationLarge"), MediaQueryAlias.Resolve("Large"));
-    Html.RequiresJs("~/style-guide.js");
     Html.RequiresJs("~/js/landing.js");
 }
 @section Header {
     @{
-        Html.RenderPartial("~/Skins/SkinChooser.ascx");
+        Html.RenderPartial("~/Views/Shared/_SkinChooser.cshtml");
     }
     @Model.TemplateHtml.Header
 }
 @section Metadata {
-    @{ Html.RenderPartial("~/Skins/Metadata.ascx"); }
+    @{ Html.RenderPartial("~/Views/Shared/_Metadata.cshtml"); }
 }
 <div class="full-page">
     <article>
         <div class="content text-content">
             <h1>Landing navigation</h1>
-            <p>Landing navigation is a reusable component. It requires the <code>NavigationSmall</code>, <code>NavigationMedium</code> and <code>NavigationLarge</code> stylesheets, and
+            <p>
+                Landing navigation is a reusable component. It requires the <code>NavigationSmall</code>, <code>NavigationMedium</code> and <code>NavigationLarge</code> stylesheets, and
                 for Umbraco templates there is a <a href="https://github.com/east-sussex-county-council/Escc.EastSussexGovUK.Umbraco/blob/master/Escc.EastSussexGovUK.Umbraco.Web/Views/Layouts/_LandingNavigation.cshtml">_LandingNavigation.cshtml</a>
                 partial view in the <code>Escc.EastSussexGovUK.Umbraco.Web</code> project to handle the HTML.
             </p>

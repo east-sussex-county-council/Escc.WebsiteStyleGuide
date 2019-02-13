@@ -69,9 +69,6 @@
     <Reference Include="Escc.ClientDependencyFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.ClientDependencyFramework.2.0.1\lib\Escc.ClientDependencyFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Escc.ClientDependencyFramework.WebForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06fad7304560ae6f, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.ClientDependencyFramework.WebForms.2.1.2\lib\Escc.ClientDependencyFramework.WebForms.dll</HintPath>
-    </Reference>
     <Reference Include="Escc.Dates, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.Dates.3.0.0\lib\netstandard2.0\Escc.Dates.dll</HintPath>
     </Reference>
@@ -81,14 +78,8 @@
     <Reference Include="Escc.EastSussexGovUK.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.EastSussexGovUK.Mvc.8.0.0\lib\net462\Escc.EastSussexGovUK.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Escc.EastSussexGovUK.WebForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.EastSussexGovUK.WebForms.6.0.0\lib\net462\Escc.EastSussexGovUK.WebForms.dll</HintPath>
-    </Reference>
     <Reference Include="Escc.FindAddress.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.FindAddress.Mvc.3.0.0\lib\net452\Escc.FindAddress.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="Escc.FormControls.WebForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.FormControls.WebForms.4.0.0\lib\Escc.FormControls.WebForms.dll</HintPath>
     </Reference>
     <Reference Include="Escc.Html, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.Html.3.0.0\lib\netstandard2.0\Escc.Html.dll</HintPath>
@@ -114,20 +105,11 @@
     <Reference Include="Escc.Web.Metadata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06fad7304560ae6f, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.Web.Metadata.2.0.1\lib\Escc.Web.Metadata.dll</HintPath>
     </Reference>
-    <Reference Include="Exceptionless, Version=4.3.2012.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Exceptionless.4.3.2012\lib\net45\Exceptionless.dll</HintPath>
+    <Reference Include="Exceptionless, Version=4.3.2022.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Exceptionless.4.3.2022\lib\net45\Exceptionless.dll</HintPath>
     </Reference>
-    <Reference Include="Exceptionless.Extras, Version=2.0.1251.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Exceptionless.Web.2.0.1251\lib\net45\Exceptionless.Extras.dll</HintPath>
-    </Reference>
-    <Reference Include="Exceptionless.Mvc, Version=2.0.1251.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Exceptionless.Mvc.2.0.1251\lib\net45\Exceptionless.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="Exceptionless.Portable, Version=2.0.1251.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Exceptionless.Portable.2.0.1251\lib\portable-net40+sl50+win+wpa81+wp80\Exceptionless.Portable.dll</HintPath>
-    </Reference>
-    <Reference Include="Exceptionless.Web, Version=2.0.1251.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Exceptionless.Web.2.0.1251\lib\net45\Exceptionless.Web.dll</HintPath>
+    <Reference Include="Exceptionless.Mvc, Version=4.3.2022.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Exceptionless.Mvc.4.3.2022\lib\net45\Exceptionless.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
@@ -252,56 +234,39 @@
   </ItemGroup>
   <ItemGroup>
     <CodeAnalysisDictionary Include="CustomDictionary.xml" />
-    <Content Include="colours.aspx" />
-    <Content Include="content.aspx" />
-    <Content Include="full-width-background.js" />
+    <Content Include="js\full-width-background.js" />
     <Content Include="Global.asax" />
-    <Content Include="grid-page.js" />
-    <Content Include="grid.css" />
-    <Content Include="grid.js" />
+    <Content Include="js\grid-page.js" />
+    <Content Include="css\grid.css" />
+    <Content Include="js\grid.js" />
     <Content Include="images\feature-tile-example.jpg" />
     <Content Include="images\header-background.png" />
     <Content Include="js\libs\find-address.min.js" />
+    <Content Include="Views\Buttons\ProgressBar.ascx" />
     <Content Include="Views\Landing\Index.cshtml" />
     <Content Include="js\landing.js" />
-    <Content Include="quick-answer.aspx" />
-    <Content Include="Skins\Metadata.ascx" />
-    <Content Include="Skins\SkinChooser.ascx" />
     <Content Include="images\map-county-example.png" />
     <Content Include="images\map-example.jpg" />
     <Content Include="images\map-example.png" />
-    <Content Include="simple-form.aspx" />
-    <Content Include="short-form.aspx" />
-    <Content Include="service-form.aspx" />
-    <Content Include="maps.aspx" />
-    <Content Include="fullscreen.aspx" />
-    <Content Include="search.aspx" />
-    <Content Include="buttons.aspx" />
-    <Content Include="grid.aspx" />
-    <Content Include="setup.aspx" />
-    <Content Include="style-guide.css" />
-    <Content Include="style-guide.js" />
-    <Content Include="text.aspx" />
+    <Content Include="css\style-guide.css" />
+    <Content Include="js\style-guide.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\EastSussexGovUK_Mvc.cs" />
-    <Compile Include="App_Start\EastSussexGovUK_WebForms.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="colours.aspx.cs">
-      <DependentUpon>colours.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="colours.aspx.designer.cs">
-      <DependentUpon>colours.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="content.aspx.cs">
-      <DependentUpon>content.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="content.aspx.designer.cs">
-      <DependentUpon>content.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="Controllers\FullScreenController.cs" />
+    <Compile Include="Controllers\GridController.cs" />
+    <Compile Include="Controllers\MapsController.cs" />
+    <Compile Include="Controllers\QuickAnswerController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="Controllers\SetupController.cs" />
+    <Compile Include="Controllers\ShortFormController.cs" />
+    <Compile Include="Controllers\SimpleFormController.cs" />
+    <Compile Include="Controllers\TextController.cs" />
+    <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="Controllers\ColoursController.cs" />
+    <Compile Include="Controllers\ButtonsController.cs" />
     <Compile Include="Controllers\LandingController.cs" />
     <Compile Include="Controllers\SocialMediaController.cs" />
     <Compile Include="Controllers\HighlightedContentController.cs" />
@@ -311,108 +276,31 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Controllers\FullWidthBackgroundController.cs" />
-    <Compile Include="quick-answer.aspx.cs">
-      <DependentUpon>quick-answer.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="quick-answer.aspx.designer.cs">
-      <DependentUpon>quick-answer.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Skins\Metadata.ascx.cs">
-      <DependentUpon>Metadata.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Skins\Metadata.ascx.designer.cs">
-      <DependentUpon>Metadata.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Skins\SkinChooser.ascx.cs">
-      <DependentUpon>SkinChooser.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Skins\SkinChooser.ascx.designer.cs">
-      <DependentUpon>SkinChooser.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Skins\Skin.cs" />
-    <Compile Include="simple-form.aspx.cs">
-      <DependentUpon>simple-form.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="simple-form.aspx.designer.cs">
-      <DependentUpon>simple-form.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="short-form.aspx.cs">
-      <DependentUpon>short-form.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="short-form.aspx.designer.cs">
-      <DependentUpon>short-form.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="service-form.aspx.cs">
-      <DependentUpon>service-form.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="service-form.aspx.designer.cs">
-      <DependentUpon>service-form.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="maps.aspx.cs">
-      <DependentUpon>maps.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="maps.aspx.designer.cs">
-      <DependentUpon>maps.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="fullscreen.aspx.cs">
-      <DependentUpon>fullscreen.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="fullscreen.aspx.designer.cs">
-      <DependentUpon>fullscreen.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="search.aspx.cs">
-      <DependentUpon>search.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="search.aspx.designer.cs">
-      <DependentUpon>search.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="buttons.aspx.cs">
-      <DependentUpon>buttons.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="buttons.aspx.designer.cs">
-      <DependentUpon>buttons.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="grid.aspx.cs">
-      <DependentUpon>grid.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="grid.aspx.designer.cs">
-      <DependentUpon>grid.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="Skin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="setup.aspx.cs">
-      <DependentUpon>setup.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="setup.aspx.designer.cs">
-      <DependentUpon>setup.aspx</DependentUpon>
-    </Compile>
     <Compile Include="StyleGuidePage.cs" />
-    <Compile Include="text.aspx.cs">
-      <DependentUpon>text.aspx</DependentUpon>
+    <Compile Include="Views\Buttons\ProgressBar.ascx.cs">
+      <DependentUpon>ProgressBar.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="text.aspx.designer.cs">
-      <DependentUpon>text.aspx</DependentUpon>
+    <Compile Include="Views\Buttons\ProgressBar.ascx.designer.cs">
+      <DependentUpon>ProgressBar.ascx</DependentUpon>
     </Compile>
-    <Compile Include="RemoteMasterPageHelper.cs" />
+    <Compile Include="Views\Search\PagingBarControl.ascx.cs">
+      <DependentUpon>PagingBarControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Search\PagingBarControl.ascx.designer.cs">
+      <DependentUpon>PagingBarControl.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="grid.xlsx" />
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="text.js" />
+    <Content Include="js\text.js" />
+    <Content Include="Views\Search\PagingBarControl.ascx" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -423,6 +311,20 @@
     <Content Include="Views\SocialMedia\Index.cshtml" />
     <Content Include="Views\Shared\_FindAddress.cshtml" />
     <Content Include="Views\web.config" />
+    <Content Include="Views\Buttons\Index.cshtml" />
+    <Content Include="Views\Colours\Index.cshtml" />
+    <Content Include="Views\Content\Index.cshtml" />
+    <Content Include="Views\Text\Index.cshtml" />
+    <Content Include="Views\SimpleForm\Index.cshtml" />
+    <Content Include="Views\ShortForm\Index.cshtml" />
+    <Content Include="Views\Setup\Index.cshtml" />
+    <Content Include="Views\Search\Index.cshtml" />
+    <Content Include="Views\QuickAnswer\Index.cshtml" />
+    <Content Include="Views\Maps\Index.cshtml" />
+    <Content Include="Views\Grid\Index.cshtml" />
+    <Content Include="Views\FullScreen\Index.cshtml" />
+    <Content Include="Views\Shared\_Metadata.cshtml" />
+    <Content Include="Views\Shared\_SkinChooser.cshtml" />
     <None Include="Views\web.example.config" />
     <None Include="Web.example.config">
       <SubType>Designer</SubType>

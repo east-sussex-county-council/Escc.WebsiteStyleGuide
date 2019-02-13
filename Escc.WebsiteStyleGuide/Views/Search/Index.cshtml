@@ -1,0 +1,77 @@
+﻿@using Escc.WebsiteStyleGuide
+@using Escc.NavigationControls.WebForms
+@model Escc.WebsiteStyleGuide.StyleGuidePage
+@{
+    Model.EsccWebsiteSkin = Skin.SelectedSkin();
+
+    Model.Metadata.Title = "Search and paging";
+    Model.Metadata.DateCreated = "2014-01-07";
+    Model.Metadata.IpsvPreferredTerms = "Website management";
+    Model.Metadata.IsInSearch = false;
+
+    var paging = new PagingController() { TotalResults = 100 };
+}
+@section Header {
+    @{
+        Html.RenderPartial("~/Views/Shared/_SkinChooser.cshtml");
+    }
+    @Model.TemplateHtml.Header
+}
+@section Metadata {
+    @{ Html.RenderPartial("~/Views/Shared/_Metadata.cshtml"); }
+}
+<div class="full-page">
+    <article>
+        <div class="content text-content">
+            <h1>Search and paging</h1>
+            <p>For paging through a set of results use <code>Escc.NavigationControls.WebForms.PagingControl</code> above and below the results. It will apply the <code>.infoBar</code> class.</p>
+            <p>
+                The results themselves typically display several fields, and use a <code>dl.itemDetail</code> for each result.
+                Where there's only one result, add <code>.onlyItem</code> to the <code>dl</code>.
+            </p>
+            <p><a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/Views/Search/Index.cshtml">View the source of this page</a> for examples.</p>
+        </div>
+
+        <div class="text-content content">
+            @Html.Partial("~/Views/Search/PagingBarControl.ascx", paging)
+
+            <dl class="itemDetail">
+                <dt>Field</dt>
+                <dd>Value</dd>
+                <dt>Field</dt>
+                <dd>Value</dd>
+            </dl>
+
+            <dl class="itemDetail">
+                <dt>Field 1</dt>
+                <dd>Value 1</dd>
+                <dt>Field 2 with a long label that goes onto multiple lines</dt>
+                <dd>Value 2</dd>
+                <dt>Field 3</dt>
+                <dd>Value 3</dd>
+                <dt>Field 4</dt>
+                <dd>Value 4 which is really long and goes onto multiple lines, and needs to wrap neatly and not overlap or be out of line with its label</dd>
+                <dt>Field 5</dt>
+                <dd>Value 5</dd>
+            </dl>
+
+            <dl class="itemDetail">
+                <dt>Field</dt>
+                <dd>Value</dd>
+                <dt>Field</dt>
+                <dd>Value</dd>
+            </dl>
+
+            @Html.Partial("~/Views/Search/PagingBarControl.ascx", paging)
+
+            <dl class="itemDetail onlyItem">
+                <dt>Total results</dt>
+                <dd>1</dd>
+                <dt>Class applied</dt>
+                <dd><code>.onlyItem</code></dd>
+            </dl>
+
+            @Html.Partial("~/Views/Search/PagingBarControl.ascx", paging)
+        </div>
+    </article>
+</div>

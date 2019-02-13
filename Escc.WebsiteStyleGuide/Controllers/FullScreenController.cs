@@ -8,12 +8,12 @@ using Escc.EastSussexGovUK.Mvc;
 
 namespace Escc.WebsiteStyleGuide.Controllers
 {
-    public class LandingController : Controller
+    public class FullScreenController : Controller
     {
-        // GET: Landing
+        // GET: FullScreen
         public async Task<ActionResult> Index()
         {
-            var templateRequest = new EastSussexGovUKTemplateRequest(Request);
+            var templateRequest = new EastSussexGovUKTemplateRequest(Request, EastSussexGovUK.Views.EsccWebsiteView.FullScreen);
             var model = new StyleGuidePage() {
                 TemplateHtml = await templateRequest.RequestTemplateHtmlAsync(),
                 WebChat = await templateRequest.RequestWebChatSettingsAsync()

@@ -8,9 +8,9 @@ using Escc.EastSussexGovUK.Mvc;
 
 namespace Escc.WebsiteStyleGuide.Controllers
 {
-    public class LandingController : Controller
+    public class SetupController : Controller
     {
-        // GET: Landing
+        // GET: Setup
         public async Task<ActionResult> Index()
         {
             var templateRequest = new EastSussexGovUKTemplateRequest(Request);

@@ -1,0 +1,40 @@
+﻿@using Escc.WebsiteStyleGuide
+@model Escc.WebsiteStyleGuide.StyleGuidePage
+@{
+    Model.EsccWebsiteSkin = Skin.SelectedSkin();
+    Model.EsccWebsiteView = Escc.EastSussexGovUK.Views.EsccWebsiteView.FullScreen;
+
+    Model.Metadata.Title = "Full screen template";
+    Model.Metadata.DateCreated = "2014-01-07";
+    Model.Metadata.IpsvPreferredTerms = "Website management";
+    Model.Metadata.IsInSearch = false;
+}
+@section Header {
+    @{
+        Html.RenderPartial("~/Views/Shared/_SkinChooser.cshtml");
+    }
+    <header>
+        <div class="header context">
+            @Html.Raw(Model.TemplateHtml?.Header)
+            <div class="full-screen-bar">
+                <h1>Full screen template</h1>
+                <p><a href="~/" runat="server">Back to Style guide</a></p>
+                <p class="accessible"><a href="javascript:return false()">Link to accessible version</a></p>
+            </div>
+        </div>
+    </header>
+}
+@section Metadata {
+    @{ Html.RenderPartial("~/Views/Shared/_Metadata.cshtml"); }
+}
+<div class="content text-content">
+    <p>When you need as much screen space as possible (typically for a map), use the full screen template.</p>
+    <p>Apply it using <code>new EastSussexGovUKTemplateRequest(Request, EastSussexGovUK.Views.EsccWebsiteView.FullScreen)</code> in your controller.</p>
+    <p>Include <code>@@section FullScreenHeading { content here }</code> and <code>@@section FullScreenLinks { content here }</code> in your view to add the heading and links to the bar across the top.</p>
+    <p><small>In WebForms set <code>MasterPageFile = &quot;~/FullScreen.master&quot;</code> in <code>Page_PreInit</code> and use the extra placeholders <code>fullScreenHeading</code> and <code>fullScreenLinks</code>.</small></p>
+    <p>Wherever relevant, include a link to an accessible alternative using the <code>.accessible</code> class to position the link.</p>
+    <p>
+        Look at the <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/Web.config.example">web.config for this project</a>
+        and the <a href="https://github.com/east-sussex-county-council/Escc.WebsiteStyleGuide/blob/master/Escc.WebsiteStyleGuide/Views/FullScreen/Index.cshtml">source of this page</a> for an example.
+    </p>
+</div>
