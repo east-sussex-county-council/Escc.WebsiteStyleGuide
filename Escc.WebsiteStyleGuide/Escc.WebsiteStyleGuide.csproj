@@ -72,11 +72,11 @@
     <Reference Include="Escc.Dates, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.Dates.3.0.0\lib\netstandard2.0\Escc.Dates.dll</HintPath>
     </Reference>
-    <Reference Include="Escc.EastSussexGovUK, Version=12.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.EastSussexGovUK.12.0.0\lib\netstandard2.0\Escc.EastSussexGovUK.dll</HintPath>
+    <Reference Include="Escc.EastSussexGovUK, Version=13.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Escc.EastSussexGovUK.13.0.0\lib\netstandard2.0\Escc.EastSussexGovUK.dll</HintPath>
     </Reference>
     <Reference Include="Escc.EastSussexGovUK.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.EastSussexGovUK.Mvc.8.0.0\lib\net462\Escc.EastSussexGovUK.Mvc.dll</HintPath>
+      <HintPath>..\packages\Escc.EastSussexGovUK.Mvc.9.0.0\lib\net462\Escc.EastSussexGovUK.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Escc.FindAddress.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.FindAddress.Mvc.3.0.0\lib\net452\Escc.FindAddress.Mvc.dll</HintPath>
@@ -87,11 +87,11 @@
     <Reference Include="Escc.NavigationControls.WebForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06fad7304560ae6f, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.NavigationControls.WebForms.1.1.0\lib\Escc.NavigationControls.WebForms.dll</HintPath>
     </Reference>
-    <Reference Include="Escc.Net, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.Net.2.0.0\lib\netstandard2.0\Escc.Net.dll</HintPath>
+    <Reference Include="Escc.Net, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Escc.Net.3.0.0\lib\netstandard2.0\Escc.Net.dll</HintPath>
     </Reference>
     <Reference Include="Escc.Net.Configuration, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.Net.Configuration.1.0.0\lib\net462\Escc.Net.Configuration.dll</HintPath>
+      <HintPath>..\packages\Escc.Net.Configuration.2.0.0\lib\net462\Escc.Net.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Escc.Redirects, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.Redirects.3.0.1\lib\netstandard2.0\Escc.Redirects.dll</HintPath>
@@ -310,7 +310,6 @@
     <Content Include="Views\ServiceForm\Index.cshtml" />
     <Content Include="Views\SocialMedia\Index.cshtml" />
     <Content Include="Views\Shared\_FindAddress.cshtml" />
-    <Content Include="Views\web.config" />
     <Content Include="Views\Buttons\Index.cshtml" />
     <Content Include="Views\Colours\Index.cshtml" />
     <Content Include="Views\Content\Index.cshtml" />
@@ -325,6 +324,7 @@
     <Content Include="Views\FullScreen\Index.cshtml" />
     <Content Include="Views\Shared\_Metadata.cshtml" />
     <Content Include="Views\Shared\_SkinChooser.cshtml" />
+    <Content Include="Views\web.config" />
     <None Include="Views\web.example.config" />
     <None Include="Web.example.config">
       <SubType>Designer</SubType>
